@@ -81,7 +81,7 @@ $(function ($) {
 
         var blogs = [];
         $.ajax({
-            url: "http://blog.chamaralabs.com/article/posts/index_data_merchent/",
+            url: "http://blog.chamaralabs.com/article/posts/index_data_merchent",
             type: 'GET',
             dataType: 'json', // added data type
             success: function (res) {

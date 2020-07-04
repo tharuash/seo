@@ -101,7 +101,6 @@ function setIndustryOwl() {
 //Start copy from js/client.js
 
 var merchants = [];
-var blogs = [];
 destroySlick();
 setSlick();
 
@@ -359,6 +358,7 @@ function setJobOwl() {
 
 
 function setBlogs(blogs) {
+    console.log(blogs)
     const monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
     ];

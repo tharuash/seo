@@ -100,93 +100,86 @@
   }
   
 
-
+ 
 
 /*=============================================
                         Our Blog
 =============================================*/
 .blog-slider .post {
-    margin: 20px 20px;
-    padding: 10px 10px;
+  margin: 20px 0;
+  padding: 0 10px;
 }
 
 
 
 .post-info {
-    height: 100px;
-    padding: 20px;
-    background: #212121;
-    transition: all 0.2s ease;
-    overflow-y: scroll;
+  height: 350px;
+  padding: 40px;
+  background: #212121;
+  transition: all 0.2s ease;
+  overflow-y: scroll;
 }
 .post:hover .post-img img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
 }
 .post .post-img {
-  overflow: hidden;
-  position: relative;
-  z-index: 10;
+overflow: hidden;
+position: relative;
+z-index: 10;
 }
 .post .post-img img {
-  width: 100% !important;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  z-index: 0;
-  -webkit-backface-visibility: hidden;
+width: 100% !important;
+-webkit-transition: all .5s ease;
+transition: all .5s ease;
+z-index: 0;
+-webkit-backface-visibility: hidden;
 }
 
 .post-info h3 {
-    font-size: 17px;
-    margin-top: 0;
-    margin-bottom:0px;
-    text-align: left
+  font-size: 17px;
+  margin-top: 0;
+  margin-bottom:0px;
 }
 .post-info h6 {
-   color: #ec407a;
-   font-size:12px;
-
-   
+ color: #ec407a;
+ font-size:12px;
+ 
 }
 
 .post-info a {
-    color:#fff;
-    -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  color:#fff;
+  -webkit-transition: all .5s ease;
+transition: all .5s ease;
 }
 
 .post-info a:hover {
-    color:#ec407a;
+  color:#ec407a;
 }
 
 .post-info p {
-	margin-top: 10px;
-  color: #fff;
-  text-align: left
+margin-top: 20px;
+color: #fff;
 }
 
 a.readmore {
-    letter-spacing: 2px;
-    color: #fff;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 700; 
-    text-align: right;
-    background: #28B05F;
-    padding: 10px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700; 
 }
 
 a:hover.readmore {
-    color: #fff;
-    background: #ec407a;
+  color: #ec407a;
 }
 
 a.readmore > span {
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-@media (min-width: 1100px) {  
+/*@media (min-width: 1100px) {  
 
   .post-info {
       height: 100px;
@@ -212,7 +205,7 @@ a.readmore > span {
     height: 120px;
   }
 
-}
+}*/
 
 
 

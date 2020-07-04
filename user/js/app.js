@@ -174,7 +174,7 @@ $(function ($) {
 
         var blogs = [];
         $.ajax({
-            url: "http://blog.chamaralabs.com/article/posts/index_data_user/",
+            url: "http://blog.chamaralabs.com/article/posts/index_data_user",
             type: 'GET',
             dataType: 'json', // added data type
             success: function (res) {
