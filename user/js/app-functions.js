@@ -27,6 +27,10 @@
 
 // ====================================================*/
 
+function changeRootLink(host){
+    $('#logo_img_div_desk a').attr("href", host)
+}
+
 
 //start copy from spot.js 
 function setSpotOwl() {
@@ -313,7 +317,7 @@ function setJobs(jobs) {
         html = `<tr>
       <td>${jobs[j].jobtitle}</td>
       <td>${jobs[j].city}</td>
-      <td> <a class="readmore" href="#"><span>Apply</span></a></td>
+      <td> <a class="readmore" href="http://blog.chamaralabs.com/jobs/jobposts/${jobs[j].encode_id}"><span>Apply</span></a></td>
    </tr>`;
         $("#job-table").append(html);
         

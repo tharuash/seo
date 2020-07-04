@@ -27,6 +27,11 @@ function svgdrawing() {
 
 // ====================================================
 
+function changeRootLink(host){
+    $('#logo_img_div_desk a').attr("href", host)
+}
+
+
 
 //start copy from spot.js 
 function setSpotOwl() {

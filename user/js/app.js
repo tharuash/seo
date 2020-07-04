@@ -45,7 +45,8 @@ $(function ($) {
 
 
     $(document).ready(function () {
-
+        changeRootLink("http://chamaralabs.com/seo-server-testing-6/seo/")
+        /*ttp://chamaralabs.com/seo-server-testing-6/seo/*/
         /*$("#main_div_id").sectionsnap({
             'delay': 100,// time dilay (ms)
             'selector': ".section",// selector
