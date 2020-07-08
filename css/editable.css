@@ -100,7 +100,7 @@
 .about-banner-area {
     position: relative;
     color: #fff;
-    background-image: url("../images/client_images/about\ us.webp");
+    background-image: url("../images/client_images/about_us.webp");
     background-position: 0% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -111,7 +111,7 @@
 .spot-banner-area {
     position: relative;
     color: #fff;
-    background-image: url("../images/client_images/why\ spotoffers.webp");
+    background-image: url("../images/client_images/why_spotoffers.webp");
     background-position: 0% 50%;
     background-size: contain;
     background-repeat: no-repeat;
