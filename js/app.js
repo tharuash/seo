@@ -170,7 +170,8 @@ $(function ($) {
     /*Main Slideshow*/
     $(".tw-slider-area").owlCarousel({
         items: 1,
-        loop: true,
+        loop: false,
+        rewind: true,
         autoplay: false,
         nav: true,
         dots: true,
@@ -190,7 +191,8 @@ $(function ($) {
     /*Testimonial Slider*/
     $(".tw-testimonial-carousel").owlCarousel({
         items: 1,
-        loop: true,
+        loop: false,
+        rewind: true,
         autoplay: false,
         nav: false,
         dots: true,
@@ -203,7 +205,8 @@ $(function ($) {
     if ($(".testimonial-slider").length > 0) {
         $(".testimonial-slider").owlCarousel({
             items: 1,
-            loop: true,
+            loop: false,
+            rewind: true,
             autoplay: false,
             nav: true,
             autoplayTimeout: 5000,
@@ -219,7 +222,8 @@ $(function ($) {
         $(".testimonial-carousel-gray").owlCarousel({
             items: 2,
             margin: 20,
-            loop: true,
+            loop:false,
+            rewind: true,
             autoplay: false,
             nav: false,
             dots: true,
@@ -233,7 +237,8 @@ $(function ($) {
         $(".testimonial-box-carousel").owlCarousel({
             items: 2,
             margin: 20,
-            loop: true,
+            loop: false,
+            rewind: true,
             autoplay: false,
             nav: false,
             dots: true,

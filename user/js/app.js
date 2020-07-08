@@ -77,7 +77,8 @@ $(function ($) {
             smartSpeed: 400,
             autoplayHoverPause: true,
             items: 1,
-            loop: true,
+            loop: false,
+            rewind: true,
 
         });
 
@@ -117,7 +118,8 @@ $(function ($) {
             smartSpeed: 400,
             autoplayHoverPause: true,
             items: 1,
-            loop: true,
+            loop: false,
+            rewind: true,
 
         });
         //========================================== End Copy from assets/js/owl-custom.js file============================
