@@ -147,6 +147,24 @@ ul#portfolio-grid>li{
 
 }
 
+.tw-work-process:hover .port{
+    background-color: black;
+}
+
+.tw-work-process:hover img{
+    opacity: 0.2;
+    transform: scale(1.5);
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.tw-work-process:hover .work-text-content {
+    color: white;
+    opacity: 1;
+    top: 40%;
+  }
 
 .port {
     /*border-radius: 50%;*/
@@ -259,6 +277,29 @@ ul#portfolio-grid>li{
         height: 428px;
     }
 
+}
+
+.tw-case-study-box:hover .anim{
+    background: black;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.tw-case-study-box:hover img {
+    opacity: 0.2;
+    transform: scale(1.5);
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.tw-case-study-box:hover .work-text-content-anim {
+    color: white;
+    opacity: 1;
+    top: 40%;
 }
 
 .anim {

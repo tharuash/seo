@@ -178,60 +178,19 @@ function setBlogs(blogs) {
 
     for (let j = 0; j < blogs.length; j++) {
 
-        /*var name = blogs[j].name.split(' ')
-        console.log(name)
-        html = `<div class="col-lg-4 col-md-12">
-    <div class="tw-latest-post" style="text-align:left">
-        <div class="latest-post-media text-center">
-            <img src="http://blog.chamaralabs.com/${blogs[j].featured_image}" alt="blog_image_one" class="img-fluid" style="height: 200px">
-        </div>
-        <!-- End Latest Post Media -->
-        <div class="post-body" style="height: 500px; overflow-y : scroll">
-            <div class="post-item-date">
-                <div class="post-date">
-                    <span class="date">${blogs[j].published_at.substring(8,10)}</span>
-                    <span class="month">${monthNames[blogs[j].published_at.substring(5,7) - 1]}</span>
-
-                
-                </div>
-            </div>
-            <!-- End Post Item Date -->
-            <div class="post-info">
-                <div class="post-meta">
-                    <span class="post-author">
-                        Posted by <a href="#">${blogs[j].created_by_name.split(' ')[0]+ blogs[j].created_by_name.split(' ')[1] }</a>
-                    </span>
-                </div>
-                <!-- End Post Meta -->
-                <h3 class="post-title"><a href="#">${blogs[j].name}</a></h3>
-                <div class="entry-content">
-                    <p>
-                    ${blogs[j].intro}
-                    </p>
-                </div>
-                <!-- End Entry Content -->
-                <a href="#" class="tw-readmore">Read More
-                    <!--i class="fa fa-angle-right"></i-->
-                </a>
-            </div>
-            <!-- End Post info -->
-        </div>
-        <!-- End Post Body -->
-    </div>
-    <!-- End Tw Latest Post -->
-</div>
-<!-- End Col -->`;*/
-
 
         html = `<div class="post item">
         <div class="post-img"> <img class="img-responsive" src="http://blog.chamaralabs.com/${blogs[j].featured_image}" alt=""/> </div>
         <div class="post-info" style="margin-left:0">
           <h3><a href="#">${blogs[j].name}</a></h3>
           <h6>${monthNames[blogs[j].published_at.substring(5, 7) - 1]} ${blogs[j].published_at.substring(8, 10)}, ${blogs[j].published_at.substring(0, 4)}</h6>
+          <div style="height:185px; overflow: hidden">
           <p>${blogs[j].intro}</p>
-          <a class="readmore" href="http://blog.chamaralabs.com/article/posts/${blogs[j].encode_id}/${blogs[j].slug}"><span>Read More</span></a> </div>
+          </div>
+           </div>
+           <div style="background:#212121; padding-bottom:30px">
+           <a class="readmore" href="http://blog.chamaralabs.com/article/posts/${blogs[j].encode_id}/${blogs[j].slug}"><span>Read More</span></a></div>
       </div>`;
-        /*$("#blog-list").append(html);*/
         $("#blog-list").append(html);
     }
 

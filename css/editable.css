@@ -16,12 +16,23 @@
     transition: all 0.3s linear;
 }
 
-.tw-work-process:hover h2 {
+.tw-work-process h2:hover{
     transition: transform .2s;
     transform: scale(1.2);
     color: rgb(0, 0, 0);
 }
 
+.tw-work-process:hover p{
+    transition: transform 1s;
+    transform: scale(1.2);
+    color: rgb(0, 0, 0);
+}
+
+/*.tw-work-process img:hover p{
+    transition: transform .2s;
+    transform: scale(1.2);
+    color: rgb(0, 0, 0);
+}*/
 
 .casestudy-content {
     background: #f7f7f7;
@@ -153,4 +164,13 @@
     -ms-flex-line-pack: center;
     align-content: center;
     min-height: 350px;
+}
+
+#main-container img{
+    width: 80%;
+}
+
+#main-container {
+   min-height: 0vh;
+   padding-bottom: 70px;
 }

@@ -94,9 +94,9 @@ $(function ($) {
         owl.on('changed.owl.carousel', function (event) {
             if (i == 5) i = 0;
 
-            var html = $('<div> \n\
+            var html = $('<div class="slide-down" > \n\
             <h2 class="title" style="font-weight: bold; font-size: 50px">'+ slides[i].title + '</h2> \n\
-            <p class="intro">'+ slides[i].intro + ' \n\
+            <p class="intro" style="text-align: center">'+ slides[i].intro + ' \n\
             </p> \n\
          </div>');
 

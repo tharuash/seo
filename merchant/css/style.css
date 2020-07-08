@@ -1724,7 +1724,7 @@ li.dropdown:hover .tw-mega-menu {
   transition: all 0.3s linear;
 }
 .tw-work-process:hover p {
-  transition: transform .2s;
+  transition: transform 1s;
   transform: scale(1.2); 
   color: rgb(0, 0, 0);
 }

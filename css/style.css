@@ -1722,11 +1722,11 @@ li.dropdown:hover .tw-mega-menu {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.tw-work-process:hover p {
+/*.tw-work-process:hover p {
   transition: transform .2s;
   transform: scale(1.2); 
   color: rgb(0, 0, 0);
-}
+}*/
 
 .process-wrapper {
   width: 200px;

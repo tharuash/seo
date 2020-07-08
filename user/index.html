@@ -62,6 +62,7 @@
    <link rel="stylesheet" href="lib/css/new.css">
    <link rel="stylesheet" href="lib/css/layerslider.css">
 
+   <link rel="stylesheet" href="css/editable.css">
 
    <!-- Slider CSS -->
    <!--link rel='stylesheet' id='rs-plugin-settings-css' href='slider/Untitled-1.css?rev=4.6.0&amp;ver=3.5.1'
@@ -89,7 +90,7 @@
          display: none;
       }
 
-      #job-area::-webkit-scrollbar{
+      #job-area::-webkit-scrollbar {
          display: none;
       }
 
@@ -384,6 +385,26 @@
          color: #FFF;
          background: #212121;
       }
+
+      .slide-down {
+         animation: slide-left 2s;
+      }
+
+      /*.slide-down p, .slide-down h2 {
+         animation: slide-down 6s;
+      }*/
+
+      @keyframes slide-left {
+         from {
+            margin-right: -100px;
+            opacity: 0;
+         }
+
+         to {
+            margin-right: 0px;
+            opacity: 1;
+         }
+      }
    </style>
 
    <link rel="stylesheet" href="css/menu-new-2.css">
@@ -403,21 +424,37 @@
                <table class="table table-sm">
                   <tbody>
                      <tr>
-                        <td><a href="index.html">Home</a></td>
-                        <td><a href="#tw-about">About Us</a></td>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                        aria-label="Toggle navigation"><a href="index.html">Home</a></td>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                        aria-label="Toggle navigation"><a href="#tw-about">About Us</a></td>
                      </tr>
                      <tr>
-                        <td><a href="../merchant/index.html">Buisness Owner</a></td>
-                        <td><a href="#tw-blog">Career</a></td>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                        aria-label="Toggle navigation"><a href="../">Buisness Owner</a></td>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                        aria-label="Toggle navigation"><a href="#tw-blog">Blog</a></td>
                      </tr>
                      <tr>
-                        <td><a href="#tw-features">Features</a></td>
-                        <td><a href="#tw-contact">Contact Us</a></td>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                        aria-label="Toggle navigation"><a href="#tw-features">Features</a></td>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                        aria-label="Toggle navigation"><a href="#tw-contact">Carrer</a></td>
                      </tr>
-                     <!--tr>
-                        <td><a href="#work-process">Industries</a></td>
-                        <td><a href="#tw-footer">Contact Us</a></td>
-                     </tr-->
+                     <tr>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                        aria-label="Toggle navigation"><a href="#work-process">Industries</a></td>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                        aria-label="Toggle navigation"><a href="#tw-contact">Contact Us</a></td>
+                     </tr>
                   </tbody>
                </table>
                <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
@@ -448,9 +485,9 @@
 
       <nav style="z-index: 100;" id="newheader2" class="menu">
          <ul class="nav-menu nav-center">
-            <li style="visibility: hidden" class="menu-item" id="sec-01"><a href="#"><u>Home</u></a></li>
+
             <li class="menu-item"><a href="index.html"><u>Home</u></a></li>
-            <li class="menu-item"><a href="../merchant/index.html"><u>Buisness Owner</u></a></li>
+            <li class="menu-item"><a href="../"><u>Buisness Owner</u></a></li>
             <li class="menu-item" id="sec-02"><a href="#tw-features"><u>Features</u></a>
                <ul>
 
@@ -477,7 +514,7 @@
                </ul>
             </li>
             <!--li class="menu-item" id="sec-03"><a href="#tw-service"><u>Services</u></a></li-->
-            <!--li class="menu-item" id="sec-04"><a href="#tw-industries"><u>Industries</u></a></li-->
+            <li class="menu-item" id="sec-05"><a href="#tw-industries"><u>Industries</u></a></li>
 
 
             <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
@@ -496,6 +533,8 @@
                       </li>
                   </ul> -->
             </li>
+            <li class="menu-item" id="sec-06"><a href="#tw-blog"><u>Blog</u></a></li>
+
             <li class="menu-item" id="sec-03"><a href="#tw-blog"><u>Career</u></a></li>
             <li class="menu-item" id="sec-04"><a href="#tw-contact"><u>Contact Us</u></a></li>
             <!--li class="menu-item" id="sec-08"><a href="#tw-contact"><u>Contact Us</u></a></li-->
@@ -513,9 +552,9 @@
             <div class="intro-area col-lg-4 col-12">
 
                <div id="side-slideshow">
-                  <div>
+                  <div class="slide-down">
                      <h2 class="title" style="font-weight: bold; font-size: 50px">Best Deals</h2>
-                     <p class="intro">Find best offers, deals, discount vouchers and stores near you
+                     <p class="intro" style="text-align: center">Find best offers, deals, discount vouchers and stores near you
                      </p>
                   </div>
                </div>
@@ -537,9 +576,11 @@
                <!--//list-unstyled-->
                <ul class="list-unstyled summary">
                   <li><i class="fa fa-check"></i> <a href="#benefit1">Work the way you live</a></li>
-                  <li><i class="fa fa-check"></i> <a href="#benefit2">Capture the moment</a></li>
+                  <li style="margin-left: -10px"><i class="fa fa-check"></i> <a href="#benefit2">Capture the moment</a>
+                  </li>
                   <li><i class="fa fa-check"></i> <a href="#benefit3">A new way to connect</a></li>
-                  <li><i class="fa fa-check"></i> <a href="#download">Trusted by many</a></li>
+                  <li style="margin-left: -35px"><i class="fa fa-check"></i> <a href="#download">Trusted by many</a>
+                  </li>
                </ul>
                <!--//list-unstyled-->
             </div>
@@ -977,7 +1018,8 @@
 
          <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
             <div class="col-md-12 remove-padding">
-               <div class="table-responsive-lg table-responsive-md table-responsive-sm" id="job-area" style="max-height: 325px; overflow-y: scroll;">
+               <div class="table-responsive-lg table-responsive-md table-responsive-sm" id="job-area"
+                  style="max-height: 325px; overflow-y: scroll;">
                   <table class="table table-dark table-hover">
                      <thead>
                         <tr>
@@ -987,7 +1029,7 @@
                         </tr>
                      </thead>
                      <tbody id="job-table">
-                        
+
 
                      </tbody>
                   </table>

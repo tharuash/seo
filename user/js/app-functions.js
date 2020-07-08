@@ -362,7 +362,6 @@ function setJobOwl() {
 
 
 function setBlogs(blogs) {
-    console.log(blogs)
     const monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
     ];
@@ -375,8 +374,12 @@ function setBlogs(blogs) {
         <div class="post-info" style="margin-left:0">
           <h3><a href="#">${blogs[j].name}</a></h3>
           <h6>${monthNames[blogs[j].published_at.substring(5, 7) - 1]} ${blogs[j].published_at.substring(8, 10)}, ${blogs[j].published_at.substring(0, 4)}</h6>
+          <div style="height:185px; overflow: hidden">
           <p>${blogs[j].intro}</p>
-          <a class="readmore" href="http://blog.chamaralabs.com/article/posts/${blogs[j].encode_id}/${blogs[j].slug}"><span>Read More</span></a> </div>
+          </div>
+          </div>
+          <div style="background:#212121; padding-bottom:30px">
+           <a class="readmore" href="http://blog.chamaralabs.com/article/posts/${blogs[j].encode_id}/${blogs[j].slug}"><span>Read More</span></a></div>
       </div>`;
         /*$("#blog-list").append(html);*/
         $("#blog-list").append(html);
