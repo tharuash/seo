@@ -45,7 +45,7 @@ $(function ($) {
 
 
     $(document).ready(function () {
-        changeRootLink("http://chamaralabs.com/seo-server-testing-6/seo/")
+        changeRootLink("/seo")
         /*ttp://chamaralabs.com/seo-server-testing-6/seo/*/
         $('.tp-leftarrow').append('<i id="me_s_left" class="icon icon-left-arrow2"></i>')
         $('.tp-rightarrow').append('<i id="me_s_right" class="icon icon-right-arrow2"></i>')
