@@ -46,6 +46,8 @@ $(function ($) {
 
     $(document).ready(function () {
         changeRootLink("/seo")
+        $('.tp-leftarrow').append('<i id="me_s_left" class="icon icon-left-arrow2"></i>')
+        $('.tp-rightarrow').append('<i id="me_s_right" class="icon icon-right-arrow2"></i>')
         /*ttp://chamaralabs.com/seo-server-testing-6/seo/*/
         /*$("#main_div_id").sectionsnap({
             'delay': 100,// time dilay (ms)
