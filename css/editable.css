@@ -174,3 +174,8 @@
    min-height: 0vh;
    padding-bottom: 70px;
 }
+
+.slider-content .slider-desc{
+    /*font-size: 17px;*/
+    color: #2F2C2C;
+}
