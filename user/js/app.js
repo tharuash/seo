@@ -83,30 +83,75 @@ $(function ($) {
         });
 
 
-        var slides = [
-            { title: 'Best Deals', intro: 'Find best offers, deals, discount vouchers and stores near you' },
-            { title: 'Welcome Gift', intro: 'Register and get Rs 5,000 Unconditional Cash Voucher Instantly' },
-            { title: 'Earn Money', intro: 'Like, comment & share on social media and EARN UNLIMITED MONEY' },
-            { title: 'Play with new Technology', intro: 'Have Fun with Augmented Reality (AR), unlock special vouchers & offers with AR' },
-            { title: 'Win Spot Deals', intro: 'Stand a chance to win Mega Spot Deals with only Rs.10' },
-        ]
+        /*var slides = [{
+                title: 'Best Deals',
+                intro: 'Find best offers, deals, discount vouchers and stores near you'
+            },
+            {
+                title: 'Welcome Gift',
+                intro: 'Register and get Rs 5,000 Unconditional Cash Voucher Instantly'
+            },
+            {
+                title: 'Earn Money',
+                intro: 'Like, comment & share on social media and EARN UNLIMITED MONEY'
+            },
+            {
+                title: 'Play with new Technology',
+                intro: 'Have Fun with Augmented Reality (AR), unlock special vouchers & offers with AR'
+            },
+            {
+                title: 'Win Spot Deals',
+                intro: 'Stand a chance to win Mega Spot Deals with only Rs.10'
+            },
+        ]*/
 
         let i = 1
+
+        var text1 = `<div class="slide-down">
+        <h2 class="title" style="font-weight: bold;">Best Deals</h2>
+        <p class="intro" style="text-align: center"> Find best offers, deals, discount <br> vouchers and stores near you
+        </p> 
+     </div>`
+
+        var text2 = `<div class="slide-down">
+     <h2 class="title" style="font-weight: bold;">Welcome Gift</h2>
+     <p class="intro" style="text-align: center"> Register and get Rs 5,000  <br>  Unconditional Cash Voucher Instantly
+     </p> 
+  </div>`
+
+        var text3 = `<div class="slide-down">
+        <h2 class="title" style="font-weight: bold;">Earn Money</h2>
+        <p class="intro" style="text-align: center"> Like, comment & share on social <br> media and EARN UNLIMITED MONEY
+        </p> 
+     </div>`
+
+        var text4 = `<div class="slide-down">
+        <h2 class="title" style="font-weight: bold;">Play with new Technology</h2>
+        <p class="intro" style="text-align: center"> Have Fun with Augmented Reality (AR) <br> unlock special vouchers & offers with AR
+        </p> 
+     </div>`
+
+        var text5 = `<div class="slide-down">
+        <h2 class="title" style="font-weight: bold;">Win Spot Deals</h2>
+        <p class="intro" style="text-align: center"> Stand a chance to win <br> Mega Spot Deals with only Rs.10
+        </p> 
+     </div>`
+
+        var texts = [ text1, text2, text3, text4, text5] 
+
         owl.on('changed.owl.carousel', function (event) {
             if (i == 5) i = 0;
 
-            var html = $('<div class="slide-down" > \n\
-            <h2 class="title" style="font-weight: bold; font-size: 50px">'+ slides[i].title + '</h2> \n\
-            <p class="intro" style="text-align: center">'+ slides[i].intro + ' \n\
+            /*var html = $('<div class="slide-down" > \n\
+            <h2 class="title" style="font-weight: bold;">' + slides[i].title + '</h2> \n\
+            <p class="intro" style="text-align: center">' + slides[i].intro + ' \n\
             </p> \n\
-         </div>');
+         </div>');*/
 
 
 
-
-           
             $('#side-slideshow').empty();
-            $('#side-slideshow').append(html);
+            $('#side-slideshow').append(texts[i]);
             i++;
         })
 
@@ -128,7 +173,7 @@ $(function ($) {
 
         //========================================== Start Copy from js/spot.js file============================
         setSpotOwl();
-        // setIndustryOwl();
+        setIndustryOwl();
         //========================================== End Copy from js/spot.js file============================
 
 
@@ -197,7 +242,7 @@ $(function ($) {
 
 
     //========================================== Start Copy from js/main.js file============================
-    
+
     /* Contact Form */
     $('#contact-form').submit(function () {
 
@@ -215,12 +260,12 @@ $(function ($) {
                 $message = $form.find('.form-message');
 
             $.post(action, {
-                name: $name.val(),
-                phone: $phone.val(),
-                email: $email.val(),
-                subject: $subject.val(),
-                message: $message.val()
-            },
+                    name: $name.val(),
+                    phone: $phone.val(),
+                    email: $email.val(),
+                    subject: $subject.val(),
+                    message: $message.val()
+                },
                 function (data) {
                     $error.html(data);
                     $error.slideDown('slow');

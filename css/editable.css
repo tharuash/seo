@@ -56,19 +56,19 @@
 
 }
 
-.tw-case-study-box-1:hover .casestudy-content h2 {
+.tw-case-study-box-1:hover .casestudy-content h4 {
     color: #6296f8;
 }
 
-.tw-case-study-box-2:hover .casestudy-content h2 {
+.tw-case-study-box-2:hover .casestudy-content h4 {
     color: #ffc81b;
 }
 
-.tw-case-study-box-3:hover .casestudy-content h2 {
+.tw-case-study-box-3:hover .casestudy-content h4 {
     color: #3f1906;
 }
 
-.tw-case-study-box-4:hover .casestudy-content h2 {
+.tw-case-study-box-4:hover .casestudy-content h4 {
     color: #4b0d56;
 }
 
@@ -84,15 +84,15 @@
     background: #b4e245
 }
 
-.tw-case-study-box-7:hover .casestudy-content h2 {
+.tw-case-study-box-7:hover .casestudy-content h4 {
     color: #574605;
 }
 
-.tw-case-study-box-8:hover .casestudy-content h2 {
+.tw-case-study-box-8:hover .casestudy-content h4 {
     color: #2b1742;
 }
 
-.tw-case-study-box-9:hover .casestudy-content h2 {
+.tw-case-study-box-9:hover .casestudy-content h4 {
     color: #b4e245;
 }
 
@@ -173,4 +173,9 @@
 #main-container {
    min-height: 0vh;
    padding-bottom: 70px;
+}
+
+.slider-content .slider-desc{
+    /*font-size: 17px;*/
+    color: #2F2C2C;
 }
