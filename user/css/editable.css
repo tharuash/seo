@@ -22,3 +22,61 @@
         margin-left: 160px;
     }
  }
+
+ .user-slider{
+     padding-top: 50px;
+ }
+
+ @media (max-width: 992px) {
+    .user-slider{
+        padding-top: 0px;
+    }
+ }
+
+ .promo{
+     padding-top: 70px;
+ }
+
+ @media (min-width: 767px) and (max-width: 992px) {
+    .promo{
+        padding-top: 40px;
+    }
+ }
+
+ @media (max-width: 767px) {
+    .section.promo{
+        padding-top: 0px !important;
+    }
+
+    .device{
+        padding-top: 20px;
+        height: 470px;
+    }
+
+    .promo .download-area{
+        padding-top: 0px;
+    }
+ }
+
+/* Owl carousel when touch no slide problem*/
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+    -ms-touch-action: auto;
+        touch-action: auto;
+}
+
+.uncommon{
+    padding-left: 56px;
+}
+
+@media (max-width: 333px) {
+    .uncommon{
+        padding-left: 55px;
+    }
+ }
+
+ @media (max-width: 332px) {
+    .uncommon{
+        padding-left: 28px;
+        margin-right: 42px;
+    }
+ }

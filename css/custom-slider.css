@@ -1,6 +1,7 @@
 /*==merchant slider css override ==*/
 .tp-bullets.hidebullets{
     opacity: 1;
+    z-index: 99;
 }
 
 .tp-bullets.simplebullets.round .bullet{
