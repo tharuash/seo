@@ -151,12 +151,6 @@ function setSlick() {
                 rows: 3,
                 slidesPerRow: 3,
             }
-        }, {
-            breakpoint: 520,
-            settings: {
-                rows: 3,
-                slidesPerRow: 1,
-            }
         }]
     });
 
