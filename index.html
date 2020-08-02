@@ -296,6 +296,15 @@
 
       @media screen and (min-width: 767px) {
 
+         .mobi_slider{
+            visibility: hidden;
+            display: none;
+         }
+
+         #mobile-img{
+            visibility: hidden;
+         }
+
          #mobile_head {
             visibility: hidden;
          }
@@ -305,6 +314,8 @@
             visibility: hidden;
          }
 
+
+
          #logo_img_div_desk {
             visibility: visible
          }
@@ -312,8 +323,18 @@
 
 
 
-
+/* mobile */
       @media screen and (max-width: 767px) {
+        
+
+         .desk_slider{
+            visibility: hidden;
+            display: none;
+         }
+
+         #mobile-img{
+            visibility: visible;
+         }
 
          /* #navi, */
          #newheader2 {
@@ -324,6 +345,9 @@
             visibility: visible;
 
          }
+         #neww{
+   visibility: visible;
+}
 
          #logo_img_div_mobi {
             display: block;
@@ -403,10 +427,10 @@
 
    <!-- header======================-->
 
-   <header style="height: 0rem;">
+   <header >
 
-      <div id="mobile_head"  >
-      <div class="fixed-top pos-f-t">
+      <div id="mobile_head" class="fixed-top pos-f-t" >
+    
          <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-dark p-4">
                <div id="logo_img_div_mobi" style="float: left; padding-bottom: 1%;">
@@ -491,11 +515,26 @@
          </nav>
 
       </div>
-
-
-
       
-      </div>
+   
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
 
       <!-- mobile view center logo -->
      
@@ -508,11 +547,11 @@
       </div>
       <!-- ----------------------- -->
 
-      <nav style="z-index: 100;" id="newheader2" class="menu">
+      <!-- <nav style="z-index: 100;" id="newheader2" class="menu">
          <ul class="nav-menu nav-center">
             <li class="menu-item" id="sec-02"><a href="#tw-service"><u>Services</u></a>
                <ul>
-                  <!-- <li><a href="#">Sub Nav Link</a></li> -->
+                
                   <li><a href="marketing.html">Marketing</a>
                      <ul>
                         <li><a href="spot_offer.html">Spot Offer App</a>
@@ -575,18 +614,7 @@
                </ul>
             </li>
             <li class="menu-item" id="sec-03"><a href="#tw-industry"><u>Industries</u></a>
-               <!--ul>
-                     <li><a href="#">Sub Nav Link</a></li>
-                     <li><a href="#">Sub Nav Link</a>
-                         <ul>
-                             <li><a href="#">Sub Sub Nav Link</a></li>
-                             <li><a href="#">Sub Sub Nav Link</a></li>
-                             <li><a href="#">Sub Sub Nav Link</a></li>
-                         </ul>
-                     </li>
-                     <li><a href="#">Sub Nav Link</a></li>
-                     <li><a href="#">Sub Nav Link</a></li>
-                 </ul-->
+               
             </li>
             <li class="menu-item" id="sec-04"><a href="#tw-tech"><u>Technologies</u></a>
                <ul>
@@ -600,28 +628,102 @@
 
             <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
 
-            <!-- <li id="sec-00" class="menu-item active" style="text-align: center;"><a style="padding: 0;"
-                 href="#"><img id="logo_img_xxx" class="shadowfilter" src="images/sss.png" alt=""></a></li> -->
-
             <li class="menu-item"><a href="user/index.html"><u>User</u></a>
-               <!--ul class="sub-234">
-                     <li><a href="#">Sub Nav Link</a></li>
-                     <li><a href="#">Sub Nav Link</a> </li>
-                     <li><a href="#">Sub Nav Link</a></li>
-                     <li><a href="#">Sub Nav Link</a>
-                         <ul>
-                             <li><a href="#">Sub Sub Nav Link</a></li>
-                             <li><a href="#">Sub Sub Nav Link</a></li>
-                             <li><a href="#">Sub Sub Nav Link</a></li>
-                         </ul>
-                     </li>
-                 </ul-->
+             
             </li>
-            <li class="menu-item" id="sec-07"><a target="_blank" rel="noopener noreferrer" href="http://blog.chamaralabs.com/article/posts/merchent"><u>Blog</u></a></li>
+            <li class="menu-item" id="sec-07"><a href="#tw-blog"><u>Blog</u></a></li>
             <li class="menu-item" id="sec-09"><a href="#tw-about"><u>About Us</u></a></li>
             <li class="menu-item" id="sec-08"><a href="#tw-contact"><u>Contact Us</u></a></li>
          </ul>
-      </nav>
+      </nav> -->
+
+
+
+      <nav style="z-index: 100;" id="newheader2" class="menu">
+         <ul class="nav-menu nav-center">
+            <li class="menu-item"><a href="index.html"><u>Home</u></a>
+            <li class="menu-item"><a href="user/index.html"><u>User App</u></a>
+               <li class="menu-item"><a href="#"><u>Benefits</u></a>
+            <li class="menu-item" id="sec-02"><a href="#tw-service"><u>Services</u></a>
+               <ul>
+                
+                  <li><a href="marketing.html">Marketing</a>
+                     <ul>
+                        <li><a href="spot_offer.html">Spot Offer App</a>
+                           <ul>
+                              <li><a href="delever_dynamic_offers.html">Deliver Dynamic Offers &
+                                    Promotions </a>
+                              <li><a href="intelligent_statistics.html">Intelligent
+                                    Statistics</a>
+                              </li>
+                              <li><a href="real_time_edits.html">Real Time edits</a></li>
+                              <li><a href="get_discovered.html.html">Get discovered</a></li>
+                              <li><a href="approve_reject_leads.html">Approve / Reject leads</a>
+                              </li>
+                              <li><a href="get_store_followers.html">Get store followers</a>
+                              </li>
+                              <li><a href="get_more_leads.html">Get more leads via price request
+                                    from
+                                    users</a></li>
+                              <li><a href="better_branding.html">Better Branding</a></li>
+                              <li><a href="spot/loyalty_offers.html">Loyalty Offers to attract repeat
+                                    customers</a></li>
+                              <li><a href="one_click_chat.html">One click chat</a></li>
+                              <li><a href="social_media_integration_for_larger_reach.html">
+                                    Social Media integration for larger reach</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="lead_generation.html">Lead Generation</a></li>
+                        <li><a href="sm_marketing.html">Social Media Marketing</a></li>
+                        <li><a href="ppc.html">PPC</a></li>
+                        <li><a href="growth_hacking.html">Growth Hacking</a></li>
+                        <li><a href="web_analytics.html">Web Analytics</a></li>
+                        <li><a href="seo.html">SEO</a></li>
+                        <li><a href="sms_marketing.html">SMS Marketing</a></li>
+                        <li><a href="gmbt.html">GMBT</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="strategy.html">Strategy</a>
+                     <ul>
+                        <li><a href="omni_channel.html">Omni Channel</a></li>
+                        <li><a href="digital_strategy.html">Digital Strategy</a></li>
+                        <li><a href="brand_strategy.html">Brand Strategy</a></li>
+                        <li><a href="market_research.html">Market Research</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="design.html">Design</a>
+                     <ul>
+                        <li><a href="branding.html">Branding</a></li>
+                        <li><a href="logo_designing.html">Logo Designing</a></li>
+                        <li><a href="photo_video.html">Photography / Videograply </a></li>
+                        <li><a href="brocher_designing.html">Brocher Designing</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="development.html">Development</a>
+                     <ul>
+                        <li><a href="website_development.html">Website Development</a></li>
+                        <li><a href="ar_vr.html">AR / VR</a></li>
+                        <li><a href="app_development.html">iOS/Android app Development</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
+            <li class="menu-item" id="sec-04"><a href="#tw-tech"><u>Technology</u></a>
+               <ul>
+                  <li><a href="tech1.html">Geolocation</a></li>
+                  <li><a href="tech2.html">Augmented Reality</a>
+                  <li><a href="tech3.html">Beacon Technology</a>
+               </ul>
+            </li>
+            <li class="menu-item" id="sec-07"><a href="#tw-blog"><u>Blog</u></a></li>
+            <li class="menu-item" id="sec-09"><a href="#tw-about"><u>About Us</u></a></li>
+            <li class="menu-item" id="sec-08"><a href="#tw-contact"><u>Contact Us</u></a></li>
+            
+            
+         </ul>
+      </nav> 
+
 
 
    </header>
@@ -632,23 +734,23 @@
 
 
    <!-- <section id="work-process" class="rev_slider-home-page extendBg gradient-1 section"> -->
-   <section id="work-process" class="section gradient-1" style="padding-top: 90px">
+   <section id="work-process " class="section gradient-1" style="padding-top: 90px">
       <!-- START REVOLUTION SLIDER 4.6.0 fullwidth mode -->
-
-      <div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;max-height:617px;height:200px;">
+      <!-- <div id="desk_slider"> -->
+      <div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;max-height:6617px;height:200px;">
          <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-
+      
          <ul>
 
             <!-- SLIDE 1  -->
             <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="8000"
-            data-saveperformance="off">
+            data-saveperformance="off" >
 
             <!-- LAYERS -->
 
             <!-- LAYER NR. 1 -->
-            <div class="tp-caption lfr stl " data-x="-150" data-y="100" data-speed="1400" data-start="200"
+            <div  class="tp-caption lfr stl desk_slider" data-x="-150" data-y="100" data-speed="1400" data-start="200"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="200" style="z-index: 4;">
                <div class="slider-content">
@@ -657,9 +759,18 @@
                </div>
 
             </div>
+            <div  class="tp-caption lfr stl mobi_slider" data-x="50" data-y="100" data-speed="1400" data-start="200"
+               data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="200" style="z-index: 4;">
+               <div class="slider-content" >
+                  <h1 > Overcome <span>COVID-19</span> <br> business   scare and <br> fight the Recession </h1>
+
+               </div>
+
+            </div>
 
             <!-- LAYER NR. 2 -->
-            <div class="tp-caption lfr stl " data-x="00" data-y="400" data-speed="1400" data-start="1000"
+            <div class="tp-caption lfr stl desk_slider" data-x="00" data-y="400" data-speed="1400" data-start="1000"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="200" style="z-index: 4;">
                <div class="slider-contentx">
@@ -670,6 +781,17 @@
                </div>
 
             </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="350" data-y="500" data-speed="1400" data-start="1000"
+            data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+            data-endspeed="200" style="z-index: 4;">
+            <div class="slider-contentx">
+
+               <p class="slider-descx" >Don’t let Coronavirus <br> lock your business down.  <br> Let us help you! <br><br>
+                  </p>
+
+            </div>
+
+         </div>
 
             <!-- LAYER NR. 3 -->
             <!-- <div class="tp-caption lfr stl" data-x="1" data-y="450" data-speed="1400" data-start="1300"
@@ -683,7 +805,11 @@
 
 
             <!-- LAYER NR. 4 -->
-            <div class="tp-caption sft stt " data-x="700" data-y="120" data-speed="1000" data-start="1500"
+            <div class="tp-caption sft stt desk_slider" data-x="700" data-y="120" data-speed="1000" data-start="1500"
+               data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="250" style="z-index: 5;"><img class="slider-img col-sm-12" src="images/client_images/home_slider/Overcome_COVID-19_business_scare.webp" alt="">
+            </div>
+            <div class="tp-caption sft stt mobi_slider" data-x="700" data-y="720" data-speed="1000" data-start="1500"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="250" style="z-index: 5;"><img class="slider-img col-sm-12" src="images/client_images/home_slider/Overcome_COVID-19_business_scare.webp" alt="">
             </div>
@@ -698,7 +824,14 @@
 
 
             <!-- LAYER NR. 1 -->
-            <div class="tp-caption lfl stl" data-x="0" data-y="225" data-speed="500" data-start="500"
+            <div class="tp-caption lfl stl desk_slider" data-x="0" data-y="225" data-speed="500" data-start="500"
+               data-easing="easeOutExpo" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="175" style="z-index: 3;">
+               <div class="slider-content">
+               <h1><span>Free Digital Marketing</span></h1>
+               </div>
+            </div>
+            <div class="tp-caption lfl stl mobi_slider" data-x="30" data-y="225" data-speed="500" data-start="500"
                data-easing="easeOutExpo" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="175" style="z-index: 3;">
                <div class="slider-content">
@@ -707,7 +840,13 @@
             </div>
 
             <!-- LAYER NR. 2 -->
-            <div class="tp-caption lfr stl" data-x="1" data-y="400" data-speed="600" data-start="1200"
+            <div class="tp-caption lfr stl desk_slider" data-x="1" data-y="400" data-speed="600" data-start="1200"
+               data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="200" style="z-index: 4;">
+               <h3 class="slider-descx">Become a Spot Merchant</h3>
+
+            </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="230" data-y="500" data-speed="600" data-start="1200"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="200" style="z-index: 4;">
                <h3 class="slider-descx">Become a Spot Merchant</h3>
@@ -715,7 +854,13 @@
             </div>
 
             <!-- LAYER NR. 3 -->
-            <div class="tp-caption lfr stl" data-x="395" data-y="400" data-speed="725" data-start="1500"
+            <div class="tp-caption lfr stl desk_slider" data-x="395" data-y="400" data-speed="725" data-start="1500"
+            data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+            data-endspeed="250" style="z-index: 5;">
+            <h3 class="slider-descx">and be entitled to</h3>
+
+         </div>
+         <div class="tp-caption lfr stl mobi_slider" data-x="640" data-y="500" data-speed="725" data-start="1500"
             data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
             data-endspeed="250" style="z-index: 5;">
             <h3 class="slider-descx">and be entitled to</h3>
@@ -723,7 +868,13 @@
          </div>
 
             <!-- LAYER NR. 4 -->
-            <div class="tp-caption lfr stl" data-x="150" data-y="450" data-speed="850" data-start="1800"
+            <div class="tp-caption lfr stl desk_slider" data-x="150" data-y="450" data-speed="850" data-start="1800"
+               data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="300" style="z-index: 6;">
+               <h3 class="slider-descx">free marketing service</h3>
+
+            </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="380" data-y="550" data-speed="850" data-start="1800"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="300" style="z-index: 6;">
                <h3 class="slider-descx">free marketing service</h3>
@@ -743,7 +894,12 @@
             </div> -->
 
             <!-- LAYER NR. 7 -->
-            <div class="tp-caption sfb str" data-x="751" data-y="150" data-speed="900" data-start="3000"
+            <div class="tp-caption sfb str desk_slider" data-x="751" data-y="150" data-speed="900" data-start="3000"
+            data-easing="easeOutCubic" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+            data-endspeed="200" style="z-index: 9;">
+            <img class="slider-img" src="images/client_images/home_slider/free_digital_marketing.webp" alt="">
+         </div>
+         <div class="tp-caption sfb str mobi_slider" data-x="751" data-y="750" data-speed="900" data-start="3000"
             data-easing="easeOutCubic" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
             data-endspeed="200" style="z-index: 9;">
             <img class="slider-img" src="images/client_images/home_slider/free_digital_marketing.webp" alt="">
@@ -761,7 +917,15 @@
             <!-- LAYERS -->
 
             <!-- LAYER NR. 1 -->
-            <div class="tp-caption lfl stl" data-x="0" data-y="200" data-speed="800" data-start="900"
+            <div class="tp-caption lfl stl desk_slider" data-x="0" data-y="200" data-speed="800" data-start="900"
+               data-easing="easeOutExpo" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="500" style="z-index: 3;">
+
+               <div class="slider-content">
+                  <h1>Get  <span>More Customer</span> <br> Visits! </h1>
+               </div>
+            </div>
+            <div class="tp-caption lfl stl mobi_slider" data-x="100" data-y="200" data-speed="800" data-start="900"
                data-easing="easeOutExpo" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="500" style="z-index: 3;">
 
@@ -771,7 +935,7 @@
             </div>
 
             <!-- LAYER NR. 2 -->
-            <div class="tp-caption lfl stl" data-x="50" data-y="400" data-speed="800" data-start="1200"
+            <div class="tp-caption lfl stl desk_slider" data-x="-30" data-y="400" data-speed="800" data-start="1200"
                data-easing="easeOutExpo" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="500" style="z-index: 3;">
 
@@ -782,6 +946,17 @@
 
                </div>
             </div>
+            <div class="tp-caption lfl stl mobi_slider" data-x="250" data-y="500" data-speed="800" data-start="1200"
+            data-easing="easeOutExpo" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+            data-endspeed="500" style="z-index: 3;">
+
+            <div class="slider-contentx">
+
+               <p class="slider-descx">Increase your sales by attracting <br> new & repeat customers to your stores
+               </p>
+
+            </div>
+         </div>
 
             <!-- LAYER NR. 3 -->
             <!-- <div class="tp-caption lfl stl" data-x="0" data-y="400" data-speed="500" data-start="1500"
@@ -794,11 +969,16 @@
             </div> -->
 
             <!-- LAYER NR. 4 -->
-            <div class="tp-caption lfr stl" data-x="570" data-y="100" data-speed="1500" data-start="1200"
+            <div class="tp-caption lfr stl desk_slider" data-x="570" data-y="100" data-speed="1500" data-start="1200"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="1000" style="z-index: 4;">
                <img class="slider-img" src="images/client_images/home_slider/get_more_customer_visit.webp" alt="">
             </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="570" data-y="100" data-speed="1500" data-start="1200"
+            data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+            data-endspeed="1000" style="z-index: 4;">
+            <img class="slider-img" src="images/client_images/home_slider/get_more_customer_visit.webp" alt="">
+         </div>
 
          </li>
 
@@ -817,7 +997,7 @@
             <!-- LAYERS -->
 
             <!-- LAYER NR. 1 -->
-            <div class="tp-caption lfr stl" data-x="1" data-y="200" data-speed="1000" data-start="900"
+            <div class="tp-caption lfr stl desk_slider" data-x="1" data-y="200" data-speed="1000" data-start="900"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="200" style="z-index: 4;">
                <div class="slider-content">
@@ -825,10 +1005,18 @@
                </div>
 
             </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="100" data-y="200" data-speed="1000" data-start="900"
+            data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+            data-endspeed="200" style="z-index: 4;">
+            <div class="slider-content">
+               <h1>  <span>Guaranteed Leads!</span> </h1>
+            </div>
+
+         </div>
 
 
             <!-- LAYER NR. 2 -->
-            <div class="tp-caption lfr stl" data-x="85" data-y="380" data-speed="1000" data-start="1100"
+            <div class="tp-caption lfr stl desk_slider" data-x="30" data-y="380" data-speed="1000" data-start="1100"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="200" style="z-index: 4;">
                <div class="slider-contentx">
@@ -838,6 +1026,16 @@
                </div>
 
             </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="300" data-y="380" data-speed="1000" data-start="1100"
+            data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+            data-endspeed="200" style="z-index: 4;">
+            <div class="slider-contentx">
+
+               <p class="slider-descx">See your business soar with our<br> Guaranteed Lead service</p>
+
+            </div>
+
+         </div>
 
 
             <!-- LAYER NR. 3 -->
@@ -851,10 +1049,14 @@
             </div> -->
 
             <!-- LAYER NR. 4 -->
-            <div class="tp-caption sft stt" data-x="650" data-y="200" data-speed="1000" data-start="1500"
+            <div class="tp-caption sft stt desk_slider" data-x="650" data-y="200" data-speed="1000" data-start="1500"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="250" style="z-index: 5;"><img style="width: 600px; height: auto;" src="images/client_images/home_slider/guranted_lead.webp" alt="">
             </div>
+            <div class="tp-caption sft stt mobi_slider" data-x="650" data-y="200" data-speed="1000" data-start="1500"
+            data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+            data-endspeed="250" style="z-index: 5;"><img style="width: 600px; height: auto;" src="images/client_images/home_slider/guranted_lead.webp" alt="">
+         </div>
 
          </li>
 
@@ -865,7 +1067,14 @@
 
 
             <!-- LAYER NR. 2 -->
-            <div class="tp-caption lfl stl" data-x="-15" data-y="150" data-speed="500" data-start="900"
+            <div class="tp-caption lfl stl desk_slider" data-x="-15" data-y="150" data-speed="500" data-start="900"
+               data-easing="easeOutExpo" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="175" style="z-index: 3;">
+               <div class="slider-content">
+               <h1><span> Get Discovered!</span></h1>
+               </div>
+            </div>
+            <div class="tp-caption lfl stl mobi_slider" data-x="200" data-y="150" data-speed="500" data-start="900"
                data-easing="easeOutExpo" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="175" style="z-index: 3;">
                <div class="slider-content">
@@ -874,23 +1083,41 @@
             </div>
 
             <!-- LAYER NR. 3 -->
-            <div class="tp-caption lfr stl" data-x="-45" data-y="350" data-speed="600" data-start="1200"
+            <div class="tp-caption lfr stl desk_slider" data-x="-45" data-y="350" data-speed="600" data-start="1200"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="200" style="z-index: 4;">
                <h4 class="slider-descx" >Advertise your products & services on</h4>
                <!-- <img src="slider/be-creative.png" alt=""> -->
             </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="320" data-y="350" data-speed="600" data-start="1200"
+            data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+            data-endspeed="200" style="z-index: 4;">
+            <h4 class="slider-descx" >Advertise your products & services on</h4>
+            <!-- <img src="slider/be-creative.png" alt=""> -->
+         </div>
 
             <!-- LAYER NR. 4 -->
-            <div class="tp-caption lfr stl" data-x="80" data-y="400" data-speed="725" data-start="1500"
+            <div class="tp-caption lfr stl desk_slider" data-x="80" data-y="400" data-speed="725" data-start="1500"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="250" style="z-index: 5;">
                <h4 class="slider-descx">Spot Offers app to</h4>
                <!-- <img src="slider/get-noticed.png" alt=""> -->
             </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="475" data-y="400" data-speed="725" data-start="1500"
+            data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+            data-endspeed="250" style="z-index: 5;">
+            <h4 class="slider-descx">Spot Offers app to</h4>
+            <!-- <img src="slider/get-noticed.png" alt=""> -->
+         </div>
 
             <!-- LAYER NR. 5 -->
-            <div class="tp-caption lfr stl" data-x="20" data-y="450" data-speed="850" data-start="1800"
+            <div class="tp-caption lfr stl desk_slider" data-x="20" data-y="450" data-speed="850" data-start="1800"
+               data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="300" style="z-index: 6;">
+               <h4 class="slider-descx">attract customers near you</h4>
+               <!-- <img src="slider/see-results.png" alt=""> -->
+            </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="415" data-y="450" data-speed="850" data-start="1800"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="300" style="z-index: 6;">
                <h4 class="slider-descx">attract customers near you</h4>
@@ -910,11 +1137,16 @@
             </div> -->
 
             <!-- LAYER NR. 8 -->
-            <div class="tp-caption sfb str" data-x="600" data-y="194" data-speed="900" data-start="3000"
+            <div class="tp-caption sfb str desk_slider" data-x="600" data-y="194" data-speed="900" data-start="3000"
                data-easing="easeOutCubic" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="200" style="z-index: 9;">
                <img style="width: 800;" src="images/client_images/home_slider/get_discoverd.webp" alt="">
             </div>
+            <div class="tp-caption sfb str mobi_slider" data-x="600" data-y="194" data-speed="900" data-start="3000"
+            data-easing="easeOutCubic" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+            data-endspeed="200" style="z-index: 9;">
+            <img style="width: 800;" src="images/client_images/home_slider/get_discoverd.webp" alt="">
+         </div>
 
             <!-- LAYER NR. 9 -->
             <!-- <div class="tp-caption tp-fade fadeout"
@@ -941,29 +1173,44 @@ data-endspeed="200"
             <!-- LAYERS -->
 
             <!-- LAYER NR. 1 -->
-            <div class="tp-caption tp-fade" data-x="-200" data-y="0" data-speed="750" data-start="0"
+            <div class="tp-caption tp-fade desk_slider" data-x="-200" data-y="0" data-speed="750" data-start="0"
                data-easing="easeOutExpo" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="300" data-captionhidden="on" style="z-index: 2;">
 
                <!-- <img src="wp-content/uploads/2013/04/header-overlay-faded.png" alt=""> -->
             </div>
+           
 
             <!-- LAYER NR. 2 -->
-            <div class="tp-caption lfr stl" data-x="-100" data-y="100" data-speed="500" data-start="900"
+            <div class="tp-caption lfr stl desk_slider" data-x="-100" data-y="100" data-speed="500" data-start="900"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="175" style="z-index: 3;">
                <!-- <img src="start-something.png" alt="">  -->
                <h1 style="font-size: 50px;font-weight: 800;">Digital Marketing = 
                </h1>
             </div>
-            <div class="tp-caption lfr stl" data-x="390" data-y="100" data-speed="500" data-start="1400"
+            <div class="tp-caption lfr stl mobi_slider" data-x="100" data-y="100" data-speed="500" data-start="900"
+            data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+            data-endspeed="175" style="z-index: 3;">
+            <!-- <img src="start-something.png" alt="">  -->
+            <h1 style="font-size: 30px;font-weight: 800;">Digital Marketing = 
+            </h1>
+         </div>
+            <div class="tp-caption lfr stl desk_slider" data-x="390" data-y="100" data-speed="500" data-start="1400"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="175" style="z-index: 3;">
                <!-- <img src="start-something.png" alt="">  -->
                <h1 style="font-size: 50px;font-weight: 800;"> Increase Visibility = 
                </h1>
             </div>
-            <div class="tp-caption lfr stl" data-x="890" data-y="100" data-speed="500" data-start="1900"
+            <div class="tp-caption lfr stl mobi_slider" data-x="100" data-y="230" data-speed="500" data-start="1400"
+               data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="175" style="z-index: 3;">
+               <!-- <img src="start-something.png" alt="">  -->
+               <h1 style="font-size: 30px;font-weight: 800;"> Increase Visibility = 
+               </h1>
+            </div>
+            <div class="tp-caption lfr stl desk_slider" data-x="890" data-y="100" data-speed="500" data-start="1900"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="175" style="z-index: 3;">
                <!-- <img src="start-something.png" alt="">  -->
@@ -975,9 +1222,27 @@ data-endspeed="200"
                </h1>
             </div>
             </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="200" data-y="360" data-speed="500" data-start="1900"
+               data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="175" style="z-index: 3;">
+               <!-- <img src="start-something.png" alt="">  -->
+              
+            <div class="slider-content">
+               <h1 style="font-size: 30px;font-weight: 800;"> 
+                  <span>
+                  Higher Sales!</span>
+               </h1>
+            </div>
+            </div>
 
             <!-- LAYER NR. 3 -->
-            <div class="tp-caption lfr stl" data-x="1" data-y="300" data-speed="1500" data-start="2000"
+            <div class="tp-caption lfr stl desk_slider" data-x="1" data-y="300" data-speed="1500" data-start="2000"
+               data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="800" style="z-index: 4;">
+               <h3 class="slider-descx">If you are not investing in digital marketing,</h3>
+               <!-- <img src="slider/be-creative.png" alt=""> -->
+            </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="250" data-y="600" data-speed="1500" data-start="2000"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="800" style="z-index: 4;">
                <h3 class="slider-descx">If you are not investing in digital marketing,</h3>
@@ -1002,7 +1267,13 @@ data-endspeed="250"
             <!-- </div> -->
 
             <!-- LAYER NR. 5 -->
-            <div class="tp-caption lfr stl" data-x="150" data-y="350" data-speed="1500" data-start="2100"
+            <div class="tp-caption lfr stl desk_slider" data-x="150" data-y="350" data-speed="1500" data-start="2100"
+               data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="500" style="z-index: 6;">
+               <h3 class="slider-descx" >you are losing money</h3>
+               <!-- <img src="slider/see-results.png" alt=""> -->
+            </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="400" data-y="650" data-speed="1500" data-start="2100"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="500" style="z-index: 6;">
                <h3 class="slider-descx" >you are losing money</h3>
@@ -1023,7 +1294,12 @@ data-endspeed="250"
             </div> -->
 
             <!-- LAYER NR. 8 -->
-            <div class="tp-caption sfb str" data-x="651" data-y="194" data-speed="900" data-start="3000"
+            <div class="tp-caption sfb str desk_slider" data-x="651" data-y="194" data-speed="900" data-start="3000"
+               data-easing="easeOutCubic" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="200" style="z-index: 9;">
+               <img class="slider-img" src="images/client_images/home_slider/digital_marketing_increase_visiblty.webp" alt="">
+            </div>
+            <div class="tp-caption sfb str mobi_slider" data-x="651" data-y="194" data-speed="900" data-start="3000"
                data-easing="easeOutCubic" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="200" style="z-index: 9;">
                <img class="slider-img" src="images/client_images/home_slider/digital_marketing_increase_visiblty.webp" alt="">
@@ -1054,7 +1330,13 @@ data-endspeed="200"
             <!-- LAYERS -->
 
             <!-- LAYER NR. 1 -->
-            <div class="tp-caption tp-fade" data-x="-200" data-y="0" data-speed="750" data-start="0"
+            <div class="tp-caption tp-fade desk_slider" data-x="-200" data-y="0" data-speed="750" data-start="0"
+               data-easing="easeOutExpo" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="300" data-captionhidden="on" style="z-index: 2;">
+
+               <!-- <img src="wp-content/uploads/2013/04/header-overlay-faded.png" alt=""> -->
+            </div>
+            <div class="tp-caption tp-fade mobi_slider" data-x="-200" data-y="0" data-speed="750" data-start="0"
                data-easing="easeOutExpo" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="300" data-captionhidden="on" style="z-index: 2;">
 
@@ -1062,7 +1344,15 @@ data-endspeed="200"
             </div>
 
             <!-- LAYER NR. 2 -->
-            <div class="tp-caption lfl stl" data-x="60" data-y="200" data-speed="500" data-start="900"
+            <div class="tp-caption lfl stl desk_slider" data-x="60" data-y="200" data-speed="500" data-start="900"
+               data-easing="easeOutExpo" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="175" style="z-index: 3;">
+               <!-- <img src="start-something.png" alt="">  -->
+               <div class="slider-content">
+               <h1><span> Stand Out!</span></h1>
+               </div>
+            </div>
+            <div class="tp-caption lfl stl mobi_slider" data-x="300" data-y="200" data-speed="500" data-start="900"
                data-easing="easeOutExpo" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="175" style="z-index: 3;">
                <!-- <img src="start-something.png" alt="">  -->
@@ -1072,7 +1362,13 @@ data-endspeed="200"
             </div>
 
             <!-- LAYER NR. 3 -->
-            <div class="tp-caption lfr stl" data-x="1" data-y="350" data-speed="600" data-start="1200"
+            <div class="tp-caption lfr stl desk_slider" data-x="1" data-y="350" data-speed="600" data-start="1200"
+               data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="200" style="z-index: 4;">
+               <h3 class="slider-descx">Our digital marketing strategy</h3>
+               <!-- <img src="slider/be-creative.png" alt=""> -->
+            </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="370" data-y="400" data-speed="600" data-start="1200"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="200" style="z-index: 4;">
                <h3 class="slider-descx">Our digital marketing strategy</h3>
@@ -1080,7 +1376,13 @@ data-endspeed="200"
             </div>
 
             <!-- LAYER NR. 4 -->
-            <div class="tp-caption lfr stl" data-x="15" data-y="400" data-speed="725" data-start="1500"
+            <div class="tp-caption lfr stl desk_slider" data-x="15" data-y="400" data-speed="725" data-start="1500"
+               data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="250" style="z-index: 5;">
+               <h3 class="slider-descx"> brings you out of the crowd</h3>
+               <!-- <img src="slider/get-noticed.png" alt=""> -->
+            </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="380" data-y="450" data-speed="725" data-start="1500"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="250" style="z-index: 5;">
                <h3 class="slider-descx"> brings you out of the crowd</h3>
@@ -1088,7 +1390,13 @@ data-endspeed="200"
             </div>
 
             <!-- LAYER NR. 5 -->
-            <div class="tp-caption lfr stl" data-x="-70" data-y="450" data-speed="850" data-start="1800"
+            <div class="tp-caption lfr stl desk_slider" data-x="-70" data-y="450" data-speed="850" data-start="1800"
+               data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="300" style="z-index: 6;">
+               <h3 class="slider-descx">with the right push in the right direction</h3>
+               <!-- <img src="slider/see-results.png" alt=""> -->
+            </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="300" data-y="500" data-speed="850" data-start="1800"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="300" style="z-index: 6;">
                <h3 class="slider-descx">with the right push in the right direction</h3>
@@ -1109,7 +1417,12 @@ data-endspeed="200"
             </div> -->
 
             <!-- LAYER NR. 8 -->
-            <div class="tp-caption sfb str" data-x="551" data-y="100" data-speed="900" data-start="3000"
+            <div class="tp-caption sfb str desk_slider" data-x="551" data-y="100" data-speed="900" data-start="3000"
+               data-easing="easeOutCubic" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="200" style="z-index: 9;">
+               <img class="slider-img" src="images/client_images/home_slider/stand_out.webp" alt="">
+            </div>
+            <div class="tp-caption sfb str mobi_slider" data-x="551" data-y="100" data-speed="900" data-start="3000"
                data-easing="easeOutCubic" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="200" style="z-index: 9;">
                <img class="slider-img" src="images/client_images/home_slider/stand_out.webp" alt="">
@@ -1143,7 +1456,17 @@ data-endspeed="200"
 
 
             <!-- LAYER NR. 1 -->
-            <div class="tp-caption lfr stl" data-x="-90" data-y="150" data-speed="1400" data-start="900"
+            <div class="tp-caption lfr stl desk_slider" data-x="-90" data-y="150" data-speed="1400" data-start="900"
+               data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="200" style="z-index: 4;">
+               <div class="slider-content">
+                  <h1> Adapt to new technology & <br> stay ahead of <span> competition!</span> </h1>
+                  <!-- <p class="slider-desc">In today's digital age investing in new technology keeps you ahead of competition. <br> With Spot Offers you always get a Head Start</p>
+      <a href="#" class="btn btn-primary">Request free Consultation</a> -->
+               </div>
+               <!-- <img src="slider/be-creative.png" alt=""> -->
+            </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="-70" data-y="150" data-speed="1400" data-start="900"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="200" style="z-index: 4;">
                <div class="slider-content">
@@ -1155,12 +1478,22 @@ data-endspeed="200"
             </div>
 
             <!-- LAYER NR. 2 -->
-            <div class="tp-caption lfr stl" data-x="70" data-y="350" data-speed="1400" data-start="1000"
+            <div class="tp-caption lfr stl desk_slider" data-x="70" data-y="350" data-speed="1400" data-start="1000"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="200" style="z-index: 4;">
                <div class="slider-content">
                   <!-- <h1> Adapt <span>new technology</span> <br> & stay ahead! </h1> -->
                   <p class="slider-descx">Use new technology but <br><br> without any <br><br> Technology Investment!</p>
+                  <!-- <a href="#" class="btn btn-primary">Request free Consultation</a> -->
+               </div>
+               <!-- <img src="slider/be-creative.png" alt=""> -->
+            </div>
+            <div class="tp-caption lfr stl mobi_slider" data-x="400" data-y="450" data-speed="1400" data-start="1000"
+               data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="200" style="z-index: 4;">
+               <div class="slider-content">
+                  <!-- <h1> Adapt <span>new technology</span> <br> & stay ahead! </h1> -->
+                  <p class="slider-descx">Use new technology but <br> without any <br> Technology Investment!</p>
                   <!-- <a href="#" class="btn btn-primary">Request free Consultation</a> -->
                </div>
                <!-- <img src="slider/be-creative.png" alt=""> -->
@@ -1180,7 +1513,11 @@ data-endspeed="200"
 
 
             <!-- LAYER NR. 4 -->
-            <div class="tp-caption sft stt" data-x="620" data-y="100" data-speed="1000" data-start="1500"
+            <div class="tp-caption sft stt desk_slider" data-x="620" data-y="100" data-speed="1000" data-start="1500"
+               data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
+               data-endspeed="250" style="z-index: 5;"><img class="slider-img"  src="images/client_images/home_slider/adapt_new_technology.webp" alt="">
+            </div>
+            <div class="tp-caption sft stt mobi_slider" data-x="620" data-y="100" data-speed="1000" data-start="1500"
                data-easing="easeInOutQuint" data-elementdelay="0" data-endelementdelay="0" data-end="9500"
                data-endspeed="250" style="z-index: 5;"><img class="slider-img"  src="images/client_images/home_slider/adapt_new_technology.webp" alt="">
             </div>
@@ -1357,8 +1694,15 @@ data-endspeed="200"
 
       <!--/div-->
       <!-- END REVOLUTION SLIDER -->
+      <!-- </div> -->
 
-   </section><!-- #TopContent -->
+   </section>
+
+
+
+<!-- mobile start -->
+
+
 
    <section id="tw-work" menu-sec="sec-01" data-color="#000" class="section tw-work-area gradient-2" style="min-height: 0vh">
       <div class="work-bg-pattern d-none d-lg-inline-block">
