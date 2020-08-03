@@ -214,6 +214,7 @@ website:   	http://www.themepunch.com
       background-image:none;
       background-position:0px 0px;
       text-indent: 0em;
+      /*height: 600px !important;*/
   }
   
   .rev_slider .tp-caption,

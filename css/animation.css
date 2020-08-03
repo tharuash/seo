@@ -304,6 +304,17 @@ ul#portfolio-grid>li{
 
 }
 
+@media (max-width: 362px) {
+    .cont {
+        padding: 5px 10px
+     }
+
+    .c_img {
+        height: 66px;
+    }
+
+}
+
 @media (max-width: 311px) {
     .cont {
         padding: 5px 10px
