@@ -63,5 +63,10 @@
 
 .rev_slider img{
     width: 80% !important;
-    height: auto;
+    height:auto !important;
+}
+
+.mobi_slider img{
+    width: 40% !important;
+    height:auto !important;
 }
