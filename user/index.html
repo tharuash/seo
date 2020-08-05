@@ -324,7 +324,7 @@
          }
 
          #logo_img_div_mobi {
-            display: none;
+            display: block;
             visibility: visible;
          }
 
@@ -336,7 +336,7 @@
 
 
       table a {
-         color: whitesmoke;
+         color: #212529;
       }
 
       u {
@@ -418,42 +418,60 @@
    <header>
 
       <div id="mobile_head" class="fixed-top pos-f-t">
-         <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
+         <div class="collapse" id="navbarToggleExternalContent" style="background: #FFFFFF">
+            <div class="p-4">
+               <div id="logo_img_div_mobi" style="float: left; padding-bottom: 1%;">
+                  <a style="padding: 0;" href="/SEO-final/index.html"><img id="logo_img_xxx" class="shadowfilter"
+                        src="images/menu-logo.jpeg" alt=""></a>
+               </div>
                <h5 class="text-white h4">SEO</h5>
                <table class="table table-sm">
                   <tbody>
                      <tr>
                         <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                        aria-label="Toggle navigation"><a href="index.html">Home</a></td>
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation"><a href="index.html">Home</a></td>
+
+                     </tr>
+
+                     <tr>
                         <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                        aria-label="Toggle navigation"><a href="#tw-about">About Us</a></td>
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation"><a href="../">Buisness Owner</a></td>
+
                      </tr>
                      <tr>
                         <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                        aria-label="Toggle navigation"><a href="../">Buisness Owner</a></td>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                        aria-label="Toggle navigation"><a target="_blank" rel="noopener noreferrer" href="http://blog.chamaralabs.com/article/posts/user">Blog</a></td>
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation"><a href="#tw-benefits">App Benefits</a></td>
+
                      </tr>
                      <tr>
                         <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                        aria-label="Toggle navigation"><a href="#tw-benefits">App Benefits</a></td>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                        aria-label="Toggle navigation"><a href="#tw-carrier">Carrer</a></td>
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation"><a href="#tw-industries">Industries</a></td>
+
                      </tr>
                      <tr>
                         <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                        aria-label="Toggle navigation"><a href="#tw-industries">Industries</a></td>
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation"><a href="#tw-about">About Us</a></td>
+                     </tr>
+                     <tr>
                         <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                        aria-label="Toggle navigation"><a href="#tw-contact">Contact Us</a></td>
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation"><a target="_blank" rel="noopener noreferrer"
+                              href="http://blog.chamaralabs.com/article/posts/user">Blog</a></td>
+                     </tr>
+                     <tr>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation"><a href="#tw-carrier">Careers</a></td>
+                     </tr>
+                     <tr>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation"><a href="#tw-contact">Contact Us</a></td>
                      </tr>
                   </tbody>
                </table>
@@ -470,10 +488,10 @@
       </div>
 
       <!-- mobile view center logo -->
-      <div id="logo_img_div_mobi" style="text-align: center;z-index: 105;position: fixed;  left: 40%;">
+      <!--div id="logo_img_div_mobi" style="text-align: center;z-index: 105;position: fixed;  left: 40%;">
          <a style="padding: 0;" href="/"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
                alt=""></a>
-      </div>
+      </div-->
       <!-- ------------------------ -->
 
       <!-- desktop view center logo -->
@@ -533,9 +551,10 @@
                       </li>
                   </ul> -->
             </li>
-            <li class="menu-item" id="sec-05"><a target="_blank" rel="noopener noreferrer" href="http://blog.chamaralabs.com/article/posts/user"><u>Blog</u></a></li>
+            <li class="menu-item" id="sec-05"><a target="_blank" rel="noopener noreferrer"
+                  href="http://blog.chamaralabs.com/article/posts/user"><u>Blog</u></a></li>
 
-            <li class="menu-item" id="sec-06"><a href="#tw-carrier"><u>Career</u></a></li>
+            <li class="menu-item" id="sec-06"><a href="#tw-carrier"><u>Careers</u></a></li>
             <li class="menu-item" id="sec-07"><a href="#tw-contact"><u>Contact Us</u></a></li>
             <!--li class="menu-item" id="sec-08"><a href="#tw-contact"><u>Contact Us</u></a></li-->
          </ul>
@@ -554,8 +573,9 @@
                <div id="side-slideshow">
                   <div class="slide-down">
                      <h2 class="title" style="font-weight: bold;">Best Deals</h2>
-                     <p class="intro" style="text-align: center"> Find best offers, deals, discount <br> vouchers and stores near you
-                     </p> 
+                     <p class="intro" style="text-align: center"> Find best offers, deals, discount <br> vouchers and
+                        stores near you
+                     </p>
                   </div>
                </div>
 
@@ -587,28 +607,35 @@
             <div class="clearfix d-md-block d-none"></div>
             <div class="download-area col-lg-4 col-md-6 col-12 order-md-12">
                <ul class="list-unstyled download-buttons">
-                  <li class="app-store"><a target="_blank" rel="noopener noreferrer" href="https://apps.apple.com/us/app/spot-offers-offers-near-you/id1322855172?ls=1"><img class="img-fluid d-block"
-                           src="assets/images/buttons/btn-app-store.png" alt="Download from App Store" /></a></li>
-                  <li class="google-play"><a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.spotoffers.user"><img class="img-fluid d-block"
-                           src="assets/images/buttons/btn-google-play.png" alt="Download from Google Play" /></a></li>
+                  <li class="app-store"><a target="_blank" rel="noopener noreferrer"
+                        href="https://apps.apple.com/us/app/spot-offers-offers-near-you/id1322855172?ls=1"><img
+                           class="img-fluid d-block" src="assets/images/buttons/btn-app-store.png"
+                           alt="Download from App Store" /></a></li>
+                  <li class="google-play"><a target="_blank" rel="noopener noreferrer"
+                        href="https://play.google.com/store/apps/details?id=com.spotoffers.user"><img
+                           class="img-fluid d-block" src="assets/images/buttons/btn-google-play.png"
+                           alt="Download from Google Play" /></a></li>
                   <!--li class="windows-store"><a href="#"><img class="img-fluid d-block"
                            src="assets/images/buttons/btn-windows-store.png"
                            alt="Download from Windows Phone Store" /></a></li-->
                </ul>
                <!--//list-unstyled-->
                <ul class="list-unstyled summary">
-                  <li style="margin-left: -48px"><i class="fa fa-check"></i> <a href="#benefit1">Find Best Deals</a></li>
+                  <li style="margin-left: -48px"><i class="fa fa-check"></i> <a href="#benefit1">Find Best Deals</a>
+                  </li>
                   <li style="margin-left: -79px"><i class="fa fa-check"></i> <a href="#benefit2">Earn Money</a></li>
-                  <li style="margin-left: -17px"><i class="fa fa-check"></i> <a href="#benefit3">Free Cash Vouchers</a></li>
-                  <li class="uncommon"><i class="fa fa-check"></i> <a href="#download">Spot Deals with 99% discount</a></li>
+                  <li style="margin-left: -17px"><i class="fa fa-check"></i> <a href="#benefit3">Free Cash Vouchers</a>
+                  </li>
+                  <li class="uncommon"><i class="fa fa-check"></i> <a href="#download">Spot Deals with 99% discount</a>
+                  </li>
                </ul>
                <!--//list-unstyled-->
             </div>
 
             <!--//download-area-->
-            
 
-            
+
+
          </div>
       </div>
       <!--//container-->
@@ -623,8 +650,9 @@
          <div class="row text-center">
             <div class="col section-heading tw-text-white wow fadeInDown" data-wow-duration="1s">
                <a href="app_benefits.html">
-               <h2>
-                  <small></small>App <span> Benefits</span></h2></a>
+                  <h2>
+                     <small></small>App <span> Benefits</span></h2>
+               </a>
             </div>
             <!-- End Col -->
          </div>
@@ -976,7 +1004,7 @@
             </div>
             <!-- End Col -->
 
-            
+
          </div>
          <div class="row owl-carousel owl-theme" id="indus-list">
             <div>
@@ -1268,8 +1296,10 @@
       <div class="container ">
          <div class="row text-center">
             <div class="col section-heading tw-text-white wow fadeInDown" data-wow-duration="1s">
-               <a href="our_merchants.html"><h2>
-                  <small></small>Our <span> Merchants</span></h2></a>
+               <a href="our_merchants.html">
+                  <h2>
+                     <small></small>Our <span> Merchants</span></h2>
+               </a>
             </div>
             <!-- End Col -->
          </div>
@@ -1293,10 +1323,12 @@
       <div class="container">
          <div class="row text-center">
             <div class="col section-heading tw-text-white wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-               <a href="http://blog.chamaralabs.com/jobs/jobposts"><h2>
-                  <small></small>
-                  Careers <span></span>
-               </h2></a>
+               <a href="http://blog.chamaralabs.com/jobs/jobposts">
+                  <h2>
+                     <small></small>
+                     Careers <span></span>
+                  </h2>
+               </a>
             </div>
             <!-- Col end -->
          </div>
@@ -1338,10 +1370,12 @@
       <div class="container">
          <div class="row text-center">
             <div class="col section-heading tw-text-white wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-               <a href="http://blog.chamaralabs.com/article/posts/user"><h2>
-                  <small></small>
-                  Blog <span></span>
-               </h2></a>
+               <a href="http://blog.chamaralabs.com/article/posts/user">
+                  <h2>
+                     <small></small>
+                     Blog <span></span>
+                  </h2>
+               </a>
             </div>
             <!-- Col end -->
          </div>
@@ -1383,7 +1417,8 @@
                <div class="col-lg-12 col-md-12 wow fadeInRight intro-text-left" data-wow-duration="1s"
                   style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;">
                   <!--h2 class="column-title">We Solve <span>Online Marketing</span> Problems</h2-->
-                  <img src="images/client_images/about_us.webp" alt="" class="img-fluid"style="float: right; width: 50%;">
+                  <img src="images/client_images/about_us.webp" alt="" class="img-fluid"
+                     style="float: right; width: 50%;">
                   <p>
                      Spot Offers is one of the Best 360 Degree Digital Marketing Company with an Online-to-Offline (O2O)
                      platform. We work with offline retail stores to increase their store walk-ins and boost sales. If
@@ -1448,8 +1483,10 @@
       <div class="container">
          <div class="row text-center">
             <div class="col section-heading tw-text-white wow fadeInDown" data-wow-duration="1s">
-               <a href="../contact_us.html"><h2>
-                  <small></small><span>Contact </span> Us</h2></a>
+               <a href="../contact_us.html">
+                  <h2>
+                     <small></small><span>Contact </span> Us</h2>
+               </a>
             </div>
             <!-- End Col -->
          </div>
