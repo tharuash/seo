@@ -410,7 +410,7 @@ section {
 .column-title span {
   /*color: #28b05f;*/
 }
-.column-title:after {
+/*.column-title:after {
   position: absolute;
   content: "";
   bottom: -25px;
@@ -418,7 +418,7 @@ section {
   width: 65px;
   height: 3px;
   background: #28b05f;
-}
+}*/
 
 /* Bottom Border */
 .bottom-border {

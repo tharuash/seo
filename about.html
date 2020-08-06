@@ -203,8 +203,8 @@
 
       #logo_img_xxx {
          height: 78px;
-         opacity: 0;
-         animation: second_opacity 3s .3s forwards;
+         opacity: 1;
+         /*animation: second_opacity 3s .3s forwards;*/
       }
 
       .nav a {
@@ -284,7 +284,7 @@
 
 
       table a {
-         color: whitesmoke;
+         color: #212529;
       }
 
       u {
@@ -355,41 +355,62 @@
    <header>
 
       <div id="mobile_head" class="fixed-top pos-f-t">
-         <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-               <h5 class="text-white h4">SEO</h5>
+
+         <div class="collapse" id="navbarToggleExternalContent" style="background: #FFFFFF">
+            <div class="bg-black p-4">
+               <div id="logo_img_div_mobi" style="float: left; padding-bottom: 1%;">
+                  <a style="padding: 0;" href="/SEO-final/index.html"><img id="logo_img_xxx" 
+                        src="images/menu-logo.jpeg" alt=""></a>
+               </div>
                <table class="table table-sm">
                   <tbody>
                      <tr>
                         <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
                            aria-controls="navbarToggleExternalContent" aria-expanded="false"
                            aria-label="Toggle navigation">
-                           <a href="#">Services</a>
+                           <a href="index.html">Home</a>
                         </td>
+
+                     </tr>
+
+                     <tr>
                         <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
                            aria-controls="navbarToggleExternalContent" aria-expanded="false"
                            aria-label="Toggle navigation">
-                           <a href="user/index.html">User</a>
+                           <a href="user/index.html">User App</a>
+                        </td>
+
+                     </tr>
+                     <tr>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <a href="spot_offers.html">Benefits</a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                           aria-controls="navbarToggleExternalContent" aria-expanded="true"
+                           aria-label="Toggle navigation">
+                           <a href="our_services.html">Services</a>
                         </td>
                      </tr>
                      <tr>
                         <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
                            aria-controls="navbarToggleExternalContent" aria-expanded="false"
                            aria-label="Toggle navigation">
-                           <a href="#">Industries</a>
+                           <a href="tech_we_use.html">Technology</a>
                         </td>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="#">Blog</a>
-                        </td>
+
                      </tr>
                      <tr>
                         <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
                            aria-controls="navbarToggleExternalContent" aria-expanded="false"
                            aria-label="Toggle navigation">
-                           <a href="#">Technologies</a>
+                           <a href="http://blog.chamaralabs.com/article/posts/merchent">Blog</a>
                         </td>
+                     </tr>
+                     <tr>
                         <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
                            aria-controls="navbarToggleExternalContent" aria-expanded="false"
                            aria-label="Toggle navigation">
@@ -400,17 +421,12 @@
                         <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
                            aria-controls="navbarToggleExternalContent" aria-expanded="false"
                            aria-label="Toggle navigation">
-                           <a href="#">Clients</a>
-                        </td>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="#">Contact Us</a>
+                           <a href="contact_us.html">Contact Us</a>
                         </td>
                      </tr>
                   </tbody>
                </table>
-
+               <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
             </div>
          </div>
          <nav class="navbar navbar-dark bg-dark">
@@ -420,29 +436,26 @@
                <span class="navbar-toggler-icon"></span>
             </button>
          </nav>
-      </div>
 
-      <!-- mobile view center logo -->
-      <div id="logo_img_div_mobi" style="margin-top: 10px;text-align: center;z-index: 105;position: fixed; left:40%;">
-         <a style="padding: 0;" href="/"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
-               alt=""></a>
       </div>
-      <!-- ------------------------ -->
 
       <!-- desktop view center logo -->
-      <div id="logo_img_div_desk" style="margin-top: 10px;text-align: center;z-index: 105;position: fixed; left:47%;">
-         <a style="padding: 0;" href="/"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
-               alt=""></a>
+      <div id="logo_img_div_desk" style="margin-top: 10px;text-align: center;z-index: 1;position: fixed; left:47%; ">
+         <a style="padding: 0;" href="index.html"><img id="logo_img_xxx" class="shadowfilter"
+               src="images/center_logo_new.png" alt=""></a>
       </div>
       <!-- ----------------------- -->
-
       <nav style="z-index: 100;" id="newheader2" class="menu">
          <ul class="nav-menu nav-center">
-            <li class="menu-item" id="sec-02"><a href="#"><u>Services</u></a>
+            <li class="menu-item"><a href="index.html"><u>Home</u></a>
+            <li class="menu-item"><a href="user/index.html"><u>User App</u></a>
+            <li class="menu-item"><a href="spot_offers.html"><u>Benefits</u></a>
+            <li class="menu-item" id="sec-02"><a href="our_services.html"><u>Services</u></a>
                <ul>
+
                   <li><a href="marketing.html">Marketing</a>
                      <ul>
-                        <li><a href="spot_offer.html">Spot Offer App</a>
+                        <li><a href="spot_offer.html">Spot Offers Super App</a>
                            <ul>
                               <li><a href="delever_dynamic_offers.html">Deliver Dynamic Offers &
                                     Promotions </a>
@@ -467,13 +480,16 @@
                            </ul>
                         </li>
                         <li><a href="lead_generation.html">Lead Generation</a></li>
-                        <li><a href="sm_marketing.html">Social Media Marketing</a></li>
-                        <li><a href="ppc.html">PPC</a></li>
-                        <li><a href="growth_hacking.html">Growth Hacking</a></li>
-                        <li><a href="web_analytics.html">Web Analytics</a></li>
-                        <li><a href="seo.html">SEO</a></li>
+                        <li><a href="sm_marketing.html">Social Media</a></li>
                         <li><a href="sms_marketing.html">SMS Marketing</a></li>
+                        <li><a href="seo.html">SEO</a></li>
+                        <li><a href="web_analytics.html">Web Analytics</a></li>
                         <li><a href="gmbt.html">GMBT</a></li>
+                        <li><a href="growth_hacking.html">Growth Hacking</a></li>
+
+
+
+
                      </ul>
                   </li>
                   <li><a href="strategy.html">Strategy</a>
@@ -501,30 +517,23 @@
                   </li>
                </ul>
             </li>
-            <li class="menu-item" id="sec-03"><a href="#"><u>Industries</u></a>
-
-            </li>
-            <li class="menu-item" id="sec-04"><a href="#"><u>Technologies</u></a>
+            <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
+            <li class="menu-item" id="sec-04"><a href="tech_we_use.html"><u>Technology</u></a>
                <ul>
                   <li><a href="tech1.html">Geolocation</a></li>
                   <li><a href="tech2.html">Augmented Reality</a>
                   <li><a href="tech3.html">Beacon Technology</a>
                </ul>
             </li>
-            <li class="menu-item" id="sec-06"><a href="#"><u>Clients</u></a></li>
+            <li class="menu-item" id="sec-07"><a
+                  href="http://blog.chamaralabs.com/article/posts/merchent"><u>Blog</u></a></li>
+            <li class="menu-item" id="sec-09"><a href="about.html"><u>About Us</u></a></li>
+            <li class="menu-item" id="sec-08"><a href="contact_us.html"><u>Contact Us</u></a></li>
 
 
-            <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
-
-
-
-            <li class="menu-item"><a href="user/index.html"><u>User</u></a>
-            </li>
-            <li class="menu-item" id="sec-07"><a href="#"><u>Blog</u></a></li>
-            <li class="menu-item"><a href="about.html"><u>About Us</u></a></li>
-            <li class="menu-item" id="sec-08"><a href="#"><u>Contact Us</u></a></li>
          </ul>
       </nav>
+
 
 
    </header>
