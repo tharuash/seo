@@ -11,13 +11,12 @@
     <!-- Mobile Specific Metas ================================-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- 
+
     <!-- Site Title- -->
     <title>Let customers find your store from anywhere</title>
     <meta name="description"
         content="If you have a promotion running at your store but only walk-in customers can view it then you are losing out to your competitors.">
-    <meta name="keywords"
-        content="Offers, promotions, discounts, advertise, promote, ">
+    <meta name="keywords" content="Offers, promotions, discounts, advertise, promote, ">
     <link rel="icon" href="images/center_logo_new.png" type="image/x-icon">
     <!-- CSS
    ==================================================== -->
@@ -289,7 +288,7 @@
 
 
         table a {
-            color: whitesmoke;
+            color: #212529;
         }
 
         u {
@@ -338,6 +337,14 @@
             background-image: url("images/client_images/spot_offer_super_app/Banner/Get_Discovered.webp");
 
         }
+
+        @media (max-width: 768px) {
+            .about-banner-area {
+
+                background-image: url("");
+
+            }
+        }
     </style>
 
     <link rel="stylesheet" href="css/menu-new-2.css">
@@ -353,41 +360,65 @@
     <header>
 
         <div id="mobile_head" class="fixed-top pos-f-t">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                    <h5 class="text-white h4">SEO</h5>
+
+            <div class="collapse" id="navbarToggleExternalContent" style="background: #FFFFFF">
+                <div class="bg-black p-4">
+                    <div id="logo_img_div_mobi" style="float: left; padding-bottom: 1%;">
+                        <a style="padding: 0;" href="/SEO-final/index.html"><img id="logo_img_xxx" class="shadowfilter"
+                                src="images/menu-logo.jpeg" alt=""></a>
+                    </div>
                     <table class="table table-sm">
                         <tbody>
+
+
+
                             <tr>
                                 <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                    aria-controls="navbarToggleExternalContent" aria-expanded="true"
                                     aria-label="Toggle navigation">
-                                    <a href="#">Services</a>
+                                    <a href="index.html">Home</a>
                                 </td>
-                                <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <a href="user/index.html">User</a>
-                                </td>
+
+
                             </tr>
                             <tr>
                                 <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
                                     aria-controls="navbarToggleExternalContent" aria-expanded="false"
                                     aria-label="Toggle navigation">
-                                    <a href="#">Industries</a>
+                                    <a href="user/index.html">User App</a>
                                 </td>
-                                <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <a href="#">Blog</a>
-                                </td>
+
                             </tr>
                             <tr>
                                 <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
                                     aria-controls="navbarToggleExternalContent" aria-expanded="false"
                                     aria-label="Toggle navigation">
-                                    <a href="#">Technologies</a>
+                                    <a href="spot_offers.html">Benefits</a>
                                 </td>
+
+                            </tr>
+                            <tr>
+                                <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <a href="our_services.html">Services</a>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <a href="tech_we_use.html">Technology</a>
+                                </td>
+                            </tr>
+                            <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                                aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <a href="http://blog.chamaralabs.com/article/posts/merchent">Blog</a>
+                            </td>
+                            </tr>
+                            <tr>
                                 <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
                                     aria-controls="navbarToggleExternalContent" aria-expanded="false"
                                     aria-label="Toggle navigation">
@@ -398,17 +429,12 @@
                                 <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
                                     aria-controls="navbarToggleExternalContent" aria-expanded="false"
                                     aria-label="Toggle navigation">
-                                    <a href="#">Clients</a>
-                                </td>
-                                <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <a href="#">Contact Us</a>
+                                    <a href="contact_us.html">Contact Us</a>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-
+                    <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
                 </div>
             </div>
             <nav class="navbar navbar-dark bg-dark">
@@ -418,26 +444,34 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </nav>
+
         </div>
 
+
         <!-- mobile view center logo -->
-        <div id="logo_img_div_mobi" style="margin-top: 10px;text-align: center;z-index: 105;position: fixed; left:40%;">
-            <a style="padding: 0;" href="/"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
-                    alt=""></a>
-        </div>
+
         <!-- ------------------------ -->
 
         <!-- desktop view center logo -->
-        <div id="logo_img_div_desk" style="margin-top: 10px;text-align: center;z-index: 1;position: fixed; left:47%;">
+        <div id="logo_img_div_desk"
+            style="margin-top: 10px;text-align: center;z-index: 105;position: fixed; left:47%; ">
             <a style="padding: 0;" href="/"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
                     alt=""></a>
         </div>
         <!-- ----------------------- -->
 
-        <!-- <nav style="z-index: 100;" id="newheader2" class="menu">
+
+
+
+
+        <nav style="z-index: 100;" id="newheader2" class="menu">
             <ul class="nav-menu nav-center">
+                <li class="menu-item"><a href="index.html"><u>Home</u></a>
+                <li class="menu-item"><a href="user/index.html"><u>User App</u></a>
+                <li class="menu-item"><a href="spot_offers.html"><u>Benefits</u></a>
                 <li class="menu-item" id="sec-02"><a href="our_services.html"><u>Services</u></a>
                     <ul>
+
                         <li><a href="marketing.html">Marketing</a>
                             <ul>
                                 <li><a href="spot_offer.html">Spot Offer App</a>
@@ -499,115 +533,24 @@
                         </li>
                     </ul>
                 </li>
-                <li class="menu-item" id="sec-03"><a href="industries_we_help.html"><u>Industries</u></a>
-
-                </li>
-                <li class="menu-item" id="sec-04"><a href="tech_we_use.html"><u>Technologies</u></a>
+                <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
+                <li class="menu-item" id="sec-04"><a href="tech_we_use.html"><u>Technology</u></a>
                     <ul>
                         <li><a href="tech1.html">Geolocation</a></li>
                         <li><a href="tech2.html">Augmented Reality</a>
                         <li><a href="tech3.html">Beacon Technology</a>
                     </ul>
                 </li>
-                <li class="menu-item" id="sec-06"><a href="our_clients.html"><u>Clients</u></a></li>
-
-
-                <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
-
-
-
-                <li class="menu-item"><a href="user/index.html"><u>User</u></a>
-                </li>
-                <li class="menu-item" id="sec-07"><a href="http://blog.chamaralabs.com/article/posts/merchent"><u>Blog</u></a></li>
-                <li class="menu-item"><a href="about.html"><u>About Us</u></a></li>
+                <li class="menu-item" id="sec-07"><a
+                        href="http://blog.chamaralabs.com/article/posts/merchent"><u>Blog</u></a></li>
+                <li class="menu-item" id="sec-09"><a href="about.html"><u>About Us</u></a></li>
                 <li class="menu-item" id="sec-08"><a href="contact_us.html"><u>Contact Us</u></a></li>
+
+
             </ul>
-        </nav> -->
-        <nav style="z-index: 100;" id="newheader2" class="menu">
-            <ul class="nav-menu nav-center">
-               <li class="menu-item"><a href="index.html"><u>Home</u></a>
-               <li class="menu-item"><a href="user/index.html"><u>User App</u></a>
-                  <li class="menu-item"><a href="#tw-work"><u>Benefits</u></a>
-               <li class="menu-item" id="sec-02"><a href="our_services.html"><u>Services</u></a>
-                  <ul>
-                   
-                     <li><a href="marketing.html">Marketing</a>
-                        <ul>
-                           <li><a href="spot_offer.html">Spot Offer App</a>
-                              <ul>
-                                 <li><a href="delever_dynamic_offers.html">Deliver Dynamic Offers &
-                                       Promotions </a>
-                                 <li><a href="intelligent_statistics.html">Intelligent
-                                       Statistics</a>
-                                 </li>
-                                 <li><a href="real_time_edits.html">Real Time edits</a></li>
-                                 <li><a href="get_discovered.html.html">Get discovered</a></li>
-                                 <li><a href="approve_reject_leads.html">Approve / Reject leads</a>
-                                 </li>
-                                 <li><a href="get_store_followers.html">Get store followers</a>
-                                 </li>
-                                 <li><a href="get_more_leads.html">Get more leads via price request
-                                       from
-                                       users</a></li>
-                                 <li><a href="better_branding.html">Better Branding</a></li>
-                                 <li><a href="spot/loyalty_offers.html">Loyalty Offers to attract repeat
-                                       customers</a></li>
-                                 <li><a href="one_click_chat.html">One click chat</a></li>
-                                 <li><a href="social_media_integration_for_larger_reach.html">
-                                       Social Media integration for larger reach</a></li>
-                              </ul>
-                           </li>
-                           <li><a href="lead_generation.html">Lead Generation</a></li>
-                           <li><a href="sm_marketing.html">Social Media Marketing</a></li>
-                           <li><a href="ppc.html">PPC</a></li>
-                           <li><a href="growth_hacking.html">Growth Hacking</a></li>
-                           <li><a href="web_analytics.html">Web Analytics</a></li>
-                           <li><a href="seo.html">SEO</a></li>
-                           <li><a href="sms_marketing.html">SMS Marketing</a></li>
-                           <li><a href="gmbt.html">GMBT</a></li>
-                        </ul>
-                     </li>
-                     <li><a href="strategy.html">Strategy</a>
-                        <ul>
-                           <li><a href="omni_channel.html">Omni Channel</a></li>
-                           <li><a href="digital_strategy.html">Digital Strategy</a></li>
-                           <li><a href="brand_strategy.html">Brand Strategy</a></li>
-                           <li><a href="market_research.html">Market Research</a></li>
-                        </ul>
-                     </li>
-                     <li><a href="design.html">Design</a>
-                        <ul>
-                           <li><a href="branding.html">Branding</a></li>
-                           <li><a href="logo_designing.html">Logo Designing</a></li>
-                           <li><a href="photo_video.html">Photography / Videograply </a></li>
-                           <li><a href="brocher_designing.html">Brocher Designing</a></li>
-                        </ul>
-                     </li>
-                     <li><a href="development.html">Development</a>
-                        <ul>
-                           <li><a href="website_development.html">Website Development</a></li>
-                           <li><a href="ar_vr.html">AR / VR</a></li>
-                           <li><a href="app_development.html">iOS/Android app Development</a></li>
-                        </ul>
-                     </li>
-                  </ul>
-               </li>
-               <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
-               <li class="menu-item" id="sec-04"><a href="tech_we_use.html"><u>Technology</u></a>
-                  <ul>
-                     <li><a href="tech1.html">Geolocation</a></li>
-                     <li><a href="tech2.html">Augmented Reality</a>
-                     <li><a href="tech3.html">Beacon Technology</a>
-                  </ul>
-               </li>
-               <li class="menu-item" id="sec-07"><a href="http://blog.chamaralabs.com/article/posts/merchent"><u>Blog</u></a></li>
-               <li class="menu-item" id="sec-09"><a href="about.html"><u>About Us</u></a></li>
-               <li class="menu-item" id="sec-08"><a href="contact_us.html"><u>Contact Us</u></a></li>
-               
-               
-            </ul>
-         </nav> 
-        
+        </nav>
+
+
 
     </header>
 
@@ -622,9 +565,10 @@
         <div id="banner-area" class="about-banner-area" style="height: 300px;">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 ml-auto">
+                    <div class="col-lg-8 col-md-6 ml-auto">
                         <div class="banner-heading wow fadeInRight">
-                            <h1 class="banner-title" style="color: #2F2C2C; text-align: center">Let customers find your store from anywhere
+                            <h1 class="banner-title" style="color: #2F2C2C; text-align: center">Let customers find your
+                                store from anywhere
                             </h1>
                             <ol class="breadcrumb">
                                 <!-- <li>Home</li>
@@ -650,28 +594,33 @@
                     style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;">
                     <!--h2 class="column-title">We Solve <span>Online Marketing</span> Problems</h2-->
                     <p>
-                     t’s easy to be lost in the digital world, imagine what can happen with a physical world.
-                      With so many competitors around its difficult to stand out. The majority of the users 
-                      research online before deciding to walk into a store. If you do not have an online presence,
-                       you are losing out.
+                        t’s easy to be lost in the digital world, imagine what can happen with a physical world.
+                        With so many competitors around its difficult to stand out. The majority of the users
+                        research online before deciding to walk into a store. If you do not have an online presence,
+                        you are losing out.
                     </p>
                     <p>
-                     To add to your woos if you have a business at a blind spot or at a location with low footfall
-                      then it could be even more challenging to sustain your business. But you could turn this 
-                      around by having a presence in our app. We display stores to users nearest to them, which 
-                      means that your store will always be displayed 1st to the users closest to your store.
+                        To add to your woos if you have a business at a blind spot or at a location with low footfall
+                        then it could be even more challenging to sustain your business. But you could turn this
+                        around by having a presence in our app. We display stores to users nearest to them, which
+                        means that your store will always be displayed 1st to the users closest to your store.
                     </p>
                     <p>
-                     In our app, we give an equal opportunity to all merchants. Unlike other apps, we don’t prioritise
-                      ads based on subscription paid. Our geo-location feature ensures that your offers and stores always
-                       appear 1st in our app no matter where you are located to the customers closest to your store.
-                 </p>
-                 <p>
-                  We also allow users to change their location so they can search for stores and offers at any other 
-                  location. This helps when customers want to visit a different location and want to view offers and 
-                  stores prior to going to that location. This again gives visibility to customers who may be visiting
-                   your area.
-                 </p>
+                        In our app, we give an equal opportunity to all merchants. Unlike other apps, we don’t
+                        prioritise
+                        ads based on subscription paid. Our geo-location feature ensures that your offers and stores
+                        always
+                        appear 1st in our app no matter where you are located to the customers closest to your store.
+                    </p>
+                    <p>
+                        We also allow users to change their location so they can search for stores and offers at any
+                        other
+                        location. This helps when customers want to visit a different location and want to view offers
+                        and
+                        stores prior to going to that location. This again gives visibility to customers who may be
+                        visiting
+                        your area.
+                    </p>
                     <!--ul class="intro-list">
                      <li>Internet marketing SEO company offering innovative designs</li>
                      <li>Marketing generate awareness, drive traffic, connect with</li>
@@ -681,7 +630,8 @@
                     <!--a href="#" class="btn btn-secondary tw-mt-40">contact us</a-->
                 </div>
                 <!-- End Col -->
-                <div class="col-lg-6 col-md-12 text-lg-right text-md-center wow fadeInLeft my-auto" data-wow-duration="1s"
+                <div class="col-lg-6 col-md-12 text-lg-right text-md-center wow fadeInLeft my-auto"
+                    data-wow-duration="1s"
                     style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
                     <img src="images/client_images/spot_offer_super_app/Content/Get_Discovered.webp" alt=""
                         class="img-fluid">
@@ -695,273 +645,275 @@
     <!-- Main container end -->
 
 
-    <section id="tw-work" menu-sec="sec-01" data-color="#000" class="section tw-work-area gradient-4" style="min-height: 0vh">
-            <div class="work-bg-pattern d-none d-lg-inline-block">
-            </div>
-            <!-- End Work BG Pattern -->
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col section-heading wow fadeInDown" data-wow-duration="1s">
-                       <a href="spot_offers.html">
-                          <h1><small></small>
+    <section id="tw-work" menu-sec="sec-01" data-color="#000" class="section tw-work-area gradient-4"
+        style="min-height: 0vh">
+        <div class="work-bg-pattern d-none d-lg-inline-block">
+        </div>
+        <!-- End Work BG Pattern -->
+        <div class="container">
+            <div class="row text-center">
+                <div class="col section-heading wow fadeInDown" data-wow-duration="1s">
+                    <a href="spot_offers.html">
+                        <h1><small></small>
                             Other Benefits of Spot Offers App Marketing</h1>
-                       </a>
-                    </div>
-                    <!-- End Col -->
-                 </div>
-                <!-- End Row -->
-                <div class="row owl-carousel owl-theme" id="spot-list">
-                    <a href="targeted_ads.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/spot_offer_super_app/icons/Promote_Offers.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Promote dynamic offers & promotions to users around you</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-    
-    
-    
-                            <p>Promote Offers</p>
-    
-    
-                        </div>
                     </a>
-                    <!-- End Tw work process -->
-    
-                    <!-- End Col -->
-                    <a href="cheap_advertising.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/spot_offer_super_app/icons/Get_Discovered.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Let customers find your store from anywhere</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>Get Discovered</p>
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <!-- End Col -->
-                    <a href="high_return.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/spot_offer_super_app/icons/Get_Leads.webp"
-                                            id="feature" class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Get more leads via price request from users</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>Get Leads</p>
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <!-- End Col -->
-                    <a href="improve_conversion.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/spot_offer_super_app/icons/Home_Delivery.webp"
-                                            id="feature" class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Sell & deliver to your customers</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>Home Delivery</p>
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <!-- End Col -->
-                    <a href="measure_roi.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/spot_offer_super_app/icons/Clear_old_Stock.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Sell your old inventory and increase cash flow</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>Clear Old Stock</p>
-    
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <a href="data_analytics.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/spot_offer_super_app/icons/Get_Followers.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Get store followers to boost your organic sale</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>Get Followers</p>
-    
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <!-- End Col -->
-                    <a href="peak_hours.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/spot_offer_super_app/icons/Loyalty_Offers.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Post loyalty offers to attract repeat customers</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>Loyalty Offers</p>
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <!-- End Col -->
-                    
-                    <a href="update_ads.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/spot_offer_super_app/icons/Data_Analytics .webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Get Intelligent Statistics for your Ad campaign</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>Data Analytics</p>
-    
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <!-- End Col -->
-                    <a href="brand_development.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/spot_offer_super_app/icons/Approve_Leads.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Use our merchant app to approve or reject a lead </h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>Approve Leads</p>
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <!-- End Col -->
-                    <a href="easy_to_share.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/spot_offer_super_app/icons/Better_Branding.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Showcase your store for better branding</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End Process Wrapper -->
-                            <p>Better Branding</p>
-                        </div>
-                        <!-- End Word Process -->
-                    </a>
-                    <!-- End Col -->
-                    <a href="customer_journey.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/spot_offer_super_app/icons/One_Click_Chat.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Allow users to contact you via chat</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End Process Wrapper -->
-                            <p>One Click Chat</p>
-                        </div>
-                        <!-- End Work Process -->
-                    </a>
-                    <a href="customer_journey.html">
-                     <div class="tw-work-process item">
-                         <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
-                             <div class="process-inner d-table-cell">
-                                 <div class="port" style="border-radius: 50%">
-                                     <img src="images/client_images/spot_offer_super_app/icons/Social_Media.webp" id="feature"
-                                         class="img-fluid" />
-                                     <div class="work-text-content">
-                                         <h5 style="color:#fff">Get higher visibility with Social Media integration</h5>
-                                     </div>
-                                 </div>
- 
-                             </div>
-                         </div>
-                         <!-- End Process Wrapper -->
-                         <p>Social Media</p>
-                     </div>
-                     <!-- End Work Process -->
-                 </a>
                 </div>
-                <!-- End Row -->
+                <!-- End Col -->
             </div>
-            <!-- End Container -->
-        </section>
-        <!-- End Features section -->
+            <!-- End Row -->
+            <div class="row owl-carousel owl-theme" id="spot-list">
+                <a href="targeted_ads.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/spot_offer_super_app/icons/Promote_Offers.webp"
+                                        id="feature" class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Promote dynamic offers & promotions to users around you
+                                        </h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+
+
+
+                        <p>Promote Offers</p>
+
+
+                    </div>
+                </a>
+                <!-- End Tw work process -->
+
+                <!-- End Col -->
+                <a href="cheap_advertising.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/spot_offer_super_app/icons/Get_Discovered.webp"
+                                        id="feature" class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Let customers find your store from anywhere</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>Get Discovered</p>
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <!-- End Col -->
+                <a href="high_return.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/spot_offer_super_app/icons/Get_Leads.webp"
+                                        id="feature" class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Get more leads via price request from users</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>Get Leads</p>
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <!-- End Col -->
+                <a href="improve_conversion.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/spot_offer_super_app/icons/Home_Delivery.webp"
+                                        id="feature" class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Sell & deliver to your customers</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>Home Delivery</p>
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <!-- End Col -->
+                <a href="measure_roi.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/spot_offer_super_app/icons/Clear_old_Stock.webp"
+                                        id="feature" class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Sell your old inventory and increase cash flow</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>Clear Old Stock</p>
+
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <a href="data_analytics.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/spot_offer_super_app/icons/Get_Followers.webp"
+                                        id="feature" class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Get store followers to boost your organic sale</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>Get Followers</p>
+
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <!-- End Col -->
+                <a href="peak_hours.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/spot_offer_super_app/icons/Loyalty_Offers.webp"
+                                        id="feature" class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Post loyalty offers to attract repeat customers</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>Loyalty Offers</p>
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <!-- End Col -->
+
+                <a href="update_ads.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/spot_offer_super_app/icons/Data_Analytics .webp"
+                                        id="feature" class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Get Intelligent Statistics for your Ad campaign</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>Data Analytics</p>
+
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <!-- End Col -->
+                <a href="brand_development.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/spot_offer_super_app/icons/Approve_Leads.webp"
+                                        id="feature" class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Use our merchant app to approve or reject a lead </h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>Approve Leads</p>
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <!-- End Col -->
+                <a href="easy_to_share.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/spot_offer_super_app/icons/Better_Branding.webp"
+                                        id="feature" class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Showcase your store for better branding</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Process Wrapper -->
+                        <p>Better Branding</p>
+                    </div>
+                    <!-- End Word Process -->
+                </a>
+                <!-- End Col -->
+                <a href="customer_journey.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/spot_offer_super_app/icons/One_Click_Chat.webp"
+                                        id="feature" class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Allow users to contact you via chat</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Process Wrapper -->
+                        <p>One Click Chat</p>
+                    </div>
+                    <!-- End Work Process -->
+                </a>
+                <a href="customer_journey.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/spot_offer_super_app/icons/Social_Media.webp"
+                                        id="feature" class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Get higher visibility with Social Media integration</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Process Wrapper -->
+                        <p>Social Media</p>
+                    </div>
+                    <!-- End Work Process -->
+                </a>
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- End Container -->
+    </section>
+    <!-- End Features section -->
 
 
 
