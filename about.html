@@ -352,92 +352,148 @@
 
    <!-- header======================-->
 
+
+
    <header>
 
       <div id="mobile_head" class="fixed-top pos-f-t">
-
-         <div class="collapse" id="navbarToggleExternalContent" style="background: #FFFFFF">
-            <div class="bg-black p-4">
-               <div id="logo_img_div_mobi" style="float: left; padding-bottom: 1%;">
-                  <a style="padding: 0;" href="/SEO-final/index.html"><img id="logo_img_xxx" 
-                        src="images/menu-logo.jpeg" alt=""></a>
+         <div>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f7f7f7">
+               <!--a class="navbar-brand tw-nav-brand" href="index.html">
+                        <img src="images/logo/logo.png" alt="seotime">
+                     </a-->
+               <div id="logo_img_div_mobi" class="navbar-brand"
+                  style="width: 100%;text-align: center; background-color: #f7f7f7">
+                  <a style="padding: 0;" href="/SEO-final/index.html"><img id="logo_img_xxx" src="images/menu-logo.jpeg"
+                        alt=""></a>
                </div>
-               <table class="table table-sm">
-                  <tbody>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="index.html">Home</a>
-                        </td>
-
-                     </tr>
-
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="user/index.html">User App</a>
-                        </td>
-
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="spot_offers.html">Benefits</a>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="true"
-                           aria-label="Toggle navigation">
-                           <a href="our_services.html">Services</a>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="tech_we_use.html">Technology</a>
-                        </td>
-
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="http://blog.chamaralabs.com/article/posts/merchent">Blog</a>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="about.html">About Us</a>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="contact_us.html">Contact Us</a>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-               <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
-            </div>
+               <!-- End of Navbar Brand -->
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <!-- End of Navbar toggler -->
+               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav" style="padding-left: 10px">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                           Home
+                           
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="user/index.html">
+                           User App
+                        </a>
+                     </li>
+                     <!-- End Dropdown -->
+                     <li class="nav-item">
+                        <a class="nav-link" href="spot_offers.html">
+                           Benefits
+                        </a>
+                     </li>
+                     <!-- End Dropdown -->
+                     <li class="nav-item dropdown">
+                        <a class="nav-link" href="our_services.html" data-toggle="dropdown">
+                           Services
+                           <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu tw-dropdown-menu" style="background-color: #f7f7f7">
+                           <li><a href="marketing.html">Marketing</a></li>
+                           <li><a href="strategy.html">Strategy</a></li>
+                           <li><a href="design.html">Design</a></li>
+                           <li><a href="development.html">Development</a></li>
+                        </ul>
+                     </li>
+                     <!-- End Dropdown -->
+                     <!--li class="nav-item dropdown tw-megamenu-wrapper">
+                        <a class="nav-link" href="#" data-toggle="dropdown">
+                           Features
+                           <span class="tw-indicator">
+                              <i class="fa fa-angle-down"></i>
+                           </span>
+                        </a>
+                        <div id="tw-megamenu" class="dropdown-menu tw-mega-menu">
+                           <div class="row">
+                              <div class="col-md-12 col-lg-3 no-padding">
+                                 <ul>
+                                    <li class="tw-megamenu-title">
+                                       <h3>Addons List One</h3>
+                                    </li>
+                                    <li><a href="#">SEO Pricing</a></li>
+                                    <li><a href="#">Ecommerce SEO</a></li>
+                                    <li><a href="#">Enterprise SEO</a></li>
+                                    <li><a href="#">Local SEO</a></li>
+                                 </ul>
+                                 
+                              </div>
+                             
+                              <div class="col-md-12 col-lg-3 no-padding">
+                                 <ul>
+                                    <li class="tw-megamenu-title">
+                                       <h3>Addons List Two</h3>
+                                    </li>
+                                    <li><a href="#">Addon list 1</a></li>
+                                    <li><a href="#">Addon list 2</a></li>
+                                    <li><a href="#">Addon list 3</a></li>
+                                    <li><a href="#">Addon list 4</a></li>
+                                 </ul>
+                                 
+                              </div>
+                             
+                              <div class="col-md-12 col-lg-3 no-padding">
+                                 <ul>
+                                    <li class="tw-megamenu-title">
+                                       <h3>Useful links</h3>
+                                    </li>
+                                    <li><a href="#">Search Engine</a></li>
+                                    <li><a href="#">Data analysis</a></li>
+                                    <li><a href="#">Disital marketing</a></li>
+                                    <li><a href="#">Social Marketing</a></li>
+                                 </ul>
+                                
+                              </div>
+                              
+                              <div class="col-md-12 col-lg-3 megamenu-img">
+                                 <img src="images/menu_img.png" alt="" class="img-fluid">
+                              </div>
+                             
+                           </div>
+                          
+                        </div>
+                        
+                     </li-->
+                     <!-- End MegaMenu -->
+                     <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown">
+                           Technology
+                           <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu tw-dropdown-menu" style="background-color: #f7f7f7">
+                           <li><a href="tech1.html">Geolocation</a></li>
+                           <li><a href="tech2.html">Augmented Reality</a></li>
+                           <li><a href="tech3.html">Beacon Technology</a></li>
+                        </ul>
+                        <!-- End of Dropdown menu -->
+                     </li>
+                     <!-- End Dropdown -->
+                     <li class="nav-item"><a class="nav-link" href="http://blog.chamaralabs.com/article/posts/merchent">Blog</a></li>
+                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                     <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+                  </ul>
+                  <!-- End Navbar Nav -->
+                 
+                  <!-- End off canvas menu -->
+               </div>
+               <!-- End of navbar collapse -->
+            </nav>
+            <!-- End of Nav -->
          </div>
-         <nav class="navbar navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-               data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-               aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-         </nav>
-
+         <!-- End of Container -->
       </div>
+      <!-- End tw head -->
+
+      
 
       <!-- desktop view center logo -->
       <div id="logo_img_div_desk" style="margin-top: 10px;text-align: center;z-index: 1;position: fixed; left:47%; ">
@@ -846,6 +902,7 @@
    <!-- slick -->
    <script src="js/slick.js"></script>
 
+
    <!--Sliding mobile js-->
    <!--script src="lib/js/greensock.js"></script>
    <script src="lib/js/layerslider.transitions.js"></script>
@@ -855,6 +912,13 @@
 
    <script src="js/app-functions.js"></script>
    <script src="js/app.js"></script>
+
+   <script>
+      $("li.nav-item a").on("click", function () {
+         $(this).parent("li").find(".dropdown-menu").slideToggle();
+         // $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
+      });
+   </script>
    <!--script>
       $(document).ready(function () {
 
