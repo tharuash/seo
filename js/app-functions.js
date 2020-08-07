@@ -29,6 +29,7 @@ function svgdrawing() {
 
 function changeRootLink(host){
     $('#logo_img_div_desk a').attr("href", host)
+    $('#logo_img_div_mobi a').attr("href", host)
 }
 
 

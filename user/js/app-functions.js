@@ -29,7 +29,9 @@
 
 function changeRootLink(host){
     $('#logo_img_div_desk a').attr("href", host)
+    $('#logo_img_div_mobi a').attr("href", host)
 }
+
 
 
 //start copy from spot.js 
