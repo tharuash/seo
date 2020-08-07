@@ -206,11 +206,6 @@
             transform: translate(-50%, -50%);
         }
 
-        #logo_img_xxx {
-            height: 78px;
-            opacity: 0;
-            animation: second_opacity 3s .3s forwards;
-        }
 
         .nav a {
             animation: second_opacity 3s .3s forwards;
@@ -338,6 +333,14 @@
             background-image: url("images/client_images/banner_images/360_offers/cheap_advertisin.webp");
 
         }
+
+        @media (max-width: 768px) {
+            .about-banner-area {
+
+                background-image: url("");
+
+            }
+        }
     </style>
 
     <link rel="stylesheet" href="css/menu-new-2.css">
@@ -352,125 +355,131 @@
     <header>
 
         <div id="mobile_head" class="fixed-top pos-f-t">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                    <h5 class="text-white h4">SEO</h5>
-                    <table class="table table-sm">
-                        <tbody>
-                            <tr>
-                                <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <a href="#">Services</a>
-                                </td>
-                                <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <a href="user/index.html">User</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <a href="#">Industries</a>
-                                </td>
-                                <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <a href="#">Blog</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <a href="#">Technologies</a>
-                                </td>
-                                <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <a href="about.html">About Us</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <a href="#">Clients</a>
-                                </td>
-                                <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <a href="#">Contact Us</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f7f7f7">
+                    <!--a class="navbar-brand tw-nav-brand" href="index.html">
+                          <img src="images/logo/logo.png" alt="seotime">
+                       </a-->
+                    <div id="logo_img_div_mobi" class="navbar-brand"
+                        style="width: 100%;text-align: center; background-color: #f7f7f7">
+                        <a style="padding: 0;" href="/SEO-final/index.html"><img id="logo_img_xxx"
+                                src="images/menu-logo.jpeg" alt=""></a>
+                    </div>
+                    <!-- End of Navbar Brand -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- End of Navbar toggler -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav" style="padding-left: 10px">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">
+                                    Home
 
-                </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="user/index.html">
+                                    User App
+                                </a>
+                            </li>
+                            <!-- End Dropdown -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="spot_offers.html">
+                                    Benefits
+                                </a>
+                            </li>
+                            <!-- End Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="our_services.html" data-toggle="dropdown">
+                                    Services
+                                    <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
+                                </a>
+                                <ul class="dropdown-menu tw-dropdown-menu" style="background-color: #f7f7f7">
+                                    <li><a href="marketing.html">Marketing</a></li>
+                                    <li><a href="strategy.html">Strategy</a></li>
+                                    <li><a href="design.html">Design</a></li>
+                                    <li><a href="development.html">Development</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" data-toggle="dropdown">
+                                    Technology
+                                    <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
+                                </a>
+                                <ul class="dropdown-menu tw-dropdown-menu" style="background-color: #f7f7f7">
+                                    <li><a href="tech1.html">Geolocation</a></li>
+                                    <li><a href="tech2.html">Augmented Reality</a></li>
+                                    <li><a href="tech3.html">Beacon Technology</a></li>
+                                </ul>
+                                <!-- End of Dropdown menu -->
+                            </li>
+                            <!-- End Dropdown -->
+                            <li class="nav-item"><a class="nav-link"
+                                    href="http://blog.chamaralabs.com/article/posts/merchent">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+                        </ul>
+                        <!-- End Navbar Nav -->
+
+                        <!-- End off canvas menu -->
+                    </div>
+                    <!-- End of navbar collapse -->
+                </nav>
+                <!-- End of Nav -->
             </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
+            <!-- End of Container -->
         </div>
+        <!-- End tw head -->
 
-        <!-- mobile view center logo -->
-        <div id="logo_img_div_mobi" style="margin-top: 10px;text-align: center;z-index: 105;position: fixed; left:40%;">
-            <a style="padding: 0;" href="/"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
-                    alt=""></a>
-        </div>
-        <!-- ------------------------ -->
+
 
         <!-- desktop view center logo -->
-        <div id="logo_img_div_desk" style="margin-top: 10px;text-align: center;z-index: 1;position: fixed; left:47%;">
-            <a style="padding: 0;" href="/"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
-                    alt=""></a>
+        <div id="logo_img_div_desk" style="margin-top: 10px;text-align: center;z-index: 1;position: fixed; left:47%; ">
+            <a style="padding: 0;" href="index.html"><img id="logo_img_xxx" class="shadowfilter"
+                    src="images/center_logo_new.png" alt=""></a>
         </div>
         <!-- ----------------------- -->
-
-        <!-- <nav style="z-index: 100;" id="newheader2" class="menu">
+        <nav style="z-index: 100;" id="newheader2" class="menu">
             <ul class="nav-menu nav-center">
+                <li class="menu-item"><a href="index.html"><u>Home</u></a>
+                <li class="menu-item"><a href="user/index.html"><u>User App</u></a>
+                <li class="menu-item"><a href="spot_offers.html"><u>Benefits</u></a>
                 <li class="menu-item" id="sec-02"><a href="our_services.html"><u>Services</u></a>
                     <ul>
+
                         <li><a href="marketing.html">Marketing</a>
                             <ul>
-                                <li><a href="spot_offer.html">Spot Offer App</a>
+                                <li><a href="spot_offer.html">Spot Offers Super App</a>
                                     <ul>
-                                        <li><a href="delever_dynamic_offers.html">Deliver Dynamic Offers &
-                                                Promotions </a>
-                                        <li><a href="intelligent_statistics.html">Intelligent
-                                                Statistics</a>
-                                        </li>
-                                        <li><a href="real_time_edits.html">Real Time edits</a></li>
-                                        <li><a href="get_discovered.html.html">Get discovered</a></li>
-                                        <li><a href="approve_reject_leads.html">Approve / Reject leads</a>
-                                        </li>
-                                        <li><a href="get_store_followers.html">Get store followers</a>
-                                        </li>
-                                        <li><a href="get_more_leads.html">Get more leads via price request
-                                                from
-                                                users</a></li>
+                                        <li><a href="promote_offers.html">Promote Offers</a>
+                                        <li><a href="get_discovered.html">Get Discovered</a></li>
+                                        <li><a href="get_leads.html">Get Leads</a></li>
+                                        <li><a href="home_delivery.html">Home Delivery</a></li>
+                                        <li><a href="clear_old_stock.html">Clear Stock</a></li>
+                                        <li><a href="get_followers.html">Get Followers</a></li>
+                                        <li><a href="loyalty_offers.html">Loyalty Offers</a></li>
+                                        <li><a href="data_analytics_spot.html">Data Analytics</a></li>
+                                        <li><a href="approve_leads.html">Approve Leads</a></li>
                                         <li><a href="better_branding.html">Better Branding</a></li>
-                                        <li><a href="spot/loyalty_offers.html">Loyalty Offers to attract repeat
-                                                customers</a></li>
-                                        <li><a href="one_click_chat.html">One click chat</a></li>
-                                        <li><a href="social_media_integration_for_larger_reach.html">
-                                                Social Media integration for larger reach</a></li>
+                                        <li><a href="one_click_chat.html">Chat</a></li>
+                                        <li><a href="social_media.html">Social Media</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="lead_generation.html">Lead Generation</a></li>
-                                <li><a href="sm_marketing.html">Social Media Marketing</a></li>
-                                <li><a href="ppc.html">PPC</a></li>
-                                <li><a href="growth_hacking.html">Growth Hacking</a></li>
-                                <li><a href="web_analytics.html">Web Analytics</a></li>
-                                <li><a href="seo.html">SEO</a></li>
+                                <li><a href="sm_marketing.html">Social Media</a></li>
                                 <li><a href="sms_marketing.html">SMS Marketing</a></li>
+                                <li><a href="seo.html">SEO</a></li>
+                                <li><a href="web_analytics.html">Web Analytics</a></li>
                                 <li><a href="gmbt.html">GMBT</a></li>
+                                <li><a href="growth_hacking.html">Growth Hacking</a></li>
+
+
+
+
                             </ul>
                         </li>
                         <li><a href="strategy.html">Strategy</a>
@@ -498,115 +507,24 @@
                         </li>
                     </ul>
                 </li>
-                <li class="menu-item" id="sec-03"><a href="industries_we_help.html"><u>Industries</u></a>
-
-                </li>
-                <li class="menu-item" id="sec-04"><a href="tech_we_use.html"><u>Technologies</u></a>
+                <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
+                <li class="menu-item" id="sec-04"><a href="tech_we_use.html"><u>Technology</u></a>
                     <ul>
                         <li><a href="tech1.html">Geolocation</a></li>
                         <li><a href="tech2.html">Augmented Reality</a>
                         <li><a href="tech3.html">Beacon Technology</a>
                     </ul>
                 </li>
-                <li class="menu-item" id="sec-06"><a href="our_clients.html"><u>Clients</u></a></li>
-
-
-                <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
-
-
-
-                <li class="menu-item"><a href="user/index.html"><u>User</u></a>
-                </li>
-                <li class="menu-item" id="sec-07"><a href="http://blog.chamaralabs.com/article/posts/merchent"><u>Blog</u></a></li>
-                <li class="menu-item"><a href="about.html"><u>About Us</u></a></li>
+                <li class="menu-item" id="sec-07"><a
+                        href="http://blog.chamaralabs.com/article/posts/merchent"><u>Blog</u></a></li>
+                <li class="menu-item" id="sec-09"><a href="about.html"><u>About Us</u></a></li>
                 <li class="menu-item" id="sec-08"><a href="contact_us.html"><u>Contact Us</u></a></li>
+
+
             </ul>
-        </nav> -->
-        <nav style="z-index: 100;" id="newheader2" class="menu">
-            <ul class="nav-menu nav-center">
-               <li class="menu-item"><a href="index.html"><u>Home</u></a>
-               <li class="menu-item"><a href="user/index.html"><u>User App</u></a>
-                  <li class="menu-item"><a href="#tw-work"><u>Benefits</u></a>
-               <li class="menu-item" id="sec-02"><a href="our_services.html"><u>Services</u></a>
-                  <ul>
-                   
-                     <li><a href="marketing.html">Marketing</a>
-                        <ul>
-                           <li><a href="spot_offer.html">Spot Offer App</a>
-                              <ul>
-                                 <li><a href="delever_dynamic_offers.html">Deliver Dynamic Offers &
-                                       Promotions </a>
-                                 <li><a href="intelligent_statistics.html">Intelligent
-                                       Statistics</a>
-                                 </li>
-                                 <li><a href="real_time_edits.html">Real Time edits</a></li>
-                                 <li><a href="get_discovered.html.html">Get discovered</a></li>
-                                 <li><a href="approve_reject_leads.html">Approve / Reject leads</a>
-                                 </li>
-                                 <li><a href="get_store_followers.html">Get store followers</a>
-                                 </li>
-                                 <li><a href="get_more_leads.html">Get more leads via price request
-                                       from
-                                       users</a></li>
-                                 <li><a href="better_branding.html">Better Branding</a></li>
-                                 <li><a href="spot/loyalty_offers.html">Loyalty Offers to attract repeat
-                                       customers</a></li>
-                                 <li><a href="one_click_chat.html">One click chat</a></li>
-                                 <li><a href="social_media_integration_for_larger_reach.html">
-                                       Social Media integration for larger reach</a></li>
-                              </ul>
-                           </li>
-                           <li><a href="lead_generation.html">Lead Generation</a></li>
-                           <li><a href="sm_marketing.html">Social Media Marketing</a></li>
-                           <li><a href="ppc.html">PPC</a></li>
-                           <li><a href="growth_hacking.html">Growth Hacking</a></li>
-                           <li><a href="web_analytics.html">Web Analytics</a></li>
-                           <li><a href="seo.html">SEO</a></li>
-                           <li><a href="sms_marketing.html">SMS Marketing</a></li>
-                           <li><a href="gmbt.html">GMBT</a></li>
-                        </ul>
-                     </li>
-                     <li><a href="strategy.html">Strategy</a>
-                        <ul>
-                           <li><a href="omni_channel.html">Omni Channel</a></li>
-                           <li><a href="digital_strategy.html">Digital Strategy</a></li>
-                           <li><a href="brand_strategy.html">Brand Strategy</a></li>
-                           <li><a href="market_research.html">Market Research</a></li>
-                        </ul>
-                     </li>
-                     <li><a href="design.html">Design</a>
-                        <ul>
-                           <li><a href="branding.html">Branding</a></li>
-                           <li><a href="logo_designing.html">Logo Designing</a></li>
-                           <li><a href="photo_video.html">Photography / Videograply </a></li>
-                           <li><a href="brocher_designing.html">Brocher Designing</a></li>
-                        </ul>
-                     </li>
-                     <li><a href="development.html">Development</a>
-                        <ul>
-                           <li><a href="website_development.html">Website Development</a></li>
-                           <li><a href="ar_vr.html">AR / VR</a></li>
-                           <li><a href="app_development.html">iOS/Android app Development</a></li>
-                        </ul>
-                     </li>
-                  </ul>
-               </li>
-               <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
-               <li class="menu-item" id="sec-04"><a href="tech_we_use.html"><u>Technology</u></a>
-                  <ul>
-                     <li><a href="tech1.html">Geolocation</a></li>
-                     <li><a href="tech2.html">Augmented Reality</a>
-                     <li><a href="tech3.html">Beacon Technology</a>
-                  </ul>
-               </li>
-               <li class="menu-item" id="sec-07"><a href="http://blog.chamaralabs.com/article/posts/merchent"><u>Blog</u></a></li>
-               <li class="menu-item" id="sec-09"><a href="about.html"><u>About Us</u></a></li>
-               <li class="menu-item" id="sec-08"><a href="contact_us.html"><u>Contact Us</u></a></li>
-               
-               
-            </ul>
-         </nav> 
-        
+        </nav>
+
+
 
     </header>
 
@@ -625,7 +543,8 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 ml-auto">
                         <div class="banner-heading wow fadeInRight">
-                            <h1 class="banner-title" style="color: #2F2C2C; text-align: center">Low-cost advertising</h1>
+                            <h1 class="banner-title" style="color: #2F2C2C; text-align: center">Low-cost advertising
+                            </h1>
                             <ol class="breadcrumb">
                                 <!-- <li>Home</li>
                      <li><a href="#">service</a></li> -->
@@ -649,15 +568,15 @@
                 <div class="col-lg-6 col-md-12 wow fadeInRight intro-text-left my-auto" data-wow-duration="1s"
                     style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;">
                     <!--h2 class="column-title">We Solve <span>Online Marketing</span> Problems</h2-->
-                     <p>
-                        Advertising is an essential component of success for any business. Proper advertising 
-                        ensures more sales, but if you choose the wrong options, it can be a very expensive 
-                        outlay for no return at all. Don’t just assume that throwing money at an ad campaign 
-                        or billboard will make it work better. 
+                    <p>
+                        Advertising is an essential component of success for any business. Proper advertising
+                        ensures more sales, but if you choose the wrong options, it can be a very expensive
+                        outlay for no return at all. Don’t just assume that throwing money at an ad campaign
+                        or billboard will make it work better.
                     </p>
                     <p>
                         Spot Offers converts your traditional offline advertising into powerful online marketing
-                         campaigns. With our Omni Channel approach, you are sure to succeed. 
+                        campaigns. With our Omni Channel approach, you are sure to succeed.
                     </p>
                     <!--ul class="intro-list">
                      <li>Internet marketing SEO company offering innovative designs</li>
@@ -668,7 +587,8 @@
                     <!--a href="#" class="btn btn-secondary tw-mt-40">contact us</a-->
                 </div>
                 <!-- End Col -->
-                <div class="col-lg-6 col-md-12 text-lg-right text-md-center wow fadeInLeft my-auto" data-wow-duration="1s"
+                <div class="col-lg-6 col-md-12 text-lg-right text-md-center wow fadeInLeft my-auto"
+                    data-wow-duration="1s"
                     style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
                     <img src="images/client_images/content_images/360_offers/cheap_advertisin.webp" alt=""
                         class="img-fluid">
@@ -683,254 +603,255 @@
 
 
 
-    <section id="tw-work" menu-sec="sec-01" data-color="#000" class="section tw-work-area gradient-4" style="min-height: 0vh">
-            <div class="work-bg-pattern d-none d-lg-inline-block">
-            </div>
-            <!-- End Work BG Pattern -->
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col section-heading wow fadeInDown" data-wow-duration="1s">
-                       <a href="spot_offers.html">
-                          <h1><small></small>
+    <section id="tw-work" menu-sec="sec-01" data-color="#000" class="section tw-work-area gradient-4"
+        style="min-height: 0vh">
+        <div class="work-bg-pattern d-none d-lg-inline-block">
+        </div>
+        <!-- End Work BG Pattern -->
+        <div class="container">
+            <div class="row text-center">
+                <div class="col section-heading wow fadeInDown" data-wow-duration="1s">
+                    <a href="spot_offers.html">
+                        <h1><small></small>
                             Other 360 Degree Marketing Benefits</h1>
-                       </a>
-                    </div>
-                    <!-- End Col -->
-                 </div>
-                <!-- End Row -->
-                <div class="row owl-carousel owl-theme" id="spot-list">
-                    <a href="targeted_ads.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/360_degree_icons/Geo-Targeted_Ads.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Launch Geo-targeted Ads</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-    
-    
-    
-                            <p>Targeted Ads</p>
-    
-    
-                        </div>
-                    </a>
-                    <!-- End Tw work process -->
-    
-                    <!-- End Col -->
-                    
-                    <a href="high_return.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/360_degree_icons/high_return_on_investement.webp"
-                                            id="feature" class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Get High Return on Investment</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>High Return</p>
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <!-- End Col -->
-                    <a href="improve_conversion.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/360_degree_icons/improve_conversion_rate.webp"
-                                            id="feature" class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Convert footfall to sales?</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>Improve conversion</p>
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <!-- End Col -->
-                    <a href="measure_roi.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/360_degree_icons/Measure_ROI.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Easy to measure ROI</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>Measure ROI</p>
-    
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <a href="data_analytics.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/360_degree_icons/data_analytics.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Extract detailed report</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>Data Analytics</p>
-    
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <!-- End Col -->
-                    <a href="peak_hours.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/360_degree_icons/Peak_Hours.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Convert off-peak to peak hours</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>Peak Hours</p>
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <!-- End Col -->
-                    <a href="target_customers.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/360_degree_icons/target_ideal_customers.webp"
-                                            id="feature" class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Target Ideal Customers</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>Target Customers</p>
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <!-- End Col -->
-                    <a href="update_ads.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/360_degree_icons/Update_Ads.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Edit ads on the go</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>Update Ads</p>
-    
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <!-- End Col -->
-                    <a href="brand_development.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/360_degree_icons/brand_development.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Better Brand Awareness</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End process wrapper -->
-                            <p>Brand Development</p>
-                        </div>
-                        <!-- End Tw work process -->
-                    </a>
-                    <!-- End Col -->
-                    <a href="easy_to_share.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/360_degree_icons/easy_to_share.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Make your offers viral</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End Process Wrapper -->
-                            <p>Easy to share</p>
-                        </div>
-                        <!-- End Word Process -->
-                    </a>
-                    <!-- End Col -->
-                    <a href="customer_journey.html">
-                        <div class="tw-work-process item">
-                            <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
-                                <div class="process-inner d-table-cell">
-                                    <div class="port" style="border-radius: 50%">
-                                        <img src="images/client_images/360_degree_icons/customer_journey.webp" id="feature"
-                                            class="img-fluid" />
-                                        <div class="work-text-content">
-                                            <h5 style="color:#fff">Reach customers at the start of their buying journey</h5>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                            </div>
-                            <!-- End Process Wrapper -->
-                            <p>Customer’s Journey</p>
-                        </div>
-                        <!-- End Work Process -->
                     </a>
                 </div>
-                <!-- End Row -->
+                <!-- End Col -->
             </div>
-            <!-- End Container -->
-        </section>
-        <!-- End Features section -->
+            <!-- End Row -->
+            <div class="row owl-carousel owl-theme" id="spot-list">
+                <a href="targeted_ads.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/360_degree_icons/Geo-Targeted_Ads.webp" id="feature"
+                                        class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Launch Geo-targeted Ads</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+
+
+
+                        <p>Targeted Ads</p>
+
+
+                    </div>
+                </a>
+                <!-- End Tw work process -->
+
+                <!-- End Col -->
+
+                <a href="high_return.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/360_degree_icons/high_return_on_investement.webp"
+                                        id="feature" class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Get High Return on Investment</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>High Return</p>
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <!-- End Col -->
+                <a href="improve_conversion.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/360_degree_icons/improve_conversion_rate.webp"
+                                        id="feature" class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Convert footfall to sales?</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>Improve conversion</p>
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <!-- End Col -->
+                <a href="measure_roi.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/360_degree_icons/Measure_ROI.webp" id="feature"
+                                        class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Easy to measure ROI</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>Measure ROI</p>
+
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <a href="data_analytics.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/360_degree_icons/data_analytics.webp" id="feature"
+                                        class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Extract detailed report</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>Data Analytics</p>
+
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <!-- End Col -->
+                <a href="peak_hours.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/360_degree_icons/Peak_Hours.webp" id="feature"
+                                        class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Convert off-peak to peak hours</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>Peak Hours</p>
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <!-- End Col -->
+                <a href="target_customers.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/360_degree_icons/target_ideal_customers.webp"
+                                        id="feature" class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Target Ideal Customers</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>Target Customers</p>
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <!-- End Col -->
+                <a href="update_ads.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/360_degree_icons/Update_Ads.webp" id="feature"
+                                        class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Edit ads on the go</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>Update Ads</p>
+
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <!-- End Col -->
+                <a href="brand_development.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/360_degree_icons/brand_development.webp" id="feature"
+                                        class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Better Brand Awareness</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End process wrapper -->
+                        <p>Brand Development</p>
+                    </div>
+                    <!-- End Tw work process -->
+                </a>
+                <!-- End Col -->
+                <a href="easy_to_share.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/360_degree_icons/easy_to_share.webp" id="feature"
+                                        class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Make your offers viral</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Process Wrapper -->
+                        <p>Easy to share</p>
+                    </div>
+                    <!-- End Word Process -->
+                </a>
+                <!-- End Col -->
+                <a href="customer_journey.html">
+                    <div class="tw-work-process item">
+                        <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+                            <div class="process-inner d-table-cell">
+                                <div class="port" style="border-radius: 50%">
+                                    <img src="images/client_images/360_degree_icons/customer_journey.webp" id="feature"
+                                        class="img-fluid" />
+                                    <div class="work-text-content">
+                                        <h5 style="color:#fff">Reach customers at the start of their buying journey</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Process Wrapper -->
+                        <p>Customer’s Journey</p>
+                    </div>
+                    <!-- End Work Process -->
+                </a>
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- End Container -->
+    </section>
+    <!-- End Features section -->
 
 
     <footer id="tw-footer" class="tw-footer">

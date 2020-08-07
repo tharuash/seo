@@ -197,3 +197,17 @@
     }
 }
 
+#logo_img_xxx {
+    height: 78px;
+    opacity: 1;
+    /*animation: second_opacity 3s .3s forwards;*/
+}
+
+@media (max-width: 767px) {
+    #logo_img_xxx {
+        height: 60px;
+        opacity: 1;
+        /*animation: second_opacity 3s .3s forwards;*/
+    }
+}
+

@@ -64,21 +64,7 @@
 
    <link rel="stylesheet" href="css/editable.css">
 
-   <!-- Slider CSS -->
-   <!--link rel='stylesheet' id='rs-plugin-settings-css' href='slider/Untitled-1.css?rev=4.6.0&amp;ver=3.5.1'
-      type='text/css' media='all' /-->
 
-
-
-
-   <!-- slider JS -->
-   <!--script type='text/javascript' src='slider/2.js?ver=1.8.3'></script>
-   <script type='text/javascript' src='slider/3.js?rev=4.6.0&amp;ver=3.5.1'></script>
-   <script type='text/javascript' src='slider/4.js?rev=4.6.0&amp;ver=3.5.1'></script-->
-
-
-
-   <!-- <link rel="stylesheet" href="bb/style.css"> -->
    <style>
       .zoom {
          transition: transform .2s;
@@ -102,8 +88,13 @@
          text-align: center;
          font-family: sans-serif, arial;
          margin: 0;
+         padding-top: 50px;
          /* scroll-snap-align: start;
          scroll-snap-stop: always; */
+      }
+
+      .promo {
+         padding-top: 70px;
       }
 
       html {
@@ -248,11 +239,11 @@
          transform: translate(-50%, -50%);
       }
 
-      #logo_img_xxx {
+      /*#logo_img_xxx {
          height: 78px;
          opacity: 0;
          animation: second_opacity 0.001s .3s forwards;
-      }
+      }*/
 
       .nav a {
          animation: second_opacity 3s .3s forwards;
@@ -418,94 +409,92 @@
    <header>
 
       <div id="mobile_head" class="fixed-top pos-f-t">
-         <div class="collapse" id="navbarToggleExternalContent" style="background: #FFFFFF">
-            <div class="p-4">
-               <div id="logo_img_div_mobi" style="float: left; padding-bottom: 1%;">
-                  <a style="padding: 0;" href="/SEO-final/index.html"><img id="logo_img_xxx" class="shadowfilter"
-                        src="images/menu-logo.jpeg" alt=""></a>
+         <div>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f7f7f7">
+               <!--a class="navbar-brand tw-nav-brand" href="index.html">
+                        <img src="images/logo/logo.png" alt="seotime">
+                     </a-->
+               <div id="logo_img_div_mobi" class="navbar-brand"
+                  style="width: 100%;text-align: center; background-color: #f7f7f7">
+                  <a style="padding: 0;" href="/SEO-final/index.html"><img id="logo_img_xxx" src="images/menu-logo.jpeg"
+                        alt=""></a>
                </div>
-               <h5 class="text-white h4">SEO</h5>
-               <table class="table table-sm">
-                  <tbody>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation"><a href="index.html">Home</a></td>
+               <!-- End of Navbar Brand -->
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <!-- End of Navbar toggler -->
+               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav" style="padding-left: 10px">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                           Home
 
-                     </tr>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                           Buisness Owner
+                        </a>
+                     </li>
+                     <!-- End Dropdown -->
+                     <li class="nav-item">
+                        <a class="nav-link" href="app_benefits.html">
+                           App Benefits
+                        </a>
+                     </li>
+                     <!-- End Dropdown -->
+                     <li class="nav-item">
+                        <a class="nav-link" href="categories_we_serve.html">
+                           Categories
+                           <!--span class="tw-indicator"><i class="fa fa-angle-down"></i></span-->
+                        </a>
+                        <!--ul class="dropdown-menu tw-dropdown-menu" style="background-color: #f7f7f7">
+                           <li><a href="marketing.html">Marketing</a></li>
+                           <li><a href="strategy.html">Strategy</a></li>
+                           <li><a href="design.html">Design</a></li>
+                           <li><a href="development.html">Development</a></li>
+                        </ul-->
+                     </li>
 
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation"><a href="../">Buisness Owner</a></td>
+                     <li class="nav-item">
+                        <a class="nav-link" href="../about.html">
+                           About Us
+                           <!--span class="tw-indicator"><i class="fa fa-angle-down"></i></span-->
+                        </a>
+                     </li>
+                     <!-- End Dropdown -->
+                     <li class="nav-item"><a class="nav-link"
+                           href="http://blog.chamaralabs.com/article/posts/user">Blog</a></li>
+                     <li class="nav-item"><a class="nav-link"
+                           href="http://blog.chamaralabs.com/users/careers">Carrer</a></li>
+                     <li class="nav-item"><a class="nav-link" href="../contact_us.html">Contact Us</a></li>
+                  </ul>
+                  <!-- End Navbar Nav -->
 
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation"><a href="#tw-benefits">App Benefits</a></td>
-
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation"><a href="#tw-industries">Industries</a></td>
-
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation"><a href="#tw-about">About Us</a></td>
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation"><a target="_blank" rel="noopener noreferrer"
-                              href="http://blog.chamaralabs.com/article/posts/user">Blog</a></td>
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation"><a href="#tw-carrier">Careers</a></td>
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation"><a href="#tw-contact">Contact Us</a></td>
-                     </tr>
-                  </tbody>
-               </table>
-               <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
-            </div>
+                  <!-- End off canvas menu -->
+               </div>
+               <!-- End of navbar collapse -->
+            </nav>
+            <!-- End of Nav -->
          </div>
-         <nav class="navbar navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-               data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-               aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-         </nav>
+         <!-- End of Container -->
       </div>
+      <!-- End tw head -->
 
-      <!-- mobile view center logo -->
-      <!--div id="logo_img_div_mobi" style="text-align: center;z-index: 105;position: fixed;  left: 40%;">
-         <a style="padding: 0;" href="/"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
-               alt=""></a>
-      </div-->
-      <!-- ------------------------ -->
+
 
       <!-- desktop view center logo -->
-      <div id="logo_img_div_desk" style="text-align: center;z-index: 105;position: fixed; left: 47%;">
-         <a style="padding: 0;" href="/"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
-               alt=""></a>
+      <div id="logo_img_div_desk" style="margin-top: 10px;text-align: center;z-index: 501;position: fixed; left:47%; ">
+         <a style="padding: 0;" href="index.html"><img id="logo_img_xxx" class="shadowfilter"
+               src="images/center_logo_new.png" alt=""></a>
       </div>
       <!-- ----------------------- -->
-
-      <nav style="z-index: 100;" id="newheader2" class="menu">
+      <nav style="z-index: 500;" id="newheader2" class="menu">
          <ul class="nav-menu nav-center">
-
-            <li class="menu-item"><a href="index.html"><u>Home</u></a></li>
-            <li class="menu-item"><a href="../"><u>Buisness Owner</u></a></li>
+            <li class="menu-item"><a href="index.html"><u>Home</u></a>
+            <li class="menu-item"><a href="../index.html"><u>Buisness Owner</u></a>
             <li class="menu-item" id="sec-02"><a href="#tw-benefits"><u>App Benefits</u></a>
                <ul>
 
@@ -531,34 +520,18 @@
 
                </ul>
             </li>
-            <!--li class="menu-item" id="sec-03"><a href="#tw-service"><u>Services</u></a></li-->
             <li class="menu-item" id="sec-03"><a href="#tw-categories"><u>Categories</u></a></li>
-
-
             <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
-
             <li class="menu-item" id="sec-04"><a href="#tw-about"><u>About Us</u></a>
-               <!-- <ul class="sub-234">
-                      <li><a href="#">Sub Nav Link</a></li>
-                      <li><a href="#">Sub Nav Link</a> </li>
-                      <li><a href="#">Sub Nav Link</a></li>
-                      <li><a href="#">Sub Nav Link</a>
-                          <ul>
-                              <li><a href="#">Sub Sub Nav Link</a></li>
-                              <li><a href="#">Sub Sub Nav Link</a></li>
-                              <li><a href="#">Sub Sub Nav Link</a></li>
-                          </ul>
-                      </li>
-                  </ul> -->
-            </li>
-            <li class="menu-item" id="sec-05"><a target="_blank" rel="noopener noreferrer"
-                  href="http://blog.chamaralabs.com/article/posts/user"><u>Blog</u></a></li>
+            <li class="menu-item" id="sec-05"><a href="#tw-blog"><u>Blog</u></a></li>
 
             <li class="menu-item" id="sec-06"><a href="#tw-carrier"><u>Careers</u></a></li>
             <li class="menu-item" id="sec-07"><a href="#tw-contact"><u>Contact Us</u></a></li>
-            <!--li class="menu-item" id="sec-08"><a href="#tw-contact"><u>Contact Us</u></a></li-->
+
+
          </ul>
       </nav>
+
 
 
    </header>
@@ -1323,7 +1296,7 @@
       <div class="container">
          <div class="row text-center">
             <div class="col section-heading tw-text-white wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-               <a href="http://blog.chamaralabs.com/jobs/jobposts">
+               <a target="_blank" rel="noopener noreferrer" href="http://blog.chamaralabs.com/users/careers">
                   <h2>
                      <small></small>
                      Careers <span></span>
@@ -1356,7 +1329,7 @@
                </div-->
             </div>
             <div class="col-md-12 text-center pt-5">
-               <a href="http://blog.chamaralabs.com/jobs/jobposts" class="btn btn-primary">view all</a>
+               <a href="http://blog.chamaralabs.com/users/careers" class="btn btn-primary">view all</a>
             </div>
          </div>
       </div>
@@ -1370,7 +1343,7 @@
       <div class="container">
          <div class="row text-center">
             <div class="col section-heading tw-text-white wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-               <a href="http://blog.chamaralabs.com/article/posts/user">
+               <a target="_blank" rel="noopener noreferrer" href="http://blog.chamaralabs.com/article/posts/user">
                   <h2>
                      <small></small>
                      Blog <span></span>

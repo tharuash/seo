@@ -205,12 +205,6 @@
          transform: translate(-50%, -50%);
       }
 
-      #logo_img_xxx {
-         height: 78px;
-         opacity: 0;
-         animation: second_opacity 3s .3s forwards;
-      }
-
       .nav a {
          animation: second_opacity 3s .3s forwards;
       }
@@ -373,109 +367,93 @@
    <header>
 
       <div id="mobile_head" class="fixed-top pos-f-t">
-
-         <div class="collapse" id="navbarToggleExternalContent" style="background: #FFFFFF">
-            <div class="bg-black p-4">
-               <div id="logo_img_div_mobi" style="float: left; padding-bottom: 1%;">
-                  <a style="padding: 0;" href="/SEO-final/index.html"><img id="logo_img_xxx" class="shadowfilter"
-                        src="images/menu-logo.jpeg" alt=""></a>
+         <div>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f7f7f7">
+               <!--a class="navbar-brand tw-nav-brand" href="index.html">
+                        <img src="images/logo/logo.png" alt="seotime">
+                     </a-->
+               <div id="logo_img_div_mobi" class="navbar-brand"
+                  style="width: 100%;text-align: center; background-color: #f7f7f7">
+                  <a style="padding: 0;" href="/SEO-final/index.html"><img id="logo_img_xxx" src="images/menu-logo.jpeg"
+                        alt=""></a>
                </div>
-               <table class="table table-sm">
-                  <tbody>
+               <!-- End of Navbar Brand -->
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <!-- End of Navbar toggler -->
+               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav" style="padding-left: 10px">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                           Home
 
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="user/index.html">
+                           User App
+                        </a>
+                     </li>
+                     <!-- End Dropdown -->
+                     <li class="nav-item">
+                        <a class="nav-link" href="spot_offers.html">
+                           Benefits
+                        </a>
+                     </li>
+                     <!-- End Dropdown -->
+                     <li class="nav-item dropdown">
+                        <a class="nav-link" href="our_services.html" data-toggle="dropdown">
+                           Services
+                           <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu tw-dropdown-menu" style="background-color: #f7f7f7">
+                           <li><a href="marketing.html">Marketing</a></li>
+                           <li><a href="strategy.html">Strategy</a></li>
+                           <li><a href="design.html">Design</a></li>
+                           <li><a href="development.html">Development</a></li>
+                        </ul>
+                     </li>
 
+                     <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown">
+                           Technology
+                           <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu tw-dropdown-menu" style="background-color: #f7f7f7">
+                           <li><a href="tech1.html">Geolocation</a></li>
+                           <li><a href="tech2.html">Augmented Reality</a></li>
+                           <li><a href="tech3.html">Beacon Technology</a></li>
+                        </ul>
+                        <!-- End of Dropdown menu -->
+                     </li>
+                     <!-- End Dropdown -->
+                     <li class="nav-item"><a class="nav-link"
+                           href="http://blog.chamaralabs.com/article/posts/merchent">Blog</a></li>
+                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                     <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+                  </ul>
+                  <!-- End Navbar Nav -->
 
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="true"
-                           aria-label="Toggle navigation">
-                           <a href="index.html">Home</a>
-                        </td>
-
-
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="user/index.html">User App</a>
-                        </td>
-
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="spot_offers.html">Benefits</a>
-                        </td>
-
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="our_services.html">Services</a>
-                        </td>
-
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="tech_we_use.html">Technology</a>
-                        </td>
-                     </tr>
-                     <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                        aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <a href="http://blog.chamaralabs.com/article/posts/merchent">Blog</a>
-                     </td>
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="about.html">About Us</a>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="contact_us.html">Contact Us</a>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-               <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
-            </div>
+                  <!-- End off canvas menu -->
+               </div>
+               <!-- End of navbar collapse -->
+            </nav>
+            <!-- End of Nav -->
          </div>
-         <nav class="navbar navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-               data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-               aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-         </nav>
-
+         <!-- End of Container -->
       </div>
+      <!-- End tw head -->
 
 
-      <!-- mobile view center logo -->
-
-      <!-- ------------------------ -->
 
       <!-- desktop view center logo -->
-      <div id="logo_img_div_desk" style="margin-top: 10px;text-align: center;z-index: 105;position: fixed; left:47%; ">
-         <a style="padding: 0;" href="/"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
-               alt=""></a>
+      <div id="logo_img_div_desk" style="margin-top: 10px;text-align: center;z-index: 1;position: fixed; left:47%; ">
+         <a style="padding: 0;" href="index.html"><img id="logo_img_xxx" class="shadowfilter"
+               src="images/center_logo_new.png" alt=""></a>
       </div>
       <!-- ----------------------- -->
-
-
-
-
-
       <nav style="z-index: 100;" id="newheader2" class="menu">
          <ul class="nav-menu nav-center">
             <li class="menu-item"><a href="index.html"><u>Home</u></a>
@@ -486,38 +464,33 @@
 
                   <li><a href="marketing.html">Marketing</a>
                      <ul>
-                        <li><a href="spot_offer.html">Spot Offer App</a>
+                        <li><a href="spot_offer.html">Spot Offers Super App</a>
                            <ul>
-                              <li><a href="delever_dynamic_offers.html">Deliver Dynamic Offers &
-                                    Promotions </a>
-                              <li><a href="intelligent_statistics.html">Intelligent
-                                    Statistics</a>
-                              </li>
-                              <li><a href="real_time_edits.html">Real Time edits</a></li>
-                              <li><a href="get_discovered.html.html">Get discovered</a></li>
-                              <li><a href="approve_reject_leads.html">Approve / Reject leads</a>
-                              </li>
-                              <li><a href="get_store_followers.html">Get store followers</a>
-                              </li>
-                              <li><a href="get_more_leads.html">Get more leads via price request
-                                    from
-                                    users</a></li>
+                              <li><a href="promote_offers.html">Promote Offers</a>
+                              <li><a href="get_discovered.html">Get Discovered</a></li>
+                              <li><a href="get_leads.html">Get Leads</a></li>
+                              <li><a href="home_delivery.html">Home Delivery</a></li>
+                              <li><a href="clear_old_stock.html">Clear Stock</a></li>
+                              <li><a href="get_followers.html">Get Followers</a></li>
+                              <li><a href="loyalty_offers.html">Loyalty Offers</a></li>
+                              <li><a href="data_analytics_spot.html">Data Analytics</a></li>
+                              <li><a href="approve_leads.html">Approve Leads</a></li>
                               <li><a href="better_branding.html">Better Branding</a></li>
-                              <li><a href="spot/loyalty_offers.html">Loyalty Offers to attract repeat
-                                    customers</a></li>
-                              <li><a href="one_click_chat.html">One click chat</a></li>
-                              <li><a href="social_media_integration_for_larger_reach.html">
-                                    Social Media integration for larger reach</a></li>
+                              <li><a href="one_click_chat.html">Chat</a></li>
+                              <li><a href="social_media.html">Social Media</a></li>
                            </ul>
                         </li>
                         <li><a href="lead_generation.html">Lead Generation</a></li>
-                        <li><a href="sm_marketing.html">Social Media Marketing</a></li>
-                        <li><a href="ppc.html">PPC</a></li>
-                        <li><a href="growth_hacking.html">Growth Hacking</a></li>
-                        <li><a href="web_analytics.html">Web Analytics</a></li>
-                        <li><a href="seo.html">SEO</a></li>
+                        <li><a href="sm_marketing.html">Social Media</a></li>
                         <li><a href="sms_marketing.html">SMS Marketing</a></li>
+                        <li><a href="seo.html">SEO</a></li>
+                        <li><a href="web_analytics.html">Web Analytics</a></li>
                         <li><a href="gmbt.html">GMBT</a></li>
+                        <li><a href="growth_hacking.html">Growth Hacking</a></li>
+
+
+
+
                      </ul>
                   </li>
                   <li><a href="strategy.html">Strategy</a>
@@ -565,7 +538,6 @@
 
 
    </header>
-
 
 
 
@@ -734,7 +706,7 @@
                <!-- End Tw work process -->
             </div>
             <!-- End Col -->
-            
+
 
             <div>
                <div class="tw-work-process item">

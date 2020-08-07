@@ -608,8 +608,8 @@ nav.navbar {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .navbar-light .navbar-toggler {
-  border-color: #28b05f;
-  background-color: #28b05f;
+  border-color: black;
+  background-color: black; 
 }
 .navbar-light .navbar-toggler:hover {
   cursor: pointer;
@@ -624,7 +624,7 @@ ul.navbar-nav a {
   border-radius: 50px;
 }
 ul.navbar-nav > li.nav-item.active {
-  color: #28b05f;
+  color: #f1150d;
 }
 ul.navbar-nav > li.nav-item.active > a:before {
   position: absolute;
@@ -681,7 +681,7 @@ ul.navbar-nav > li.nav-item > a.nav-link {
   margin-right: 15px;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  color: #28b05f;
+  color: #f1150d;
 }
 
 span.tw-indicator:after {

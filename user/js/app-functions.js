@@ -319,7 +319,7 @@ function setJobs(jobs) {
         html = `<tr>
       <td>${jobs[j].jobtitle}</td>
       <td>${jobs[j].city}</td>
-      <td> <a target="_blank" rel="noopener noreferrer" class="readmore" href="http://blog.chamaralabs.com/jobs/jobposts/${jobs[j].encode_id}"><span class="apply">Apply</span></a></td>
+      <td> <a target="_blank" rel="noopener noreferrer" class="readmore" href="http://blog.chamaralabs.com/users/careers/${jobs[j].encode_id}"><span class="apply">Apply</span></a></td>
    </tr>`;
         $("#job-table").append(html);
         
