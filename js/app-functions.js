@@ -29,6 +29,7 @@ function svgdrawing() {
 
 function changeRootLink(host){
     $('#logo_img_div_desk a').attr("href", host)
+    $('#logo_img_div_mobi a').attr("href", host)
 }
 
 
@@ -150,12 +151,6 @@ function setSlick() {
             settings: {
                 rows: 3,
                 slidesPerRow: 3,
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                rows: 3,
-                slidesPerRow: 1,
             }
         }]
     });

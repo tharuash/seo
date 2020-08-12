@@ -258,16 +258,63 @@ ul#portfolio-grid>li{
        padding: 5px 10px
     }
     
-    #c_img {
+    .c_img {
         height: 136.66px;
     }
 
 }
 
 @media (max-width: 519px) {
-    
-    #c_img {
-        height: 428px;
+    .cont {
+        padding: 5px 10px
+     }
+
+    .c_img {
+        height: 128.98px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .cont {
+        padding: 5px 10px
+     }
+
+    .c_img {
+        height: 93px;
+    }
+
+}
+
+@media (max-width: 362px) {
+    .cont {
+        padding: 5px 10px
+     }
+
+    .c_img {
+        height: 77px;
+    }
+
+}
+
+@media (max-width: 362px) {
+    .cont {
+        padding: 5px 10px
+     }
+
+    .c_img {
+        height: 66px;
+    }
+
+}
+
+@media (max-width: 311px) {
+    .cont {
+        padding: 5px 10px
+     }
+
+    .c_img {
+        height: 59.33px;
     }
 
 }

@@ -224,7 +224,7 @@ $(function ($) {
         $(".testimonial-carousel-gray").owlCarousel({
             items: 2,
             margin: 20,
-            loop:false,
+            loop: false,
             rewind: true,
             autoplay: false,
             nav: false,
@@ -280,12 +280,12 @@ $(function ($) {
                 $message = $form.find('.form-message');
 
             $.post(action, {
-                name: $name.val(),
-                phone: $phone.val(),
-                email: $email.val(),
-                subject: $subject.val(),
-                message: $message.val()
-            },
+                    name: $name.val(),
+                    phone: $phone.val(),
+                    email: $email.val(),
+                    subject: $subject.val(),
+                    message: $message.val()
+                },
                 function (data) {
                     $error.html(data);
                     $error.slideDown('slow');
@@ -310,6 +310,12 @@ $(function ($) {
     new WOW().init();
     //========================================== End Copy from js/main.js file============================
 
+    /* Mobile menu dropdown */
+
+    $("li.nav-item a").on("click", function () {
+        $(this).parent("li").find(".dropdown-menu").slideToggle();
+        // $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
+    });
 
 
 });

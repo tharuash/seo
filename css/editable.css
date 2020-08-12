@@ -16,13 +16,13 @@
     transition: all 0.3s linear;
 }
 
-.tw-work-process h2:hover{
+.tw-work-process h2:hover {
     transition: transform .2s;
     transform: scale(1.2);
     color: rgb(0, 0, 0);
 }
 
-.tw-work-process:hover p{
+.tw-work-process:hover p {
     transition: transform 1s;
     transform: scale(1.2);
     color: rgb(0, 0, 0);
@@ -100,7 +100,7 @@
 .about-banner-area {
     position: relative;
     color: #fff;
-    background-image: url("../images/client_images/about_us.webp");
+    /*background-image: url("../images/client_images/about_us.webp");*/
     background-position: 0% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -166,16 +166,48 @@
     min-height: 350px;
 }
 
-#main-container img{
+#main-container img {
     width: 80%;
 }
 
 #main-container {
-   min-height: 0vh;
-   padding-bottom: 70px;
+    min-height: 0vh;
+    padding-bottom: 70px;
 }
 
-.slider-content .slider-desc{
+.slider-content .slider-desc {
     /*font-size: 17px;*/
     color: #2F2C2C;
 }
+
+
+/* Owl carousel when touch no slide problem*/
+.owl-carousel .owl-stage,
+.owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: auto;
+    touch-action: auto;
+}
+
+@media (max-width: 617px) {
+
+    .rev_slider ul li,
+    .rev_slider>ul>li,
+    .rev_slider>ul>li:before {
+        height: 600px !important;
+    }
+}
+
+#logo_img_xxx {
+    height: 78px;
+    opacity: 1;
+    /*animation: second_opacity 3s .3s forwards;*/
+}
+
+@media (max-width: 767px) {
+    #logo_img_xxx {
+        height: 60px;
+        opacity: 1;
+        /*animation: second_opacity 3s .3s forwards;*/
+    }
+}
+

@@ -29,7 +29,9 @@
 
 function changeRootLink(host){
     $('#logo_img_div_desk a').attr("href", host)
+    $('#logo_img_div_mobi a').attr("href", host)
 }
+
 
 
 //start copy from spot.js 
@@ -120,7 +122,7 @@ function setSlick() {
 
         /*html = `<a href="${merchants[i].web_url}" class="slide"><img src="http://blog.chamaralabs.com/${merchants[i].image_url}"></a>`;*/
         html = `<div class="slide cont" style="padding: 5px 10px; vertical-align:top"><a target="_blank" rel="noopener noreferrer" href="${merchants[i].web_url}" > <div class="port wow fadeIn">
-                 <img id="c_img"  src="http://blog.chamaralabs.com/${merchants[i].image_url}" class="img-fluid" style="width:100%;"/>
+                 <img id="c_img"  src="http://blog.chamaralabs.com/${merchants[i].image_url}" class="img-fluid c_img" style="width:100%;"/>
                 <div class="work-text-content">
                   <h3 style="color:#fff">${merchants[i].title}</h3>
                 </div>
@@ -153,7 +155,7 @@ function setSlick() {
             breakpoint: 520,
             settings: {
                 rows: 3,
-                slidesPerRow: 1,
+                slidesPerRow: 3,
             }
         }]
     });
@@ -319,7 +321,7 @@ function setJobs(jobs) {
         html = `<tr>
       <td>${jobs[j].jobtitle}</td>
       <td>${jobs[j].city}</td>
-      <td> <a target="_blank" rel="noopener noreferrer" class="readmore" href="http://blog.chamaralabs.com/jobs/jobposts/${jobs[j].encode_id}"><span>Apply</span></a></td>
+      <td> <a target="_blank" rel="noopener noreferrer" class="readmore" href="http://blog.chamaralabs.com/users/careers/${jobs[j].encode_id}"><span class="apply">Apply</span></a></td>
    </tr>`;
         $("#job-table").append(html);
         
@@ -382,7 +384,7 @@ function setBlogs(blogs) {
           </div>
           </div>
           <div style="background:#212121; padding-bottom:30px">
-           <a class="readmore" href="http://blog.chamaralabs.com/article/posts/${blogs[j].encode_id}/${blogs[j].slug}"><span>Read More</span></a></div>
+           <a target="_blank" rel="noopener noreferrer" class="readmore" href="http://blog.chamaralabs.com/article/posts/${blogs[j].encode_id}/${blogs[j].slug}"><span>Read More</span></a></div>
       </div>`;
         /*$("#blog-list").append(html);*/
         $("#blog-list").append(html);

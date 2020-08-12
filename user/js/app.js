@@ -28,6 +28,12 @@ $(function ($) {
 
     });
 
+    /*window.scrollBy({ 
+        top: 500, // could be negative value
+        left: 0, 
+        behavior: 'smooth' 
+      });*/
+
 
     $(window).on('scroll', function () {
         var scrollTop = $(this).scrollTop();
@@ -142,13 +148,6 @@ $(function ($) {
         owl.on('changed.owl.carousel', function (event) {
             if (i == 5) i = 0;
 
-            /*var html = $('<div class="slide-down" > \n\
-            <h2 class="title" style="font-weight: bold;">' + slides[i].title + '</h2> \n\
-            <p class="intro" style="text-align: center">' + slides[i].intro + ' \n\
-            </p> \n\
-         </div>');*/
-
-
 
             $('#side-slideshow').empty();
             $('#side-slideshow').append(texts[i]);
@@ -208,7 +207,7 @@ $(function ($) {
         });*/
         var jobs = [];
         $.ajax({
-            url: "http://blog.chamaralabs.com/jobs/jobposts/index_data",
+            url: "http://blog.chamaralabs.com/users/careers/index_data",
             type: 'GET',
             dataType: 'json', // added data type
             success: function (res) {
@@ -290,6 +289,11 @@ $(function ($) {
     // new WOW().init();
     //========================================== End Copy from js/main.js file============================
 
+    /* Mobile menu dropdown */
 
+    $("li.nav-item a").on("click", function () {
+        $(this).parent("li").find(".dropdown-menu").slideToggle();
+        // $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
+    });
 
 });
