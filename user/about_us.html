@@ -13,11 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Site Title- -->
-    <title>Blog</title>
-    <meta name="description"
-        content="Spot Offers has an omnichannel approach and ensures you campaign get a 360 degree visibility.">
-    <meta name="keywords"
-        content="360 degree marketing, digital marketing, best digital marketing agency, Geo-Targeted Ads, location-based marketing, retail store, brick & mortar store, near me">
+    <title>SeoTime - SEO, Social Media and Marketing HTML Template</title>
     <link rel="icon" href="images/center_logo_new.png" type="image/x-icon">
     <!-- CSS
    ==================================================== -->
@@ -74,10 +70,6 @@
 
         }
 
-        .tw-work-process p {
-            color: #2F2C2C;
-        }
-
         /* remove scroll bar */
         html::-webkit-scrollbar {
             display: none;
@@ -124,12 +116,11 @@
         }
 
         .gradient-4 {
-            background-image: -webkit-linear-gradient(110deg, #baeff0 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
-            background-image: -moz-linear-gradient(110deg, #baeff0 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
-            background-image: -o-linear-gradient(110deg, #baeff0 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
-            background-image: linear-gradient(110deg, #baeff0 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
-            background-image: -ms-linear-gradient(left, #baeff0, #ffffff);
-            /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-5, endColorstr=$combo-6, GradientType=1); */
+            background-image: -webkit-linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
+            background-image: -moz-linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
+            background-image: -o-linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
+            background-image: linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
+            background-image: -ms-linear-gradient(110deg, #d4b548 10%, #ff577b 90%);
             background-blend-mode: multiply;
             color: #fff
         }
@@ -211,9 +202,8 @@
         }
 
         #logo_img_xxx {
-            height: 78px;
-            opacity: 0;
-            animation: second_opacity 3s .3s forwards;
+            opacity: 1;
+            /*animation: second_opacity 3s .3s forwards;*/
         }
 
         .nav a {
@@ -293,7 +283,7 @@
 
 
         table a {
-            color: whitesmoke;
+            color: #212529;
         }
 
         u {
@@ -339,12 +329,16 @@
 
         .about-banner-area {
 
-            background-image: url("");
+            background-image: url("images/client_images/about_us.webp");
 
         }
 
-        .post-info::-webkit-scrollbar {
-            display: none;
+        @media (max-width: 768px) {
+            .about-banner-area {
+
+                background-image: url("");
+
+            }
         }
     </style>
 
@@ -357,14 +351,16 @@
 
     <!-- header======================-->
 
+
+
     <header>
 
         <div id="mobile_head" class="fixed-top pos-f-t">
             <div>
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f7f7f7">
                     <!--a class="navbar-brand tw-nav-brand" href="index.html">
-                              <img src="images/logo/logo.png" alt="seotime">
-                           </a-->
+                      <img src="images/logo/logo.png" alt="seotime">
+                   </a-->
                     <div id="logo_img_div_mobi" class="navbar-brand"
                         style="width: 100%;text-align: center; background-color: #f7f7f7">
                         <a style="padding: 0;" href="/SEO-final/index.html"><img id="logo_img_xxx"
@@ -386,105 +382,40 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="user/index.html">
-                                    User App
+                                <a class="nav-link" href="../index.html">
+                                    Buisness Owner
                                 </a>
                             </li>
                             <!-- End Dropdown -->
                             <li class="nav-item">
-                                <a class="nav-link" href="spot_offers.html">
-                                    Benefits
+                                <a class="nav-link" href="app_benefits.html">
+                                    App Benefits
                                 </a>
                             </li>
                             <!-- End Dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="our_services.html" data-toggle="dropdown">
-                                    Services
-                                    <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="categories_we_serve.html">
+                                    Categories
+
                                 </a>
-                                <ul class="dropdown-menu tw-dropdown-menu" style="background-color: #f7f7f7">
-                                    <li><a href="marketing.html">Marketing</a></li>
-                                    <li><a href="strategy.html">Strategy</a></li>
-                                    <li><a href="design.html">Design</a></li>
-                                    <li><a href="development.html">Development</a></li>
-                                </ul>
+
                             </li>
-                            <!-- End Dropdown -->
-                            <!--li class="nav-item dropdown tw-megamenu-wrapper">
-                              <a class="nav-link" href="#" data-toggle="dropdown">
-                                 Features
-                                 <span class="tw-indicator">
-                                    <i class="fa fa-angle-down"></i>
-                                 </span>
-                              </a>
-                              <div id="tw-megamenu" class="dropdown-menu tw-mega-menu">
-                                 <div class="row">
-                                    <div class="col-md-12 col-lg-3 no-padding">
-                                       <ul>
-                                          <li class="tw-megamenu-title">
-                                             <h3>Addons List One</h3>
-                                          </li>
-                                          <li><a href="#">SEO Pricing</a></li>
-                                          <li><a href="#">Ecommerce SEO</a></li>
-                                          <li><a href="#">Enterprise SEO</a></li>
-                                          <li><a href="#">Local SEO</a></li>
-                                       </ul>
-                                       
-                                    </div>
-                                   
-                                    <div class="col-md-12 col-lg-3 no-padding">
-                                       <ul>
-                                          <li class="tw-megamenu-title">
-                                             <h3>Addons List Two</h3>
-                                          </li>
-                                          <li><a href="#">Addon list 1</a></li>
-                                          <li><a href="#">Addon list 2</a></li>
-                                          <li><a href="#">Addon list 3</a></li>
-                                          <li><a href="#">Addon list 4</a></li>
-                                       </ul>
-                                       
-                                    </div>
-                                   
-                                    <div class="col-md-12 col-lg-3 no-padding">
-                                       <ul>
-                                          <li class="tw-megamenu-title">
-                                             <h3>Useful links</h3>
-                                          </li>
-                                          <li><a href="#">Search Engine</a></li>
-                                          <li><a href="#">Data analysis</a></li>
-                                          <li><a href="#">Disital marketing</a></li>
-                                          <li><a href="#">Social Marketing</a></li>
-                                       </ul>
-                                      
-                                    </div>
-                                    
-                                    <div class="col-md-12 col-lg-3 megamenu-img">
-                                       <img src="images/menu_img.png" alt="" class="img-fluid">
-                                    </div>
-                                   
-                                 </div>
-                                
-                              </div>
-                              
-                           </li-->
-                            <!-- End MegaMenu -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" data-toggle="dropdown">
-                                    Technology
-                                    <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
-                                </a>
-                                <ul class="dropdown-menu tw-dropdown-menu" style="background-color: #f7f7f7">
-                                    <li><a href="tech1.html">Geolocation</a></li>
-                                    <li><a href="tech2.html">Augmented Reality</a></li>
-                                    <li><a href="tech3.html">Beacon Technology</a></li>
-                                </ul>
-                                <!-- End of Dropdown menu -->
-                            </li>
-                            <!-- End Dropdown -->
+
                             <li class="nav-item"><a class="nav-link"
-                                    href="http://blog.chamaralabs.com/article/posts/merchent">Blog</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+                                    href="http://blog.chamaralabs.com/users/careers">Carrer</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="http://blog.chamaralabs.com/article/posts/user">Blog</a></li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about_us.html">
+                                    About Us
+                                    <!--span class="tw-indicator"><i class="fa fa-angle-down"></i></span-->
+                                </a>
+                            </li>
+                            <!-- End Dropdown -->
+
+
+                            <li class="nav-item"><a class="nav-link" href="../contact_us.html">Contact Us</a></li>
                         </ul>
                         <!-- End Navbar Nav -->
 
@@ -501,95 +432,52 @@
 
 
         <!-- desktop view center logo -->
-        <div id="logo_img_div_desk" style="margin-top: 10px;text-align: center;z-index: 1;position: fixed; left:47%; ">
+        <div id="logo_img_div_desk"
+            style="margin-top: 10px;text-align: center;z-index: 501;position: fixed; left:47%; ">
             <a style="padding: 0;" href="index.html"><img id="logo_img_xxx" class="shadowfilter"
                     src="images/center_logo_new.png" alt=""></a>
         </div>
         <!-- ----------------------- -->
-        <nav style="z-index: 100;" id="newheader2" class="menu">
+        <nav style="z-index: 500;" id="newheader2" class="menu">
             <ul class="nav-menu nav-center">
                 <li class="menu-item"><a href="index.html"><u>Home</u></a>
-                <li class="menu-item"><a href="user/index.html"><u>User App</u></a>
-                <li class="menu-item"><a href="spot_offers.html"><u>Benefits</u></a>
-                <li class="menu-item" id="sec-02"><a href="our_services.html"><u>Services</u></a>
+                <li class="menu-item"><a href="../index.html"><u>Buisness Owner</u></a>
+                <li class="menu-item" id="sec-02"><a href="#tw-benefits"><u>App Benefits</u></a>
                     <ul>
 
-                        <li><a href="marketing.html">Marketing</a>
-                            <ul>
-                                <li><a href="spot_offer.html">Spot Offers Super App</a>
-                                    <ul>
-                                        <li><a href="delever_dynamic_offers.html">Deliver Dynamic Offers &
-                                                Promotions </a>
-                                        <li><a href="intelligent_statistics.html">Intelligent
-                                                Statistics</a>
-                                        </li>
-                                        <li><a href="real_time_edits.html">Real Time edits</a></li>
-                                        <li><a href="get_discovered.html.html">Get discovered</a></li>
-                                        <li><a href="approve_reject_leads.html">Approve / Reject leads</a>
-                                        </li>
-                                        <li><a href="get_store_followers.html">Get store followers</a>
-                                        </li>
-                                        <li><a href="get_more_leads.html">Get more leads via price request
-                                                from
-                                                users</a></li>
-                                        <li><a href="better_branding.html">Better Branding</a></li>
-                                        <li><a href="spot/loyalty_offers.html">Loyalty Offers to attract repeat
-                                                customers</a></li>
-                                        <li><a href="one_click_chat.html">One click chat</a></li>
-                                        <li><a href="social_media_integration_for_larger_reach.html">
-                                                Social Media integration for larger reach</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="lead_generation.html">Lead Generation</a></li>
-                                <li><a href="sm_marketing.html">Social Media</a></li>
-                                <li><a href="sms_marketing.html">SMS Marketing</a></li>
-                                <li><a href="seo.html">SEO</a></li>
-                                <li><a href="web_analytics.html">Web Analytics</a></li>
-                                <li><a href="gmbt.html">GMBT</a></li>
-                                <li><a href="growth_hacking.html">Growth Hacking</a></li>
+                        <li><a href="feature1.html">Earn Money for Using Social Media</a></li>
+                        <li><a href="feature2.html">Earn Cash For Window Shopping</a></li>
+                        <li><a href="feature3.html">Earn cash for Shopping
+                            </a></li>
+                        <li><a href="feature4.html">Earn Cash when your friends earn Cash
+                            </a></li>
+                        <li><a href="feature5.html">Find Unconditional Cash Vouchers
+                            </a></li>
+                        <li><a href="feature6.html">Find Offers near you
+                            </a></li>
+                        <li><a href="feature7.html">Find Stores near you
+                            </a></li>
+                        <li><a href="feature8.html">Follow your merchant
+                            </a></li>
+                        <li><a href="feature9.html">Price request
+                            </a></li>
+                        <li><a href="feature10.html">Fun with Augmented Reality</a></li>
 
 
 
-
-                            </ul>
-                        </li>
-                        <li><a href="strategy.html">Strategy</a>
-                            <ul>
-                                <li><a href="omni_channel.html">Omni Channel</a></li>
-                                <li><a href="digital_strategy.html">Digital Strategy</a></li>
-                                <li><a href="brand_strategy.html">Brand Strategy</a></li>
-                                <li><a href="market_research.html">Market Research</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="design.html">Design</a>
-                            <ul>
-                                <li><a href="branding.html">Branding</a></li>
-                                <li><a href="logo_designing.html">Logo Designing</a></li>
-                                <li><a href="photo_video.html">Photography / Videograply </a></li>
-                                <li><a href="brocher_designing.html">Brocher Designing</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="development.html">Development</a>
-                            <ul>
-                                <li><a href="website_development.html">Website Development</a></li>
-                                <li><a href="ar_vr.html">AR / VR</a></li>
-                                <li><a href="app_development.html">iOS/Android app Development</a></li>
-                            </ul>
-                        </li>
                     </ul>
                 </li>
+                <li class="menu-item" id="sec-03"><a href="categories_we_serve.html"><u>Categories</u></a></li>
                 <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
-                <li class="menu-item" id="sec-04"><a href="tech_we_use.html"><u>Technology</u></a>
-                    <ul>
-                        <li><a href="tech1.html">Geolocation</a></li>
-                        <li><a href="tech2.html">Augmented Reality</a>
-                        <li><a href="tech3.html">Beacon Technology</a>
-                    </ul>
+                <li class="menu-item" id="sec-06"><a href="http://blog.chamaralabs.com/users/careers"><u>Careers</u></a>
+                <li class="menu-item" id="sec-05"><a
+                        href="http://blog.chamaralabs.com/article/posts/user"><u>Blog</u></a></li>
+                <li class="menu-item" id="sec-04"><a href="about_us.html"><u>About Us</u></a>
+
+
+
                 </li>
-                <li class="menu-item" id="sec-07"><a
-                        href="http://blog.chamaralabs.com/article/posts/merchent"><u>Blog</u></a></li>
-                <li class="menu-item" id="sec-09"><a href="about.html"><u>About Us</u></a></li>
-                <li class="menu-item" id="sec-08"><a href="contact_us.html"><u>Contact Us</u></a></li>
+                <li class="menu-item" id="sec-07"><a href="#tw-contact"><u>Contact Us</u></a></li>
 
 
             </ul>
@@ -612,10 +500,9 @@
         <div id="banner-area" class="about-banner-area" style="height: 300px;">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 ml-auto">
+                    <div class="col-lg-4 col-md-6 ml-auto">
                         <div class="banner-heading wow fadeInRight">
-                            <h1 class="banner-title" style="color: #2F2C2C;">Blog
-                            </h1>
+                            <h1 class="banner-title" style="color: #2F2C2C; text-align: center">About Us</h1>
                             <ol class="breadcrumb">
                                 <!-- <li>Home</li>
                      <li><a href="#">service</a></li> -->
@@ -632,28 +519,100 @@
     </section>
 
 
-    <section id="tw-blog" menu-sec="sec-07" data-color="#fff" class="section tw-blog gradient-2"
-        style="min-height: 0vh; padding-bottom: 50px">
-        <div class="container">
 
-            <!-- Row End -->
-            <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                <div class="col-md-12 remove-padding">
-                    <div class="owl-carousel owl-theme blog-slider" id="blog-list">
-                    </div>
+    <section id="main-container" class="gradient-2 section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 wow fadeInRight intro-text-left" data-wow-duration="1s"
+                    style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;">
+                    <!--h2 class="column-title">We Solve <span>Online Marketing</span> Problems</h2-->
+                    <p>
+                        Welcome to the Best 360 Degree Digital Marketing Company with an Online-to-Offline (O2O)
+                        platform
+                        helping offline retail brands & boutiques increase their store walk-ins and boost conversions.
+                        Spot
+                        Offers is not a traditional digital marketing company or an e-commerce company. We specialize in
+                        Omni
+                        commerce or Omni channel marketing where we help merchants to power their digital services by
+                        automatically converting traditional offline advertising into powerful online marketing
+                        campaigns.
+                    </p><br>
+                    <p>
+                        We are a group of professional digital marketers, designers, and developers. Our team has
+                        several
+                        years of experience up our sleeve to make a real impact in the digital world. We are committed
+                        to
+                        making your campaign a success. Our scope of coverage reaches all over the world as well as
+                        diverse
+                        industries.
+                    </p><br>
+                    <p>
+                        Some of the industries we work with include Food & Beverages, Fashion, Beauty, Education, Real
+                        Estate,
+                        Fitness, Travels, Repairs, Pets, and Services. We employ the most modern digital tools to ensure
+                        we
+                        give you the best service. We can help you with designing your website with an online store, a
+                        business app, and run a social media campaign amidst many other benefits. On the other hand, we
+                        don’t
+                        leave out the other essential digital marketing tools.
+                    </p><br>
+                    <p>
+                        We have an enviable reputation as we give out exclusive offers to both new and existing
+                        customers. You
+                        can get the latest trendy matters in digital marketing and business growth from us, primarily
+                        through
+                        our app. We desire to build a formidable future through the use of digital technology tools and
+                        strategies. Commit your digital campaign into our hands and let us make your dreams come true
+                        with
+                        measurable growth.
+                    </p>
+                    <!--ul class="intro-list">
+                     <li>Internet marketing SEO company offering innovative designs</li>
+                     <li>Marketing generate awareness, drive traffic, connect with</li>
+                  </ul-->
+                    <!--a href="#" class="btn btn-primary tw-mt-40">learn more</a-->
+                    <!-- Default Round Btn -->
+                    <!--a href="#" class="btn btn-secondary tw-mt-40">contact us</a-->
                 </div>
-                <div class="col-md-12 text-center ">
-                    <a href="http://blog.chamaralabs.com/article/posts/merchent" class="btn btn-primary">view all</a>
-                </div>
+                <!-- End Col -->
+                <!--div class="col-lg-6 col-md-12 text-lg-right text-md-center wow fadeInLeft" data-wow-duration="1s"
+                  style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
+                  <img src="images/about/about_image.png" alt="" class="img-fluid">
+               </div-->
+                <!-- End Col -->
             </div>
             <!-- End Row -->
         </div>
-
-        <!-- Container End -->
-
-
+        <!-- End Container -->
     </section>
-    <!-- End tw blog -->
+    <!-- Main container end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -850,6 +809,7 @@
     <!-- slick -->
     <script src="js/slick.js"></script>
 
+
     <!--Sliding mobile js-->
     <!--script src="lib/js/greensock.js"></script>
    <script src="lib/js/layerslider.transitions.js"></script>
@@ -859,6 +819,8 @@
 
     <script src="js/app-functions.js"></script>
     <script src="js/app.js"></script>
+
+
     <!--script>
       $(document).ready(function () {
 

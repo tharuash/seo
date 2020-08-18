@@ -27,7 +27,7 @@
 
 // ====================================================*/
 
-function changeRootLink(host){
+function changeRootLink(host) {
     $('#logo_img_div_desk a').attr("href", host)
     $('#logo_img_div_mobi a').attr("href", host)
 }
@@ -77,7 +77,7 @@ function setIndustryOwl() {
         itemsDesktopSmall: [980, 3],
         itemsTablet: [768, 2],
         itemsMobile: [479, 1],
-        loop:false,
+        loop: false,
         rewind: true,
         responsiveRefreshRate: 0,
         autoplay: true,
@@ -239,7 +239,7 @@ function destroySlick() {
 
 
 
-       /* html = `
+/* html = `
        `;
         $("#job-list").append(html);
 
@@ -315,7 +315,7 @@ function setJobs(jobs) {
 
     for (let j = 0; j < jobs.length; j++) {
 
-        
+
 
 
         html = `<tr>
@@ -324,7 +324,7 @@ function setJobs(jobs) {
       <td> <a target="_blank" rel="noopener noreferrer" class="readmore" href="http://blog.chamaralabs.com/users/careers/${jobs[j].encode_id}"><span class="apply">Apply</span></a></td>
    </tr>`;
         $("#job-table").append(html);
-        
+
     }
 
 
@@ -375,9 +375,9 @@ function setBlogs(blogs) {
 
     for (let j = 0; j < blogs.length; j++) {
         html = `<div class="post item">
-        <div class="post-img"> <img class="img-responsive" src="http://blog.chamaralabs.com/${blogs[j].featured_image}" alt=""/> </div>
+        <div class="post-img"><a target="_blank" rel="noopener noreferrer" href="http://blog.chamaralabs.com/article/posts/${blogs[j].encode_id}/${blogs[j].slug}">  <img class="img-responsive" src="http://blog.chamaralabs.com/${blogs[j].featured_image}" alt=""/> </a> </div>
         <div class="post-info" style="margin-left:0">
-          <h3><a href="#">${blogs[j].name}</a></h3>
+          <h3><a target="_blank" rel="noopener noreferrer" href="http://blog.chamaralabs.com/article/posts/${blogs[j].encode_id}/${blogs[j].slug}" >${blogs[j].name}</a></h3>
           <h6>${monthNames[blogs[j].published_at.substring(5, 7) - 1]} ${blogs[j].published_at.substring(8, 10)}, ${blogs[j].published_at.substring(0, 4)}</h6>
           <div style="height:185px; overflow: hidden">
           <p>${blogs[j].intro}</p>

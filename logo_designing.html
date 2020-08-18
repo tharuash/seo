@@ -13,7 +13,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
    <!-- Site Title- -->
-   <title>SeoTime - SEO, Social Media and Marketing HTML Template</title>
+   <title>Logo Designing – Best Logo Designing Service</title>
+   <meta name="description"
+      content="When creating your logo we first look at your products & services. Then we understand your message that you want to highlight to your customers and to create a unique logo that represents your brand.">
+   <meta name="keywords" content="Best Logo Designing, Unique Logo, Multiple format, PSD, VECTOR, PNG, SVG, EPS">
    <link rel="icon" href="images/center_logo_new.png" type="image/x-icon">
    <!-- CSS
    ==================================================== -->
@@ -52,28 +55,21 @@
 
    <link rel="stylesheet" href="assets/plugins/owl-carousel/assets/owl.theme.default.min.css">
 
+   <link rel="stylesheet" href="css/editable.css">
+
    <style>
       .section {
-         /* min-height: 100vh; */
-         min-height: 800px;
+         min-height: 100vh;
          position: relative;
          text-align: center;
          font-family: sans-serif, arial;
          margin: 0;
          padding-top: 50px
-            /* scroll-snap-align: start;
-         scroll-snap-stop: always; */
       }
 
-
       html {
-         /* font-family: sans-serif; */
-         /* scroll-snap-type: mandatory; */
 
-         /* this not working on safari */
          scroll-behavior: smooth;
-         /* scroll-snap-points-y: repeat(100vh); */
-         /*scroll-snap-type: y mandatory;*/
 
       }
 
@@ -102,13 +98,13 @@
 
 
       .gradient-2 {
-         background-image: -webkit-linear-gradient(110deg, rgb(255, 255, 255) 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
-         background-image: -moz-linear-gradient(110deg, rgb(255, 255, 255) 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
-         background-image: -o-linear-gradient(110deg, rgb(255, 255, 255) 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
-         background-image: linear-gradient(110deg, rgb(255, 255, 255) 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
-         background-image: -ms-linear-gradient(110deg, rgb(255, 255, 255) 10%, #ffffff 90%);
+         background-image: -webkit-linear-gradient(110deg, #ffffff 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+         background-image: -moz-linear-gradient(110deg, #ffffff 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+         background-image: -o-linear-gradient(110deg, #ffffff 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+         background-image: linear-gradient(110deg, #ffffff 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+
          background-blend-mode: multiply;
-         color: #fff
+         /*color: #fff;*/
       }
 
       .gradient-3 {
@@ -123,11 +119,12 @@
       }
 
       .gradient-4 {
-         background-image: -webkit-linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
-         background-image: -moz-linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
-         background-image: -o-linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
-         background-image: linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
-         background-image: -ms-linear-gradient(110deg, #d4b548 10%, #ff577b 90%);
+         background-image: -webkit-linear-gradient(110deg, #baeff0 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+         background-image: -moz-linear-gradient(110deg, #baeff0 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+         background-image: -o-linear-gradient(110deg, #baeff0 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+         background-image: linear-gradient(110deg, #baeff0 10%, #ffffff 90%), url("images/background/diamond_upholstery.png");
+         background-image: -ms-linear-gradient(left, #baeff0, #ffffff);
+         /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-5, endColorstr=$combo-6, GradientType=1); */
          background-blend-mode: multiply;
          color: #fff
       }
@@ -208,21 +205,11 @@
          transform: translate(-50%, -50%);
       }
 
-      #logo_img_xxx {
-         height: 78px;
-         opacity: 0;
-         animation: second_opacity 3s .3s forwards;
-      }
-
       .nav a {
          animation: second_opacity 3s .3s forwards;
       }
 
-      /* #logo_img_xxx:hover {
-       -webkit-filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.7));
-       filter: drop-shadow(12px 12px 7px rgba(255, 255, 255, 0.7)); */
-      /* box-shadow: 0px 0px 5px #fff; */
-      /* } */
+
 
       .shadowfilter {
          -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.80));
@@ -295,7 +282,7 @@
 
 
       table a {
-         color: whitesmoke;
+         color: #212529;
       }
 
       u {
@@ -311,8 +298,7 @@
       .nav-menu>li:hover u,
       .nav-menu>li.active u {
          border-bottom: 2px solid;
-         /* -webkit-animation: fadeinout 2s linear forwards;
-       animation: fadeinout 2s linear forwards; */
+
       }
 
       @-webkit-keyframes fadeinout {
@@ -339,7 +325,35 @@
       .nav-menu a {
          color: black;
       }
+
+      .about-banner-area {
+
+         background-image: url("images/client_images/design/banner/Logo_Designing.webp");
+
+      }
+
+      .set-left {
+         padding-left: 100px;
+      }
+
+      @media (max-width: 768px) {
+         .about-banner-area {
+
+            background-image: url("");
+
+         }
+
+         .set-left {
+            padding-left: 0px;
+         }
+
+         .set-left h1 {
+            font-size: 32px;
+         }
+
+      }
    </style>
+
 
    <link rel="stylesheet" href="css/menu-new-2.css">
 
@@ -353,128 +367,130 @@
    <header>
 
       <div id="mobile_head" class="fixed-top pos-f-t">
-         <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-               <h5 class="text-white h4">SEO</h5>
-               <table class="table table-sm">
-                  <tbody>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="#">Services</a>
-                        </td>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="user/index.html">User</a>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="#">Industries</a>
-                        </td>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="#">Blog</a>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="#">Technologies</a>
-                        </td>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="about.html">About Us</a>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="#">Clients</a>
-                        </td>
-                        <td data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                           aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                           aria-label="Toggle navigation">
-                           <a href="#">Contact Us</a>
-                        </td>
-                     </tr>
-                  </tbody>
-               </table>
-               <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
-            </div>
-         </div>
-         <nav class="navbar navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-               data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-               aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-         </nav>
-      </div>
+         <div>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f7f7f7">
+               <!--a class="navbar-brand tw-nav-brand" href="index.html">
+                        <img src="images/logo/logo.png" alt="seotime">
+                     </a-->
+               <div id="logo_img_div_mobi" class="navbar-brand"
+                  style="width: 100%;text-align: center; background-color: #f7f7f7">
+                  <a style="padding: 0;" href="/SEO-final/index.html"><img id="logo_img_xxx" src="images/menu-logo.jpeg"
+                        alt=""></a>
+               </div>
+               <!-- End of Navbar Brand -->
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <!-- End of Navbar toggler -->
+               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav" style="padding-left: 10px">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                           Home
 
-      <!-- mobile view center logo -->
-      <div id="logo_img_div_mobi"
-         style="margin-top: 10px;text-align: center;z-index: 100;position: fixed; width: 100%;">
-         <a style="padding: 0;" href="#"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
-               alt=""></a>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="user/index.html">
+                           User App
+                        </a>
+                     </li>
+                     <!-- End Dropdown -->
+                     <li class="nav-item">
+                        <a class="nav-link" href="spot_offers.html">
+                           Benefits
+                        </a>
+                     </li>
+                     <!-- End Dropdown -->
+                     <li class="nav-item dropdown">
+                        <a class="nav-link" href="our_services.html" data-toggle="dropdown">
+                           Services
+                           <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu tw-dropdown-menu" style="background-color: #f7f7f7">
+                           <li><a href="marketing.html">Marketing</a></li>
+                           <li><a href="strategy.html">Strategy</a></li>
+                           <li><a href="design.html">Design</a></li>
+                           <li><a href="development.html">Development</a></li>
+                        </ul>
+                     </li>
+
+                     <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown">
+                           Technology
+                           <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu tw-dropdown-menu" style="background-color: #f7f7f7">
+                           <li><a href="tech1.html">Geolocation</a></li>
+                           <li><a href="tech2.html">Augmented Reality</a></li>
+                           <li><a href="tech3.html">Beacon Technology</a></li>
+                        </ul>
+                        <!-- End of Dropdown menu -->
+                     </li>
+                     <!-- End Dropdown -->
+                     <li class="nav-item"><a class="nav-link"
+                           href="http://blog.chamaralabs.com/article/posts/merchent">Blog</a></li>
+                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                     <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
+                  </ul>
+                  <!-- End Navbar Nav -->
+
+                  <!-- End off canvas menu -->
+               </div>
+               <!-- End of navbar collapse -->
+            </nav>
+            <!-- End of Nav -->
+         </div>
+         <!-- End of Container -->
       </div>
-      <!-- ------------------------ -->
+      <!-- End tw head -->
+
+
 
       <!-- desktop view center logo -->
-      <div id="logo_img_div_desk"
-         style="margin-top: 10px;text-align: center;z-index: 100;position: fixed; width: 100%;">
-         <a style="padding: 0;" href="#"><img id="logo_img_xxx" class="shadowfilter" src="images/center_logo_new.png"
-               alt=""></a>
+      <div id="logo_img_div_desk" style="margin-top: 10px;text-align: center;z-index: 105;position: fixed; left:47%; ">
+         <a style="padding: 0;" href="index.html"><img id="logo_img_xxx" class="shadowfilter"
+               src="images/center_logo_new.png" alt=""></a>
       </div>
       <!-- ----------------------- -->
-
       <nav style="z-index: 100;" id="newheader2" class="menu">
          <ul class="nav-menu nav-center">
-            <li class="menu-item" id="sec-02"><a href="#"><u>Services</u></a>
+            <li class="menu-item"><a href="index.html"><u>Home</u></a>
+            <li class="menu-item"><a href="user/index.html"><u>User App</u></a>
+            <li class="menu-item"><a href="spot_offers.html"><u>Benefits</u></a>
+            <li class="menu-item" id="sec-02"><a href="our_services.html"><u>Services</u></a>
                <ul>
-                  <!-- <li><a href="#">Sub Nav Link</a></li> -->
+
                   <li><a href="marketing.html">Marketing</a>
                      <ul>
-                        <li><a href="spot_offer.html">Spot Offer App</a>
+                        <li><a href="spot_offer.html">Spot Offers Super App</a>
                            <ul>
-                              <li><a href="delever_dynamic_offers.html">Deliver Dynamic Offers &
-                                    Promotions </a>
-                              <li><a href="intelligent_statistics.html">Intelligent
-                                    Statistics</a>
-                              </li>
-                              <li><a href="real_time_edits.html">Real Time edits</a></li>
-                              <li><a href="get_discovered.html.html">Get discovered</a></li>
-                              <li><a href="approve_reject_leads.html">Approve / Reject leads</a>
-                              </li>
-                              <li><a href="get_store_followers.html">Get store followers</a>
-                              </li>
-                              <li><a href="get_more_leads.html">Get more leads via price request
-                                    from
-                                    users</a></li>
+                              <li><a href="promote_offers.html">Promote Offers</a>
+                              <li><a href="get_discovered.html">Get Discovered</a></li>
+                              <li><a href="get_leads.html">Get Leads</a></li>
+                              <li><a href="home_delivery.html">Home Delivery</a></li>
+                              <li><a href="clear_old_stock.html">Clear Stock</a></li>
+                              <li><a href="get_followers.html">Get Followers</a></li>
+                              <li><a href="loyalty_offers.html">Loyalty Offers</a></li>
+                              <li><a href="data_analytics_spot.html">Data Analytics</a></li>
+                              <li><a href="approve_leads.html">Approve Leads</a></li>
                               <li><a href="better_branding.html">Better Branding</a></li>
-                              <li><a href="spot/loyalty_offers.html">Loyalty Offers to attract repeat
-                                    customers</a></li>
-                                    <li><a href="one_click_chat.html">One click chat</a></li>
-                                    <li><a href="social_media_integration_for_larger_reach.html">
-                                          Social Media integration for larger reach</a></li>
+                              <li><a href="one_click_chat.html">Chat</a></li>
+                              <li><a href="social_media.html">Social Media</a></li>
                            </ul>
                         </li>
                         <li><a href="lead_generation.html">Lead Generation</a></li>
-                        <li><a href="sm_marketing.html">Social Media Marketing</a></li>
-                        <li><a href="ppc.html">PPC</a></li>
-                        <li><a href="growth_hacking.html">Growth Hacking</a></li>
-                        <li><a href="web_analytics.html">Web Analytics</a></li>
-                        <li><a href="seo.html">SEO</a></li>
+                        <li><a href="sm_marketing.html">Social Media</a></li>
                         <li><a href="sms_marketing.html">SMS Marketing</a></li>
+                        <li><a href="seo.html">SEO</a></li>
+                        <li><a href="web_analytics.html">Web Analytics</a></li>
                         <li><a href="gmbt.html">GMBT</a></li>
+                        <li><a href="growth_hacking.html">Growth Hacking</a></li>
+
+
+
+
                      </ul>
                   </li>
                   <li><a href="strategy.html">Strategy</a>
@@ -489,333 +505,221 @@
                      <ul>
                         <li><a href="branding.html">Branding</a></li>
                         <li><a href="logo_designing.html">Logo Designing</a></li>
-                        <li><a href="photo_video.html">Photography / Videograply </a></li>
+                        <li><a href="photo_video.html">Photography / Videography </a></li>
                         <li><a href="brocher_designing.html">Brocher Designing</a></li>
                      </ul>
                   </li>
                   <li><a href="development.html">Development</a>
                      <ul>
                         <li><a href="website_development.html">Website Development</a></li>
-                        <li><a href="ar_vr.html">AR / VR</a></li>
-                        <li><a href="app_development.html">iOS/Android app Development</a></li>
+                        <li><a href="ar_vr.html">AR & VR</a></li>
+                        <li><a href="app_development.html">App Development</a></li>
                      </ul>
                   </li>
                </ul>
             </li>
-            <li class="menu-item" id="sec-03"><a href="#"><u>Industries</u></a>
-               <!--ul>
-                     <li><a href="#">Sub Nav Link</a></li>
-                     <li><a href="#">Sub Nav Link</a>
-                         <ul>
-                             <li><a href="#">Sub Sub Nav Link</a></li>
-                             <li><a href="#">Sub Sub Nav Link</a></li>
-                             <li><a href="#">Sub Sub Nav Link</a></li>
-                         </ul>
-                     </li>
-                     <li><a href="#">Sub Nav Link</a></li>
-                     <li><a href="#">Sub Nav Link</a></li>
-                 </ul-->
-            </li>
-            <li class="menu-item" id="sec-04"><a href="#"><u>Technologies</u></a>
+            <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
+            <li class="menu-item" id="sec-04"><a href="tech_we_use.html"><u>Technology</u></a>
                <ul>
                   <li><a href="tech1.html">Geolocation</a></li>
                   <li><a href="tech2.html">Augmented Reality</a>
                   <li><a href="tech3.html">Beacon Technology</a>
                </ul>
             </li>
-            <li class="menu-item" id="sec-06"><a href="#"><u>Clients</u></a></li>
+            <li class="menu-item" id="sec-07"><a
+                  href="http://blog.chamaralabs.com/article/posts/merchent"><u>Blog</u></a></li>
+            <li class="menu-item" id="sec-09"><a href="about.html"><u>About Us</u></a></li>
+            <li class="menu-item" id="sec-08"><a href="contact_us.html"><u>Contact Us</u></a></li>
 
 
-            <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
-
-            <!-- <li id="sec-00" class="menu-item active" style="text-align: center;"><a style="padding: 0;"
-                 href="#"><img id="logo_img_xxx" class="shadowfilter" src="images/sss.png" alt=""></a></li> -->
-
-            <li class="menu-item"><a href="user/index.html"><u>User</u></a>
-               <!--ul class="sub-234">
-                     <li><a href="#">Sub Nav Link</a></li>
-                     <li><a href="#">Sub Nav Link</a> </li>
-                     <li><a href="#">Sub Nav Link</a></li>
-                     <li><a href="#">Sub Nav Link</a>
-                         <ul>
-                             <li><a href="#">Sub Sub Nav Link</a></li>
-                             <li><a href="#">Sub Sub Nav Link</a></li>
-                             <li><a href="#">Sub Sub Nav Link</a></li>
-                         </ul>
-                     </li>
-                 </ul-->
-            </li>
-            <li class="menu-item" id="sec-07"><a href="#"><u>Blog</u></a></li>
-            <li class="menu-item"><a href="about.html"><u>About Us</u></a></li>
-            <li class="menu-item" id="sec-08"><a href="#"><u>Contact Us</u></a></li>
          </ul>
       </nav>
+
 
 
    </header>
 
 
 
-   <div id="">
 
 
 
 
 
 
-      <section class=" gradient-1 section-banner" >
-         <div id="banner-area" class="banner-area ">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-4 col-md-6 ml-auto">
-                     <div class="banner-heading wow fadeInRight">
-                        <h1 class="banner-title" style="color: #2F2C2C;">Logo Designing</h1>
-                        <ol class="breadcrumb">
-                           <!-- <li>Home</li>
+   <section class="gradient-1 section" style="min-height: 0vh">
+      <div id="banner-area" class="about-banner-area" style="height: 300px;">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 col-md-8 ml-auto">
+                  <div class="banner-heading wow fadeInRight">
+                     <h1 class="banner-title" style="color: #2F2C2C;text-align: center;">Logo Designing – Best Logo Designing Service
+                     </h1>
+                     <ol class="breadcrumb">
+                        <!-- <li>Home</li>
                      <li><a href="#">service</a></li> -->
-                        </ol>
-                     </div>
-                  </div>
-                  <!-- Col end -->
-               </div>
-               <!-- Row end -->
-            </div>
-            <!-- Container end -->
-         </div>
-         <!-- Banner area end -->
-      </section>
-
-
-
-      <section id="main-container" class="gradient-2 section-para">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-6 col-md-12 wow fadeInRight intro-text-left" data-wow-duration="1s"
-                  style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;">
-                  <h2 class="">We Solve <span>Online Marketing</span> Problems</h2>
-                  <p>
-                     Internet marketing SEO company offering innovati marketing solution to mid to large size companies
-                     across the globe. As a
-                     leader in SEO, web design. ecommerce, website conversion.
-                  </p>
-                  <ul class="intro-list">
-                     <li>Internet marketing SEO company offering innovative designs</li>
-                     <li>Marketing generate awareness, drive traffic, connect with</li>
-                  </ul>
-                  <a href="#" class="btn btn-primary tw-mt-40">learn more</a>
-                  <!-- Default Round Btn -->
-                  <a href="#" class="btn btn-secondary tw-mt-40">contact us</a>
-               </div>
-               <!-- End Col -->
-               <div class="col-lg-6 col-md-12 text-lg-right text-md-center wow fadeInLeft" data-wow-duration="1s"
-                  style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
-                  <img src="images/about/about_image.png" alt="" class="img-fluid">
-               </div>
-               <!-- End Col -->
-            </div>
-            <!-- End Row -->
-         </div>
-         <!-- End Container -->
-      </section>
-      <!-- Main container end -->
-
-      <section id="tw-service-value" class="tw-service-value gradient-2 section-para">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-6 col-md-12 align-self-center">
-                  <img src="images/services/skill_image.png" alt="" class="img-fluid">
-               </div>
-               <div class="col-lg-6 col-md-12 ml-auto">
-                  <div class="tw-value-desc">
-                     <h2 class="">Our working Skills</h2>
-                     <span class="animate-border border-offwhite tw-mt-20 tw-mb-35"></span>
-                     <p>
-                        It’s an approach that brings together the best of financial planning and the best of investment
-                        management. It’s an approach
-                        that has worked for families, trusts, foundations and other.
-                     </p>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-3 text-center">
-                        <div class="percent-area">
-                           <div class="chart" data-percent="80">
-                              <p class="percent">80%</p>
-                           </div>
-                           <p>Optimizing</p>
-                           <!-- Chart end -->
-                        </div>
-                        <!-- Percent area end -->
-                     </div>
-                     <div class="col-md-3 text-center">
-                        <div class="percent-area">
-                           <div class="chart" data-percent="75">
-                              <p class="percent">75%</p>
-                           </div>
-                           <p>Advertising</p>
-                           <!-- Chart end -->
-                        </div>
-                        <!-- Percent area end -->
-                     </div>
-                     <div class="col-md-3 text-center">
-                        <div class="percent-area">
-                           <div class="chart" data-percent="70">
-                              <p class="percent">70%</p>
-                           </div>
-                           <p>Marketing</p>
-                           <!-- Chart end -->
-                        </div>
-                        <!-- Percent area end -->
-                     </div>
-                     <div class="col-md-3 text-center">
-                        <div class="percent-area">
-                           <div class="chart" data-percent="70">
-                              <p class="percent">70%</p>
-                           </div>
-                           <p>Planning</p>
-                           <!-- Chart end -->
-                        </div>
-                        <!-- Percent area end -->
-                     </div>
+                     </ol>
                   </div>
                </div>
-
+               <!-- Col end -->
             </div>
-            <!-- Content Row End -->
+            <!-- Row end -->
          </div>
-         <!-- Container End -->
-      </section>
-      <!-- Service Value End -->
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-   </div>
-
-
-
-
-   <section id="tw-work" menu-sec="sec-01"  class=" tw-work-area gradient-10 single-slider">
-      <div class="work-bg-pattern d-none d-lg-inline-block">
+         <!-- Container end -->
       </div>
-      <!-- End Work BG Pattern -->
+      <!-- Banner area end -->
+   </section>
+
+
+
+   <section id="main-container" class="gradient-2 section">
       <div class="container">
-         <div class="row text-center">
-            
-            <!-- End Col -->
-         </div>
-         <!-- End Row -->
-         <div class="row owl-carousel owl-theme" id="bottom-list" style="margin-top: 75px">
-            <div>
-               <div class="tw-work-process item">
-                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                     <div class="process-inner d-table-cell">
-                        <div class="port" style="border-radius: 50%">
-                           <img src="images/team/expert1.jpg" id="feature" class="img-fluid"
-                              style="border-radius: 50%" />
-                           <div class="work-text-content">
-                              <h5 style="color:#fff">Branding</h5>
-                           </div>
-                        </div>
-                        <!--img src="images/team/expert4.jpg" alt="" id="feature" class="img-fluid" style="border-radius: 50%"-->
-   
-                     </div>
-   
-                  </div>
-                  <!-- End process wrapper -->
-   
-   
-                 <a href="branding.html"> <p>Branding</p></a>
-   
-   
-               </div>
-               <!-- End Tw work process -->
+         <div class="row">
+            <div class="col-lg-6 col-md-12 wow fadeInRight intro-text-left my-auto" data-wow-duration="1s"
+               style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;">
+               <!--h2 class="column-title">We Solve <span>Online Marketing</span> Problems</h2-->
+               <p>
+                  Logo design is a critical factor in digital branding because a logo encodes the summary of the brand
+                  in an artistic form. It, therefore, takes much creativity to create a logo, which is a single entity,
+                  but that carries all that the brand represents.
+               </p>
+
+               <p>
+                  We are a team of experts who specializes in branding your product or service with an excellent touch.
+                  When creating your logo we first look at your products & services. Then we understand your message
+                  that you want to highlight to your customers. Once we have these information we blend them together to
+                  create a unique logo that represents your brand.
+               </p>
+
+               <p>
+                  We can create your logo in multiple format, be it PSD, VECTOR, PNG, SVG, EPS or others depending on
+                  your business needs.
+               </p>
+
             </div>
             <!-- End Col -->
-            <div>
-               <div class="tw-work-process item">
-                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                     <div class="process-inner d-table-cell">
-                        <div class="port" style="border-radius: 50%">
-                           <img src="images/team/expert2.jpg" id="feature" class="img-fluid"
-                              style="border-radius: 50%" />
-                           <div class="work-text-content">
-                              <h5 style="color:#fff">Logo Designing</h5>
-                           </div>
-                        </div>
-   
-                     </div>
-                  </div>
-                  <!-- End process wrapper -->
-                 <a href="logo_designing.html"> <p>Logo Designing</p></a>
-               </div>
-               <!-- End Tw work process -->
+            <div class="col-lg-6 col-md-12 text-lg-right text-md-center wow fadeInLeft my-auto" data-wow-duration="1s"
+               style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
+               <img src="images/client_images/design/content/Logo_Designing.webp" alt="" class="img-fluid">
             </div>
             <!-- End Col -->
-            <div>
-               <div class="tw-work-process item">
-                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                     <div class="process-inner d-table-cell">
-                        <div class="port" style="border-radius: 50%">
-                           <img src="images/team/expert3.jpg" id="feature" class="img-fluid"
-                              style="border-radius: 50%" />
-                           <div class="work-text-content">
-                              <h5 style="color:#fff">Photography/ <br> Videography</h5>
-                           </div>
-                        </div>
-   
-                     </div>
-                  </div>
-                  <!-- End process wrapper -->
-                  <a href="photo_video.html"><p>Photography/ <br> Videography</p></a>
-               </div>
-               <!-- End Tw work process -->
-            </div>
-            <!-- End Col -->
-            <div>
-               <div class="tw-work-process item">
-                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
-                     <div class="process-inner d-table-cell">
-                        <div class="port" style="border-radius: 50%">
-                           <img src="images/team/expert3.jpg" id="feature" class="img-fluid"
-                              style="border-radius: 50%" />
-                           <div class="work-text-content">
-                              <h5 style="color:#fff">Brocher Designing</h5>
-                           </div>
-                        </div>
-   
-                     </div>
-                  </div>
-                  <!-- End process wrapper -->
-                 <a href="brocher_designing.html"> <p>Brocher Designing</p></a>
-               </div>
-               <!-- End Tw work process -->
-            </div>
-            <!-- End Col -->
-          
-           
-            
-           
-           
          </div>
          <!-- End Row -->
       </div>
       <!-- End Container -->
    </section>
+   <!-- Main container end -->
+
+
+
+   <section id="tw-work" menu-sec="sec-01" data-color="#000" class="section tw-work-area gradient-4"
+      style="min-height: 0vh">
+      <div class="work-bg-pattern d-none d-lg-inline-block">
+      </div>
+      <!-- End Work BG Pattern -->
+      <div class="container">
+         <div class="row text-center">
+            <div class="col section-heading  wow fadeInDown" data-wow-duration="1s">
+               <h2>
+                  <small></small>More Design Services <span></span></h2>
+            </div>
+
+         </div>
+         <!-- End Row -->
+         <div class="row" style="padding-bottom: 40px">
+            <div class="col-lg-4 col-md-4">
+               <div class="tw-work-process">
+                  <a href="branding.html">
+                     <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="process-inner d-table-cell">
+                           <div class="port" style="border-radius: 50%">
+                              <img src="images/client_images/design/icons/Branding.webp" id="feature" class="img-fluid"
+                                 style="border-radius: 50%" />
+                              <div class="work-text-content">
+                                 <h5 style="color:#fff">Better Branding,
+                                    Brand Recognition,
+                                    Better Customer Service</h5>
+                              </div>
+                           </div>
+                           <!--img src="images/team/expert4.jpg" alt="" id="feature" class="img-fluid" style="border-radius: 50%"-->
+
+                        </div>
+
+                     </div>
+                     <!-- End process wrapper -->
+
+
+                     <p>Branding</p>
+                  </a>
+
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-lg-4 col-md-4">
+               <div class="tw-work-process">
+                  <a href="photo_video.html">
+                     <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="process-inner d-table-cell">
+                           <div class="port" style="border-radius: 50%">
+                              <img src="images/client_images/design/icons/Photography_Videograply.webp" id="feature"
+                                 class="img-fluid" style="border-radius: 50%" />
+                              <div class="work-text-content">
+                                 <h5 style="color:#fff">Showcase Product
+                                    Showcase Services
+                                    Engaging Content</h5>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                     <!-- End process wrapper -->
+                     <p>Photo & Videography</p>
+                  </a>
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+
+            <div class="col-lg-4 col-md-4">
+               <div class="tw-work-process">
+                  <a href="brocher_designing.html">
+                     <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="process-inner d-table-cell">
+                           <div class="port" style="border-radius: 50%">
+                              <img src="images/client_images/design/icons/Brochure_Designing.webp" id="feature"
+                                 class="img-fluid" style="border-radius: 50%" />
+                              <div class="work-text-content">
+                                 <h5 style="color:#fff">Attractive Design
+                                    Clear Messaging</h5>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+                     <!-- End process wrapper -->
+                     <p>Brochure Designing</p>
+                  </a>
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+
+
+         </div>
+
+
+
+
+
+
+      </div>
+      <!-- End Row -->
+      </div>
+      <!-- End Container -->
+   </section>
    <!-- End Features section -->
-   <!-- Slider Area End -->
-   
 
 
 
@@ -883,7 +787,8 @@
                         <img src="images/footer_logo.png" alt="footer_logo" class="img-fluid">
                      </a>
                      <p class="footer-info-text">
-                        Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut
                      </p>
                      <div class="footer-social-link">
                         <h3>Follow us</h3>
@@ -1023,7 +928,7 @@
 
    <script src="js/app-functions.js"></script>
    <script src="js/app.js"></script>
-   <script>
+   <!--script>
       $(document).ready(function () {
 
          $(".tw-slider-area").owlCarousel({
@@ -1047,7 +952,7 @@
 
 
       });
-   </script>
+   </script-->
 </body>
 
 

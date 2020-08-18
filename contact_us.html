@@ -74,9 +74,9 @@
 
         }
 
-        .tw-work-process p{
-         color: #2F2C2C;
-      }
+        .tw-work-process p {
+            color: #2F2C2C;
+        }
 
         /* remove scroll bar */
         html::-webkit-scrollbar {
@@ -210,7 +210,7 @@
             transform: translate(-50%, -50%);
         }
 
-        
+
         .nav a {
             animation: second_opacity 3s .3s forwards;
         }
@@ -407,9 +407,9 @@
                                     <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
                                 </a>
                                 <ul class="dropdown-menu tw-dropdown-menu" style="background-color: #f7f7f7">
-                                    <li><a href="tech1.html">Geolocation</a></li>
-                                    <li><a href="tech2.html">Augmented Reality</a></li>
-                                    <li><a href="tech3.html">Beacon Technology</a></li>
+                                    <li><a href="geo_location.html">Geolocation</a></li>
+                                    <li><a href="augmented_reality.html">Augmented Reality</a></li>
+                                    <li><a href="beacon_technology.html">Beacon Technology</a></li>
                                 </ul>
                                 <!-- End of Dropdown menu -->
                             </li>
@@ -434,7 +434,8 @@
 
 
         <!-- desktop view center logo -->
-        <div id="logo_img_div_desk" style="margin-top: 10px;text-align: center;z-index: 1;position: fixed; left:47%; ">
+        <div id="logo_img_div_desk"
+            style="margin-top: 10px;text-align: center;z-index: 105;position: fixed; left:47%; ">
             <a style="padding: 0;" href="index.html"><img id="logo_img_xxx" class="shadowfilter"
                     src="images/center_logo_new.png" alt=""></a>
         </div>
@@ -506,9 +507,9 @@
                 <li style="visibility: hidden;" class="menu-item"><a href="#">&nbsp;</a></li>
                 <li class="menu-item" id="sec-04"><a href="tech_we_use.html"><u>Technology</u></a>
                     <ul>
-                        <li><a href="tech1.html">Geolocation</a></li>
-                        <li><a href="tech2.html">Augmented Reality</a>
-                        <li><a href="tech3.html">Beacon Technology</a>
+                        <li><a href="geo_location.html">Geolocation</a></li>
+                        <li><a href="augmented_reality.html">Augmented Reality</a></li>
+                        <li><a href="beacon_technology.html">Beacon Technology</a></li>
                     </ul>
                 </li>
                 <li class="menu-item" id="sec-07"><a
@@ -557,77 +558,79 @@
     </section>
 
 
-    <section id="tw-contact" menu-sec="sec-08" data-color="#fff" class="section tw-blog gradient-2" style="min-height: 0vh;">
+    <section id="tw-contact" menu-sec="sec-08" data-color="#fff" class="section tw-blog gradient-2"
+        style="min-height: 0vh;">
         <div class="container">
-          
-           <div class="row mt-50">
-              <div class="col-md-8 wow fadeInRight">
-                 <form name="contact-form" id="contact-form"
-                    action="http://incognitothemes.com/arcon-landing/php/contact.php" method="POST">
-                    <div class="messages"></div>
-                    <div class="row">
-                       <div class="col-md-6">
-                          <div class="form-group wow fadeTop" data-wow-delay="0.1s">
-                             <label class="sr-only" for="name">Name</label>
-                             <input type="text" name="name" class="form-control" id="name-2" required
-                                placeholder="Your Name" data-error="Your Name is Required">
-                             <div class="help-block with-errors mt-20"></div>
-                          </div>
-                       </div>
-                       <div class="col-md-6">
-                          <div class="form-group wow fadeTop" data-wow-delay="0.2s">
-                             <label class="sr-only" for="email">Email</label>
-                             <input type="email" name="email" class="form-control" id="email-2" placeholder="Your Email"
-                                required data-error="Please Enter Valid Email">
-                             <div class="help-block with-errors mt-20"></div>
-                          </div>
-                       </div>
+
+            <div class="row mt-50">
+                <div class="col-md-8 wow fadeInRight">
+                    <form name="contact-form" id="contact-form"
+                        action="http://incognitothemes.com/arcon-landing/php/contact.php" method="POST">
+                        <div class="messages"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group wow fadeTop" data-wow-delay="0.1s">
+                                    <label class="sr-only" for="name">Name</label>
+                                    <input type="text" name="name" class="form-control" id="name-2" required
+                                        placeholder="Your Name" data-error="Your Name is Required">
+                                    <div class="help-block with-errors mt-20"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group wow fadeTop" data-wow-delay="0.2s">
+                                    <label class="sr-only" for="email">Email</label>
+                                    <input type="email" name="email" class="form-control" id="email-2"
+                                        placeholder="Your Email" required data-error="Please Enter Valid Email">
+                                    <div class="help-block with-errors mt-20"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group wow fadeTop" data-wow-delay="0.3s">
+                            <label class="sr-only" for="subject">Subject</label>
+                            <input type="text" name="subject" class="form-control" id="subject-2"
+                                placeholder="Your Subject">
+                        </div>
+                        <div class="form-group wow fadeTop" data-wow-delay="0.4s">
+                            <label class="sr-only" for="message">Message</label>
+                            <textarea name="message" class="form-control" id="message-2" rows="7"
+                                placeholder="Your Message" required data-error="Please, Leave us a message"></textarea>
+                            <div class="help-block with-errors mt-20"></div>
+                        </div>
+                        <div class="wow fadeTop" data-wow-delay="0.5s">
+                            <div class="zoomIn"><button type="submit" name="submit" class="btn btn-primary ">Send
+                                    Mail</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 wow fadeInLeft">
+                    <div class="wow fadeTop" data-wow-delay="0.1s">
+                        <h3>Postal Location</h3>
+                        <address>
+                            PO Box 16122 Toronto Eaton Centre,<br>
+                            220 The PATH Toronto, ON M5B 2H1, Canada<br>
+                            <abbr title="Phone">P:</abbr> (+1) 613 555-0105<br>
+                            <a href="#">arcon@example.com</a>
+                        </address>
                     </div>
-                    <div class="form-group wow fadeTop" data-wow-delay="0.3s">
-                       <label class="sr-only" for="subject">Subject</label>
-                       <input type="text" name="subject" class="form-control" id="subject-2" placeholder="Your Subject">
+                    <div class="wow fadeTop" data-wow-delay="0.2s">
+                        <h3>Global Location</h3>
+                        <address>
+                            PO Box 16122 Toronto Eaton Centre,<br>
+                            220 The PATH Toronto, ON M5B 2H1, Canada<br>
+                            <abbr title="Phone">P:</abbr> (+1) 613 555-0105
+                        </address>
                     </div>
-                    <div class="form-group wow fadeTop" data-wow-delay="0.4s">
-                       <label class="sr-only" for="message">Message</label>
-                       <textarea name="message" class="form-control" id="message-2" rows="7" placeholder="Your Message"
-                          required data-error="Please, Leave us a message"></textarea>
-                       <div class="help-block with-errors mt-20"></div>
+                    <div class="wow fadeTop" data-wow-delay="0.3s">
+                        <h3>Work Timings</h3>
+                        <p> <span>Mon - Fri: 10am to 7pm</span> <br>
+                            <span>Sat : 8am to 12pm</span> </p>
                     </div>
-                    <div class="wow fadeTop" data-wow-delay="0.5s">
-                       <div class="zoomIn"><button type="submit" name="submit" class="btn btn-primary ">Send
-                             Mail</button>
-                       </div>
-                    </div>
-                 </form>
-              </div>
-              <div class="col-md-4 wow fadeInLeft">
-                 <div class="wow fadeTop" data-wow-delay="0.1s">
-                    <h3>Postal Location</h3>
-                    <address>
-                       PO Box 16122 Toronto Eaton Centre,<br>
-                       220 The PATH Toronto, ON M5B 2H1, Canada<br>
-                       <abbr title="Phone">P:</abbr> (+1) 613 555-0105<br>
-                       <a href="#">arcon@example.com</a>
-                    </address>
-                 </div>
-                 <div class="wow fadeTop" data-wow-delay="0.2s">
-                    <h3>Global Location</h3>
-                    <address>
-                       PO Box 16122 Toronto Eaton Centre,<br>
-                       220 The PATH Toronto, ON M5B 2H1, Canada<br>
-                       <abbr title="Phone">P:</abbr> (+1) 613 555-0105
-                    </address>
-                 </div>
-                 <div class="wow fadeTop" data-wow-delay="0.3s">
-                    <h3>Work Timings</h3>
-                    <p> <span>Mon - Fri: 10am to 7pm</span> <br>
-                       <span>Sat : 8am to 12pm</span> </p>
-                 </div>
-              </div>
-           </div>
+                </div>
+            </div>
         </div>
-     </section>
-     <!-- End tw blog -->
+    </section>
+    <!-- End tw blog -->
 
 
 
