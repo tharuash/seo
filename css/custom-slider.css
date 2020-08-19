@@ -57,7 +57,7 @@
 
 .rev_slider{
     /*==== custom added ==*/
-    padding: 20px;
+    padding: 0px;
 }
 
 
@@ -67,6 +67,6 @@
 }
 
 .mobi_slider img{
-    width: 40% !important;
+    width: 55% !important;
     height:auto !important;
 }
