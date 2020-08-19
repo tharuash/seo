@@ -29,7 +29,7 @@
 
 @media (max-width: 992px) {
     .user-slider {
-        padding-top: 0px;
+        padding-top: 80px;
     }
 }
 
@@ -66,7 +66,7 @@
 }
 
 .uncommon {
-    padding-left: 56px;
+    padding-left: 62px;
 }
 
 @media (max-width: 333px) {
@@ -96,4 +96,71 @@
     }
 }
 
+.about-banner-area {
+    position: relative;
+    color: #fff;
+    /*background-image: url("../images/client_images/about_us.webp");*/
+    background-position: 0% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
 
+.spot-banner-area {
+    position: relative;
+    color: #fff;
+    background-image: url("../images/client_images/why_spotoffers.webp");
+    background-position: 0% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.about-banner-area .container {
+    position: relative;
+}
+
+.spot-banner-area .container {
+    position: relative;
+}
+
+.banner-title {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: right;
+    width: 100%;
+}
+
+.banner-heading {
+    width: 100%;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    min-height: 350px;
+}
